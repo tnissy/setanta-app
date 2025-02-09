@@ -1,24 +1,19 @@
 // App.tsx
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import LoginScreen from './src/screens/LoginScreen';
+import UserSettingsScreen from './src/screens/UserSettingsScreen'; // 追加！
+import { SafeAreaView } from 'react-native';
 
-export default function App() {
+const Stack = createStackNavigator();
+
+const App: React.FC = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Welcome to Setanta App! 🚀</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <UserSettingsScreen/>
+    </SafeAreaView>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-  },
-  text: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-});
+export default App;
