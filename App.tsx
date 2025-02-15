@@ -1,24 +1,23 @@
-// App.tsx
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import LoginScreen from './src/screens/LoginScreen';
-import UserSettingsScreen from './src/screens/UserSettingsScreen'; // 追加！
-import DashboardScreen from './src/screens/DashboardScreen';
-import TrainingPlanScreen from './src/screens/TrainingPlanScreen';
-import TrainingHistoryScreen from './src/screens/TrainingHistoryScreen';
+import { View, StyleSheet } from 'react-native';
+import FirestoreTestScreen from './src/screens/FirestoreTestScreen'; // 新しいスクリーンをインポート
 
-
-import { SafeAreaView } from 'react-native';
-
-const Stack = createStackNavigator();
+// Firebase初期化（副作用として実行されるだけで、返り値は使わない）
+import './src/firebaseConfig';
 
 const App: React.FC = () => {
+  console.log('App component rendered');
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <TrainingPlanScreen/>
-    </SafeAreaView>
+    <View style={styles.container}>
+      <FirestoreTestScreen />
+    </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
 
 export default App;
