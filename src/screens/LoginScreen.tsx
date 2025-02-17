@@ -1,13 +1,23 @@
+// src/screens/LoginScreen.tsx
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebaseConfig';
 
 const LoginScreen: React.FC = () => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
-  const handleLogin = (): void => {
-    // TODO: ここでFirebase認証などのログイン処理を実装
-    console.log('ログインボタンが押されたよ！', email, password);
+  const handleLogin = async (): Promise<void> => {
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      console.log('ログイン成功:', userCredential.user.email);
+      Alert.alert('ログイン成功', `ようこそ ${userCredential.user.email} さん！`);
+      // ログイン後の画面遷移などをここで実装
+    } catch (error: any) {
+      console.error('ログイン失敗:', error);
+      Alert.alert('ログインエラー', error.message);
+    }
   };
 
   return (

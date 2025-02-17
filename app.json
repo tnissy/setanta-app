@@ -3,27 +3,12 @@
     "name": "setanta-app",
     "slug": "setanta-app",
     "version": "0.1.0",
-    "orientation": "portrait",
-    "splash": {
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.setantaapp"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.anonymous.setantaapp"
-    },
     "web": {
       "favicon": "./src/assets/icons/favicon.png"
     }

@@ -1,15 +1,22 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import FirestoreTestScreen from './src/screens/FirestoreTestScreen'; // 新しいスクリーンをインポート
+import { View, StyleSheet, Text } from 'react-native';
+import LoginScreen from './src/screens/LoginScreen';
+import FirestoreTestScreen from './src/screens/FirestoreTestScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-// Firebase初期化（副作用として実行されるだけで、返り値は使わない）
-import './src/firebaseConfig';
+const Stack = createStackNavigator();
 
 const App: React.FC = () => {
   console.log('App component rendered');
   return (
     <View style={styles.container}>
-      <FirestoreTestScreen />
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="LoginScreen">
+          <Stack.Screen name="Home" component={FirestoreTestScreen} options={{ title: 'ホーム' }} />
+          <Stack.Screen name="Details" component={LoginScreen} options={{ title: 'FirestoreTestScreen' }} />
+        </Stack.Navigator>
+      </NavigationContainer>
     </View>
   );
 };
