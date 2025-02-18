@@ -8,7 +8,7 @@ import { StackNavigationProp } from '@react-navigation/stack';
 
 type RootStackParamList = {
   Login: undefined;
-  Home: undefined;
+  HomeTabs: undefined;
 };
 
 type LoginScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Login'>;
@@ -23,7 +23,7 @@ const LoginScreen: React.FC = () => {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       console.log('ログイン成功:', userCredential.user.email);
       Alert.alert('ログイン成功', `ようこそ ${userCredential.user.email} さん！`);
-      // ログイン後の画面遷移などをここで実装
+      navigation.navigate('HomeTabs'); // ログイン成功後にホーム画面へ遷移
     } catch (error: any) {
       console.error('ログイン失敗:', error);
       Alert.alert('ログインエラー', error.message);
@@ -51,7 +51,7 @@ const LoginScreen: React.FC = () => {
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>ログイン</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Home')}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('HomeTabs')}>
         <Text style={styles.buttonText}>ホーム画面へ</Text>
       </TouchableOpacity>
     </View>
