@@ -19,14 +19,18 @@ const LoginScreen: React.FC = () => {
   const navigation = useNavigation<LoginScreenNavigationProp>();
 
   const handleLogin = async (): Promise<void> => {
+    console.log('handleLogin関数が開始');
     try {
+      console.log('signInWithEmailAndPasswordを実行');
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       console.log('ログイン成功:', userCredential.user.email);
       Alert.alert('ログイン成功', `ようこそ ${userCredential.user.email} さん！`);
       navigation.navigate('HomeTabs'); // ログイン成功後にホーム画面へ遷移
+      console.log('handleLogin関数が正常に終了');
     } catch (error: any) {
       console.error('ログイン失敗:', error);
       Alert.alert('ログインエラー', error.message);
+      console.log('handleLogin関数がエラーで終了');
     }
   };
 
