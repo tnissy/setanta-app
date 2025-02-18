@@ -12,7 +12,6 @@
     "expo-device": "^7.0.2",
     "expo-sensors": "^14.0.2",
     "firebase": "^11.3.1",
-    "jimp": "^1.6.0",
     "protobufjs": "^7.4.0",
     "react": "18",
     "react-dom": "18",
@@ -35,9 +34,6 @@
     "prettier": "^3.5.1",
     "reactotron-react-native": "^5.1.12",
     "typescript": "^5.3.3"
-  },
-  "resolutions": {
-    "jimp-compact": "npm:jimp@latest"
   },
   "expo": {
     "doctor": {
