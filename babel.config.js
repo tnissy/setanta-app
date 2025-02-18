@@ -8,6 +8,14 @@ module.exports = {
     ['@babel/plugin-transform-private-methods', { loose: true }],
     ['@babel/plugin-transform-private-property-in-object', { loose: true }],
     ['@babel/plugin-transform-object-rest-spread', { loose: true }],
-    ['@babel/plugin-proposal-decorators', { legacy: true }]
+    ['@babel/plugin-proposal-decorators', { legacy: true }],
+    ['module:react-native-dotenv', {
+      moduleName: '@env',
+      path: '.env',
+      blacklist: null,
+      whitelist: null,
+      safe: false,
+      allowUndefined: true,
+    }]
   ]
 };

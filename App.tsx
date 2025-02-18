@@ -5,11 +5,13 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import LoginScreen from './src/screens/LoginScreen';
 import TrainingHistoryScreen from './src/screens/TrainingHistoryScreen';
 import TrainingRecordScreen from './src/screens/TrainingRecordScreen';
+import FirestoreTestScreen from './src/screens/FirestoreTestScreen';
 
 // 型定義
 type RootStackParamList = {
   Login: undefined;
   HomeTabs: undefined;
+  Home: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -38,15 +40,15 @@ const App: React.FC = () => {
   console.log('App component rendered');
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
+      <Stack.Navigator initialRouteName="Home">
         <Stack.Screen 
           name="Login" 
           component={LoginScreen} 
           options={{ title: 'ログイン' }} 
         />
         <Stack.Screen 
-          name="HomeTabs" 
-          component={HomeTabs} 
+          name="Home" 
+          component={FirestoreTestScreen} 
           options={{ title: 'ホーム' }} 
         />
       </Stack.Navigator>
