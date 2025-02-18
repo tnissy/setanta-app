@@ -29,7 +29,8 @@ const firebaseConfig = {
     measurementId: FIREBASE_MEASUREMENT_ID
   };  
 
-// Firebaseアプリを初期化
+// Firebaseアプリを初期化..
+
 const app = initializeApp(firebaseConfig);
 
 // 各機能を初期化し、エクスポートしておく
