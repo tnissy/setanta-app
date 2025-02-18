@@ -1,0 +1,3 @@
+[31m[1mUnknown Syntax Error[22m[39m: Extraneous positional argument ("check").
+
+$ yarn constraints [--fix] [--json]

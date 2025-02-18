@@ -1,0 +1,6633 @@
+├─ @0no-co/graphql.web@npm:1.1.1
+│  ├─ Instances: 1
+│  └─ Version: 1.1.1
+│
+├─ @ampproject/remapping@npm:2.3.0
+│  ├─ Version: 2.3.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jridgewell/gen-mapping@npm:^0.3.5 → npm:0.3.8
+│     └─ @jridgewell/trace-mapping@npm:^0.3.24 → npm:0.3.25
+│
+├─ @babel/code-frame@npm:7.10.4
+│  ├─ Version: 7.10.4
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/highlight@npm:^7.10.4 → npm:7.25.9
+│
+├─ @babel/code-frame@npm:7.26.2
+│  ├─ Version: 7.26.2
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-validator-identifier@npm:^7.25.9 → npm:7.25.9
+│     ├─ js-tokens@npm:^4.0.0 → npm:4.0.0
+│     └─ picocolors@npm:^1.0.0 → npm:1.1.1
+│
+├─ @babel/compat-data@npm:7.26.8
+│  └─ Version: 7.26.8
+│
+├─ @babel/core@npm:7.26.9
+│  ├─ Version: 7.26.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @ampproject/remapping@npm:^2.2.0 → npm:2.3.0
+│     ├─ @babel/code-frame@npm:^7.26.2 → npm:7.26.2
+│     ├─ @babel/generator@npm:^7.26.9 → npm:7.26.9
+│     ├─ @babel/helper-compilation-targets@npm:^7.26.5 → npm:7.26.5
+│     ├─ @babel/helpers@npm:^7.26.9 → npm:7.26.9
+│     ├─ @babel/parser@npm:^7.26.9 → npm:7.26.9
+│     ├─ @babel/template@npm:^7.26.9 → npm:7.26.9
+│     ├─ @babel/traverse@npm:^7.26.9 → npm:7.26.9
+│     ├─ @babel/types@npm:^7.26.9 → npm:7.26.9
+│     ├─ convert-source-map@npm:^2.0.0 → npm:2.0.0
+│     ├─ gensync@npm:^1.0.0-beta.2 → npm:1.0.0-beta.2
+│     ├─ json5@npm:^2.2.3 → npm:2.2.3
+│     ├─ semver@npm:^6.3.1 → npm:6.3.1
+│     ├─ @babel/helper-module-transforms@npm:^7.26.0 → npm:7.26.0 [12b18]
+│     └─ debug@npm:^4.3.1 → npm:4.4.0 [5dc40]
+│
+├─ @babel/generator@npm:7.26.9
+│  ├─ Version: 7.26.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/parser@npm:^7.26.9 → npm:7.26.9
+│     ├─ @babel/types@npm:^7.26.9 → npm:7.26.9
+│     ├─ @jridgewell/gen-mapping@npm:^0.3.5 → npm:0.3.8
+│     ├─ @jridgewell/trace-mapping@npm:^0.3.25 → npm:0.3.25
+│     └─ jsesc@npm:^3.0.2 → npm:3.1.0
+│
+├─ @babel/helper-annotate-as-pure@npm:7.25.9
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/types@npm:^7.25.9 → npm:7.26.9
+│
+├─ @babel/helper-compilation-targets@npm:7.26.5
+│  ├─ Version: 7.26.5
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/compat-data@npm:^7.26.5 → npm:7.26.8
+│     ├─ @babel/helper-validator-option@npm:^7.25.9 → npm:7.25.9
+│     ├─ browserslist@npm:^4.24.0 → npm:4.24.4
+│     ├─ lru-cache@npm:^5.1.1 → npm:5.1.1
+│     └─ semver@npm:^6.3.1 → npm:6.3.1
+│
+├─ @babel/helper-create-class-features-plugin@npm:7.26.9
+│  ├─ Instances: 3
+│  ├─ Version: 7.26.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-annotate-as-pure@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/helper-member-expression-to-functions@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/helper-optimise-call-expression@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/helper-replace-supers@npm:^7.26.5 → npm:7.26.5
+│     ├─ @babel/helper-skip-transparent-expression-wrappers@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/traverse@npm:^7.26.9 → npm:7.26.9
+│     └─ semver@npm:^6.3.1 → npm:6.3.1
+│
+├─ @babel/helper-create-regexp-features-plugin@npm:7.26.3
+│  ├─ Instances: 2
+│  ├─ Version: 7.26.3
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-annotate-as-pure@npm:^7.25.9 → npm:7.25.9
+│     ├─ regexpu-core@npm:^6.2.0 → npm:6.2.0
+│     └─ semver@npm:^6.3.1 → npm:6.3.1
+│
+├─ @babel/helper-define-polyfill-provider@npm:0.6.3
+│  ├─ Instances: 1
+│  ├─ Version: 0.6.3
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-compilation-targets@npm:^7.22.6 → npm:7.26.5
+│     ├─ @babel/helper-plugin-utils@npm:^7.22.5 → npm:7.26.5
+│     ├─ debug@npm:^4.1.1 → npm:4.4.0
+│     ├─ lodash.debounce@npm:^4.0.8 → npm:4.0.8
+│     └─ resolve@patch:resolve@npm%3A^1.14.2#optional!builtin<compat/resolve> → patch:resolve@npm%3A1.22.10#optional!builtin<compat/resolve>::version=1.22.10&hash=c3c19d
+│
+├─ @babel/helper-member-expression-to-functions@npm:7.25.9
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/traverse@npm:^7.25.9 → npm:7.26.9
+│     └─ @babel/types@npm:^7.25.9 → npm:7.26.9
+│
+├─ @babel/helper-module-imports@npm:7.25.9
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/traverse@npm:^7.25.9 → npm:7.26.9
+│     └─ @babel/types@npm:^7.25.9 → npm:7.26.9
+│
+├─ @babel/helper-module-transforms@npm:7.26.0
+│  ├─ Instances: 3
+│  ├─ Version: 7.26.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-module-imports@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/helper-validator-identifier@npm:^7.25.9 → npm:7.25.9
+│     └─ @babel/traverse@npm:^7.25.9 → npm:7.26.9
+│
+├─ @babel/helper-optimise-call-expression@npm:7.25.9
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/types@npm:^7.25.9 → npm:7.26.9
+│
+├─ @babel/helper-plugin-utils@npm:7.26.5
+│  └─ Version: 7.26.5
+│
+├─ @babel/helper-remap-async-to-generator@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-annotate-as-pure@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/helper-wrap-function@npm:^7.25.9 → npm:7.25.9
+│     └─ @babel/traverse@npm:^7.25.9 → npm:7.26.9
+│
+├─ @babel/helper-replace-supers@npm:7.26.5
+│  ├─ Instances: 3
+│  ├─ Version: 7.26.5
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-member-expression-to-functions@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/helper-optimise-call-expression@npm:^7.25.9 → npm:7.25.9
+│     └─ @babel/traverse@npm:^7.26.5 → npm:7.26.9
+│
+├─ @babel/helper-skip-transparent-expression-wrappers@npm:7.25.9
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/traverse@npm:^7.25.9 → npm:7.26.9
+│     └─ @babel/types@npm:^7.25.9 → npm:7.26.9
+│
+├─ @babel/helper-string-parser@npm:7.25.9
+│  └─ Version: 7.25.9
+│
+├─ @babel/helper-validator-identifier@npm:7.25.9
+│  └─ Version: 7.25.9
+│
+├─ @babel/helper-validator-option@npm:7.25.9
+│  └─ Version: 7.25.9
+│
+├─ @babel/helper-wrap-function@npm:7.25.9
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/template@npm:^7.25.9 → npm:7.26.9
+│     ├─ @babel/traverse@npm:^7.25.9 → npm:7.26.9
+│     └─ @babel/types@npm:^7.25.9 → npm:7.26.9
+│
+├─ @babel/helpers@npm:7.26.9
+│  ├─ Version: 7.26.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/template@npm:^7.26.9 → npm:7.26.9
+│     └─ @babel/types@npm:^7.26.9 → npm:7.26.9
+│
+├─ @babel/highlight@npm:7.25.9
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-validator-identifier@npm:^7.25.9 → npm:7.25.9
+│     ├─ chalk@npm:^2.4.2 → npm:2.4.2
+│     ├─ js-tokens@npm:^4.0.0 → npm:4.0.0
+│     └─ picocolors@npm:^1.0.0 → npm:1.1.1
+│
+├─ @babel/parser@npm:7.26.9
+│  ├─ Version: 7.26.9
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ parser
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/types@npm:^7.26.9 → npm:7.26.9
+│
+├─ @babel/plugin-proposal-class-properties@npm:7.18.6
+│  ├─ Instances: 1
+│  ├─ Version: 7.18.6
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-create-class-features-plugin@npm:^7.18.6 → npm:7.26.9
+│     └─ @babel/helper-plugin-utils@npm:^7.18.6 → npm:7.26.5
+│
+├─ @babel/plugin-proposal-decorators@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-create-class-features-plugin@npm:^7.25.9 → npm:7.26.9
+│     ├─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│     └─ @babel/plugin-syntax-decorators@npm:^7.25.9 → npm:7.25.9
+│
+├─ @babel/plugin-proposal-export-default-from@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-proposal-nullish-coalescing-operator@npm:7.18.6
+│  ├─ Instances: 1
+│  ├─ Version: 7.18.6
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-plugin-utils@npm:^7.18.6 → npm:7.26.5
+│     └─ @babel/plugin-syntax-nullish-coalescing-operator@npm:^7.8.3 → npm:7.8.3
+│
+├─ @babel/plugin-proposal-optional-chaining@npm:7.21.0
+│  ├─ Instances: 1
+│  ├─ Version: 7.21.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-plugin-utils@npm:^7.20.2 → npm:7.26.5
+│     ├─ @babel/helper-skip-transparent-expression-wrappers@npm:^7.20.0 → npm:7.25.9
+│     └─ @babel/plugin-syntax-optional-chaining@npm:^7.8.3 → npm:7.8.3
+│
+├─ @babel/plugin-syntax-async-generators@npm:7.8.4
+│  ├─ Instances: 1
+│  ├─ Version: 7.8.4
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.8.0 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-bigint@npm:7.8.3
+│  ├─ Instances: 1
+│  ├─ Version: 7.8.3
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.8.0 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-class-properties@npm:7.12.13
+│  ├─ Instances: 1
+│  ├─ Version: 7.12.13
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.12.13 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-class-static-block@npm:7.14.5
+│  ├─ Instances: 1
+│  ├─ Version: 7.14.5
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.14.5 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-decorators@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-dynamic-import@npm:7.8.3
+│  ├─ Instances: 1
+│  ├─ Version: 7.8.3
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.8.0 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-export-default-from@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-flow@npm:7.26.0
+│  ├─ Instances: 2
+│  ├─ Version: 7.26.0
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-import-attributes@npm:7.26.0
+│  ├─ Instances: 1
+│  ├─ Version: 7.26.0
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-import-meta@npm:7.10.4
+│  ├─ Instances: 1
+│  ├─ Version: 7.10.4
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.10.4 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-json-strings@npm:7.8.3
+│  ├─ Instances: 1
+│  ├─ Version: 7.8.3
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.8.0 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-jsx@npm:7.25.9
+│  ├─ Instances: 3
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-logical-assignment-operators@npm:7.10.4
+│  ├─ Instances: 1
+│  ├─ Version: 7.10.4
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.10.4 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-nullish-coalescing-operator@npm:7.8.3
+│  ├─ Instances: 2
+│  ├─ Version: 7.8.3
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.8.0 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-numeric-separator@npm:7.10.4
+│  ├─ Instances: 1
+│  ├─ Version: 7.10.4
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.10.4 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-object-rest-spread@npm:7.8.3
+│  ├─ Instances: 1
+│  ├─ Version: 7.8.3
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.8.0 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-optional-catch-binding@npm:7.8.3
+│  ├─ Instances: 1
+│  ├─ Version: 7.8.3
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.8.0 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-optional-chaining@npm:7.8.3
+│  ├─ Instances: 2
+│  ├─ Version: 7.8.3
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.8.0 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-private-property-in-object@npm:7.14.5
+│  ├─ Instances: 1
+│  ├─ Version: 7.14.5
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.14.5 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-top-level-await@npm:7.14.5
+│  ├─ Instances: 1
+│  ├─ Version: 7.14.5
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.14.5 → npm:7.26.5
+│
+├─ @babel/plugin-syntax-typescript@npm:7.25.9
+│  ├─ Instances: 3
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-arrow-functions@npm:7.25.9
+│  ├─ Instances: 2
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-async-generator-functions@npm:7.26.8
+│  ├─ Instances: 1
+│  ├─ Version: 7.26.8
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-plugin-utils@npm:^7.26.5 → npm:7.26.5
+│     ├─ @babel/helper-remap-async-to-generator@npm:^7.25.9 → npm:7.25.9
+│     └─ @babel/traverse@npm:^7.26.8 → npm:7.26.9
+│
+├─ @babel/plugin-transform-async-to-generator@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-module-imports@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│     └─ @babel/helper-remap-async-to-generator@npm:^7.25.9 → npm:7.25.9
+│
+├─ @babel/plugin-transform-block-scoping@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-class-properties@npm:7.25.9
+│  ├─ Instances: 2
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-create-class-features-plugin@npm:^7.25.9 → npm:7.26.9
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-classes@npm:7.25.9
+│  ├─ Instances: 2
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-annotate-as-pure@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/helper-compilation-targets@npm:^7.25.9 → npm:7.26.5
+│     ├─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│     ├─ @babel/helper-replace-supers@npm:^7.25.9 → npm:7.26.5
+│     ├─ @babel/traverse@npm:^7.25.9 → npm:7.26.9
+│     └─ globals@npm:^11.1.0 → npm:11.12.0
+│
+├─ @babel/plugin-transform-computed-properties@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│     └─ @babel/template@npm:^7.25.9 → npm:7.26.9
+│
+├─ @babel/plugin-transform-destructuring@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-export-namespace-from@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-flow-strip-types@npm:7.26.5
+│  ├─ Instances: 1
+│  ├─ Version: 7.26.5
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-plugin-utils@npm:^7.26.5 → npm:7.26.5
+│     └─ @babel/plugin-syntax-flow@npm:^7.26.0 → npm:7.26.0
+│
+├─ @babel/plugin-transform-for-of@npm:7.26.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.26.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-plugin-utils@npm:^7.26.5 → npm:7.26.5
+│     └─ @babel/helper-skip-transparent-expression-wrappers@npm:^7.25.9 → npm:7.25.9
+│
+├─ @babel/plugin-transform-function-name@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-compilation-targets@npm:^7.25.9 → npm:7.26.5
+│     ├─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│     └─ @babel/traverse@npm:^7.25.9 → npm:7.26.9
+│
+├─ @babel/plugin-transform-literals@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-logical-assignment-operators@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-modules-commonjs@npm:7.26.3
+│  ├─ Instances: 3
+│  ├─ Version: 7.26.3
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-module-transforms@npm:^7.26.0 → npm:7.26.0
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-named-capturing-groups-regex@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-create-regexp-features-plugin@npm:^7.25.9 → npm:7.26.3
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-nullish-coalescing-operator@npm:7.26.6
+│  ├─ Instances: 2
+│  ├─ Version: 7.26.6
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.26.5 → npm:7.26.5
+│
+├─ @babel/plugin-transform-numeric-separator@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-object-rest-spread@npm:7.25.9
+│  ├─ Instances: 2
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-compilation-targets@npm:^7.25.9 → npm:7.26.5
+│     ├─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│     └─ @babel/plugin-transform-parameters@npm:^7.25.9 → npm:7.25.9
+│
+├─ @babel/plugin-transform-optional-catch-binding@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-optional-chaining@npm:7.25.9
+│  ├─ Instances: 2
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│     └─ @babel/helper-skip-transparent-expression-wrappers@npm:^7.25.9 → npm:7.25.9
+│
+├─ @babel/plugin-transform-parameters@npm:7.25.9
+│  ├─ Instances: 2
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-private-methods@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-create-class-features-plugin@npm:^7.25.9 → npm:7.26.9
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-private-property-in-object@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-annotate-as-pure@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/helper-create-class-features-plugin@npm:^7.25.9 → npm:7.26.9
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-react-display-name@npm:7.25.9
+│  ├─ Instances: 2
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-react-jsx-development@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/plugin-transform-react-jsx@npm:^7.25.9 → npm:7.25.9
+│
+├─ @babel/plugin-transform-react-jsx-self@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-react-jsx-source@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-react-jsx@npm:7.25.9
+│  ├─ Instances: 2
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-annotate-as-pure@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/helper-module-imports@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│     ├─ @babel/plugin-syntax-jsx@npm:^7.25.9 → npm:7.25.9
+│     └─ @babel/types@npm:^7.25.9 → npm:7.26.9
+│
+├─ @babel/plugin-transform-react-pure-annotations@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-annotate-as-pure@npm:^7.25.9 → npm:7.25.9
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-regenerator@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│     └─ regenerator-transform@npm:^0.15.2 → npm:0.15.2
+│
+├─ @babel/plugin-transform-runtime@npm:7.26.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.26.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-module-imports@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/helper-plugin-utils@npm:^7.26.5 → npm:7.26.5
+│     ├─ babel-plugin-polyfill-corejs2@npm:^0.4.10 → npm:0.4.12
+│     ├─ babel-plugin-polyfill-corejs3@npm:^0.10.6 → npm:0.10.6
+│     ├─ babel-plugin-polyfill-regenerator@npm:^0.6.1 → npm:0.6.3
+│     └─ semver@npm:^6.3.1 → npm:6.3.1
+│
+├─ @babel/plugin-transform-shorthand-properties@npm:7.25.9
+│  ├─ Instances: 2
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-spread@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│     └─ @babel/helper-skip-transparent-expression-wrappers@npm:^7.25.9 → npm:7.25.9
+│
+├─ @babel/plugin-transform-sticky-regex@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/plugin-transform-template-literals@npm:7.26.8
+│  ├─ Instances: 1
+│  ├─ Version: 7.26.8
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-plugin-utils@npm:^7.26.5 → npm:7.26.5
+│
+├─ @babel/plugin-transform-typescript@npm:7.26.8
+│  ├─ Instances: 3
+│  ├─ Version: 7.26.8
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-annotate-as-pure@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/helper-create-class-features-plugin@npm:^7.25.9 → npm:7.26.9
+│     ├─ @babel/helper-plugin-utils@npm:^7.26.5 → npm:7.26.5
+│     ├─ @babel/helper-skip-transparent-expression-wrappers@npm:^7.25.9 → npm:7.25.9
+│     └─ @babel/plugin-syntax-typescript@npm:^7.25.9 → npm:7.25.9
+│
+├─ @babel/plugin-transform-unicode-regex@npm:7.25.9
+│  ├─ Instances: 2
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-create-regexp-features-plugin@npm:^7.25.9 → npm:7.26.3
+│     └─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/preset-flow@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│     ├─ @babel/helper-validator-option@npm:^7.25.9 → npm:7.25.9
+│     └─ @babel/plugin-transform-flow-strip-types@npm:^7.25.9 → npm:7.26.5
+│
+├─ @babel/preset-react@npm:7.26.3
+│  ├─ Instances: 1
+│  ├─ Version: 7.26.3
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│     ├─ @babel/helper-validator-option@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/plugin-transform-react-display-name@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/plugin-transform-react-jsx-development@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/plugin-transform-react-jsx@npm:^7.25.9 → npm:7.25.9
+│     └─ @babel/plugin-transform-react-pure-annotations@npm:^7.25.9 → npm:7.25.9
+│
+├─ @babel/preset-typescript@npm:7.26.0
+│  ├─ Instances: 3
+│  ├─ Version: 7.26.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-plugin-utils@npm:^7.25.9 → npm:7.26.5
+│     ├─ @babel/helper-validator-option@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/plugin-syntax-jsx@npm:^7.25.9 → npm:7.25.9
+│     ├─ @babel/plugin-transform-modules-commonjs@npm:^7.25.9 → npm:7.26.3
+│     └─ @babel/plugin-transform-typescript@npm:^7.25.9 → npm:7.26.8
+│
+├─ @babel/register@npm:7.25.9
+│  ├─ Instances: 1
+│  ├─ Version: 7.25.9
+│  │ 
+│  └─ Dependencies
+│     ├─ clone-deep@npm:^4.0.1 → npm:4.0.1
+│     ├─ find-cache-dir@npm:^2.0.0 → npm:2.1.0
+│     ├─ make-dir@npm:^2.1.0 → npm:2.1.0
+│     ├─ pirates@npm:^4.0.6 → npm:4.0.6
+│     └─ source-map-support@npm:^0.5.16 → npm:0.5.21
+│
+├─ @babel/runtime@npm:7.26.9
+│  ├─ Version: 7.26.9
+│  │ 
+│  └─ Dependencies
+│     └─ regenerator-runtime@npm:^0.14.0 → npm:0.14.1
+│
+├─ @babel/template@npm:7.26.9
+│  ├─ Version: 7.26.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/code-frame@npm:^7.26.2 → npm:7.26.2
+│     ├─ @babel/parser@npm:^7.26.9 → npm:7.26.9
+│     └─ @babel/types@npm:^7.26.9 → npm:7.26.9
+│
+├─ @babel/traverse@npm:7.26.9
+│  ├─ Version: 7.26.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/code-frame@npm:^7.26.2 → npm:7.26.2
+│     ├─ @babel/generator@npm:^7.26.9 → npm:7.26.9
+│     ├─ @babel/parser@npm:^7.26.9 → npm:7.26.9
+│     ├─ @babel/template@npm:^7.26.9 → npm:7.26.9
+│     ├─ @babel/types@npm:^7.26.9 → npm:7.26.9
+│     ├─ globals@npm:^11.1.0 → npm:11.12.0
+│     └─ debug@npm:^4.3.1 → npm:4.4.0 [5dc40]
+│
+├─ @babel/types@npm:7.26.9
+│  ├─ Version: 7.26.9
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-string-parser@npm:^7.25.9 → npm:7.25.9
+│     └─ @babel/helper-validator-identifier@npm:^7.25.9 → npm:7.25.9
+│
+├─ @egjs/hammerjs@npm:2.0.17
+│  ├─ Version: 2.0.17
+│  │ 
+│  └─ Dependencies
+│     └─ @types/hammerjs@npm:^2.0.36 → npm:2.0.46
+│
+├─ @eslint-community/eslint-utils@npm:4.4.1
+│  ├─ Instances: 1
+│  ├─ Version: 4.4.1
+│  │ 
+│  └─ Dependencies
+│     └─ eslint-visitor-keys@npm:^3.4.3 → npm:3.4.3
+│
+├─ @eslint-community/regexpp@npm:4.12.1
+│  └─ Version: 4.12.1
+│
+├─ @eslint/config-array@npm:0.19.2
+│  ├─ Version: 0.19.2
+│  │ 
+│  └─ Dependencies
+│     ├─ @eslint/object-schema@npm:^2.1.6 → npm:2.1.6
+│     ├─ minimatch@npm:^3.1.2 → npm:3.1.2
+│     └─ debug@npm:^4.3.1 → npm:4.4.0 [5dc40]
+│
+├─ @eslint/core@npm:0.10.0
+│  ├─ Version: 0.10.0
+│  │ 
+│  └─ Dependencies
+│     └─ @types/json-schema@npm:^7.0.15 → npm:7.0.15
+│
+├─ @eslint/core@npm:0.11.0
+│  ├─ Version: 0.11.0
+│  │ 
+│  └─ Dependencies
+│     └─ @types/json-schema@npm:^7.0.15 → npm:7.0.15
+│
+├─ @eslint/eslintrc@npm:3.2.0
+│  ├─ Version: 3.2.0
+│  │ 
+│  └─ Dependencies
+│     ├─ ajv@npm:^6.12.4 → npm:6.12.6
+│     ├─ espree@npm:^10.0.1 → npm:10.3.0
+│     ├─ globals@npm:^14.0.0 → npm:14.0.0
+│     ├─ ignore@npm:^5.2.0 → npm:5.3.2
+│     ├─ import-fresh@npm:^3.2.1 → npm:3.3.1
+│     ├─ js-yaml@npm:^4.1.0 → npm:4.1.0
+│     ├─ minimatch@npm:^3.1.2 → npm:3.1.2
+│     ├─ strip-json-comments@npm:^3.1.1 → npm:3.1.1
+│     └─ debug@npm:^4.3.1 → npm:4.4.0 [5dc40]
+│
+├─ @eslint/js@npm:9.20.0
+│  └─ Version: 9.20.0
+│
+├─ @eslint/object-schema@npm:2.1.6
+│  └─ Version: 2.1.6
+│
+├─ @eslint/plugin-kit@npm:0.2.5
+│  ├─ Version: 0.2.5
+│  │ 
+│  └─ Dependencies
+│     ├─ @eslint/core@npm:^0.10.0 → npm:0.10.0
+│     └─ levn@npm:^0.4.1 → npm:0.4.1
+│
+├─ @expo/bunyan@npm:4.0.1
+│  ├─ Version: 4.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ uuid@npm:^8.0.0 → npm:8.3.2
+│
+├─ @expo/cli@npm:0.22.16
+│  ├─ Version: 0.22.16
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ expo-internal
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/runtime@npm:^7.20.0 → npm:7.26.9
+│     ├─ @expo/code-signing-certificates@npm:^0.0.5 → npm:0.0.5
+│     ├─ @expo/config-plugins@npm:~9.0.15 → npm:9.0.15
+│     ├─ @expo/config@npm:~10.0.10 → npm:10.0.10
+│     ├─ @expo/devcert@npm:^1.1.2 → npm:1.1.4
+│     ├─ @expo/env@npm:~0.4.2 → npm:0.4.2
+│     ├─ @expo/image-utils@npm:^0.6.5 → npm:0.6.5
+│     ├─ @expo/json-file@npm:^9.0.2 → npm:9.0.2
+│     ├─ @expo/metro-config@npm:~0.19.10 → npm:0.19.10
+│     ├─ @expo/osascript@npm:^2.1.6 → npm:2.1.6
+│     ├─ @expo/package-manager@npm:^1.7.2 → npm:1.7.2
+│     ├─ @expo/plist@npm:^0.2.2 → npm:0.2.2
+│     ├─ @expo/prebuild-config@npm:^8.0.27 → npm:8.0.27
+│     ├─ @expo/rudder-sdk-node@npm:^1.1.1 → npm:1.1.1
+│     ├─ @expo/spawn-async@npm:^1.7.2 → npm:1.7.2
+│     ├─ @expo/ws-tunnel@npm:^1.0.1 → npm:1.0.4
+│     ├─ @expo/xcpretty@npm:^4.3.0 → npm:4.3.2
+│     ├─ @react-native/dev-middleware@npm:0.76.7 → npm:0.76.7
+│     ├─ @urql/core@npm:^5.0.6 → npm:5.1.0
+│     ├─ accepts@npm:^1.3.8 → npm:1.3.8
+│     ├─ arg@npm:^5.0.2 → npm:5.0.2
+│     ├─ better-opn@npm:~3.0.2 → npm:3.0.2
+│     ├─ bplist-creator@npm:0.0.7 → npm:0.0.7
+│     ├─ bplist-parser@npm:^0.3.1 → npm:0.3.2
+│     ├─ cacache@npm:^18.0.2 → npm:18.0.4
+│     ├─ chalk@npm:^4.0.0 → npm:4.1.2
+│     ├─ ci-info@npm:^3.3.0 → npm:3.9.0
+│     ├─ compression@npm:^1.7.4 → npm:1.8.0
+│     ├─ connect@npm:^3.7.0 → npm:3.7.0
+│     ├─ env-editor@npm:^0.4.1 → npm:0.4.2
+│     ├─ fast-glob@npm:^3.3.2 → npm:3.3.3
+│     ├─ form-data@npm:^3.0.1 → npm:3.0.3
+│     ├─ freeport-async@npm:^2.0.0 → npm:2.0.0
+│     ├─ fs-extra@npm:~8.1.0 → npm:8.1.0
+│     ├─ getenv@npm:^1.0.0 → npm:1.0.0
+│     ├─ glob@npm:^10.4.2 → npm:10.4.5
+│     ├─ internal-ip@npm:^4.3.0 → npm:4.3.0
+│     ├─ is-docker@npm:^2.0.0 → npm:2.2.1
+│     ├─ is-wsl@npm:^2.1.1 → npm:2.2.0
+│     ├─ lodash.debounce@npm:^4.0.8 → npm:4.0.8
+│     ├─ minimatch@npm:^3.0.4 → npm:3.1.2
+│     ├─ node-forge@npm:^1.3.1 → npm:1.3.1
+│     ├─ npm-package-arg@npm:^11.0.0 → npm:11.0.3
+│     ├─ ora@npm:^3.4.0 → npm:3.4.0
+│     ├─ picomatch@npm:^3.0.1 → npm:3.0.1
+│     ├─ pretty-bytes@npm:^5.6.0 → npm:5.6.0
+│     ├─ pretty-format@npm:^29.7.0 → npm:29.7.0
+│     ├─ progress@npm:^2.0.3 → npm:2.0.3
+│     ├─ prompts@npm:^2.3.2 → npm:2.4.2
+│     ├─ qrcode-terminal@npm:0.11.0 → npm:0.11.0
+│     ├─ require-from-string@npm:^2.0.2 → npm:2.0.2
+│     ├─ requireg@npm:^0.2.2 → npm:0.2.2
+│     ├─ resolve-from@npm:^5.0.0 → npm:5.0.0
+│     ├─ resolve.exports@npm:^2.0.3 → npm:2.0.3
+│     ├─ resolve@patch:resolve@npm%3A^1.22.2#optional!builtin<compat/resolve> → patch:resolve@npm%3A1.22.10#optional!builtin<compat/resolve>::version=1.22.10&hash=c3c19d
+│     ├─ semver@npm:^7.6.0 → npm:7.7.1
+│     ├─ send@npm:^0.19.0 → npm:0.19.1
+│     ├─ slugify@npm:^1.3.4 → npm:1.6.6
+│     ├─ source-map-support@npm:~0.5.21 → npm:0.5.21
+│     ├─ stacktrace-parser@npm:^0.1.10 → npm:0.1.10
+│     ├─ structured-headers@npm:^0.4.1 → npm:0.4.1
+│     ├─ tar@npm:^6.2.1 → npm:6.2.1
+│     ├─ temp-dir@npm:^2.0.0 → npm:2.0.0
+│     ├─ tempy@npm:^0.7.1 → npm:0.7.1
+│     ├─ terminal-link@npm:^2.1.1 → npm:2.1.1
+│     ├─ undici@npm:^6.18.2 → npm:6.21.1
+│     ├─ unique-string@npm:~2.0.0 → npm:2.0.0
+│     ├─ wrap-ansi@npm:^7.0.0 → npm:7.0.0
+│     ├─ @0no-co/graphql.web@npm:^1.0.5 → npm:1.1.1 [ab2fd]
+│     ├─ @urql/exchange-retry@npm:^1.3.0 → npm:1.3.0 [d1ce7]
+│     ├─ debug@npm:^4.3.1 → npm:4.4.0 [5dc40]
+│     └─ ws@npm:^8.12.1 → npm:8.18.0 [d1ce7]
+│
+├─ @expo/code-signing-certificates@npm:0.0.5
+│  ├─ Version: 0.0.5
+│  │ 
+│  └─ Dependencies
+│     ├─ node-forge@npm:^1.2.1 → npm:1.3.1
+│     └─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│
+├─ @expo/config-plugins@npm:9.0.15
+│  ├─ Version: 9.0.15
+│  │ 
+│  └─ Dependencies
+│     ├─ @expo/config-types@npm:^52.0.4 → npm:52.0.4
+│     ├─ @expo/json-file@npm:~9.0.1 → npm:9.0.2
+│     ├─ @expo/plist@npm:^0.2.1 → npm:0.2.2
+│     ├─ @expo/sdk-runtime-versions@npm:^1.0.0 → npm:1.0.0
+│     ├─ chalk@npm:^4.1.2 → npm:4.1.2
+│     ├─ getenv@npm:^1.0.0 → npm:1.0.0
+│     ├─ glob@npm:^10.4.2 → npm:10.4.5
+│     ├─ resolve-from@npm:^5.0.0 → npm:5.0.0
+│     ├─ semver@npm:^7.5.4 → npm:7.7.1
+│     ├─ slash@npm:^3.0.0 → npm:3.0.0
+│     ├─ slugify@npm:^1.6.6 → npm:1.6.6
+│     ├─ xcode@npm:^3.0.1 → npm:3.0.1
+│     ├─ xml2js@npm:0.6.0 → npm:0.6.0
+│     └─ debug@npm:^4.3.1 → npm:4.4.0 [5dc40]
+│
+├─ @expo/config-types@npm:52.0.4
+│  └─ Version: 52.0.4
+│
+├─ @expo/config@npm:10.0.10
+│  ├─ Version: 10.0.10
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/code-frame@npm:~7.10.4 → npm:7.10.4
+│     ├─ @expo/config-plugins@npm:~9.0.15 → npm:9.0.15
+│     ├─ @expo/config-types@npm:^52.0.4 → npm:52.0.4
+│     ├─ @expo/json-file@npm:^9.0.2 → npm:9.0.2
+│     ├─ deepmerge@npm:^4.3.1 → npm:4.3.1
+│     ├─ getenv@npm:^1.0.0 → npm:1.0.0
+│     ├─ glob@npm:^10.4.2 → npm:10.4.5
+│     ├─ require-from-string@npm:^2.0.2 → npm:2.0.2
+│     ├─ resolve-from@npm:^5.0.0 → npm:5.0.0
+│     ├─ resolve-workspace-root@npm:^2.0.0 → npm:2.0.0
+│     ├─ semver@npm:^7.6.0 → npm:7.7.1
+│     ├─ slugify@npm:^1.3.4 → npm:1.6.6
+│     └─ sucrase@npm:3.35.0 → npm:3.35.0
+│
+├─ @expo/devcert@npm:1.1.4
+│  ├─ Version: 1.1.4
+│  │ 
+│  └─ Dependencies
+│     ├─ application-config-path@npm:^0.1.0 → npm:0.1.1
+│     ├─ command-exists@npm:^1.2.4 → npm:1.2.9
+│     ├─ eol@npm:^0.9.1 → npm:0.9.1
+│     ├─ get-port@npm:^3.2.0 → npm:3.2.0
+│     ├─ glob@npm:^10.4.2 → npm:10.4.5
+│     ├─ lodash@npm:^4.17.21 → npm:4.17.21
+│     ├─ mkdirp@npm:^0.5.1 → npm:0.5.6
+│     ├─ password-prompt@npm:^1.0.4 → npm:1.1.3
+│     ├─ sudo-prompt@npm:^8.2.0 → npm:8.2.5
+│     ├─ tmp@npm:^0.0.33 → npm:0.0.33
+│     ├─ tslib@npm:^2.4.0 → npm:2.8.1
+│     └─ debug@npm:^3.1.0 → npm:3.2.7 [440dd]
+│
+├─ @expo/env@npm:0.4.2
+│  ├─ Version: 0.4.2
+│  │ 
+│  └─ Dependencies
+│     ├─ chalk@npm:^4.0.0 → npm:4.1.2
+│     ├─ dotenv-expand@npm:~11.0.6 → npm:11.0.7
+│     ├─ dotenv@npm:~16.4.5 → npm:16.4.7
+│     ├─ getenv@npm:^1.0.0 → npm:1.0.0
+│     └─ debug@npm:^4.3.1 → npm:4.4.0 [5dc40]
+│
+├─ @expo/fingerprint@npm:0.11.10
+│  ├─ Version: 0.11.10
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ fingerprint
+│  │ 
+│  └─ Dependencies
+│     ├─ @expo/spawn-async@npm:^1.7.2 → npm:1.7.2
+│     ├─ arg@npm:^5.0.2 → npm:5.0.2
+│     ├─ chalk@npm:^4.1.2 → npm:4.1.2
+│     ├─ find-up@npm:^5.0.0 → npm:5.0.0
+│     ├─ getenv@npm:^1.0.0 → npm:1.0.0
+│     ├─ minimatch@npm:^3.0.4 → npm:3.1.2
+│     ├─ p-limit@npm:^3.1.0 → npm:3.1.0
+│     ├─ resolve-from@npm:^5.0.0 → npm:5.0.0
+│     ├─ semver@npm:^7.6.0 → npm:7.7.1
+│     └─ debug@npm:^4.3.1 → npm:4.4.0 [5dc40]
+│
+├─ @expo/image-utils@npm:0.6.5
+│  ├─ Version: 0.6.5
+│  │ 
+│  └─ Dependencies
+│     ├─ @expo/spawn-async@npm:^1.7.2 → npm:1.7.2
+│     ├─ chalk@npm:^4.0.0 → npm:4.1.2
+│     ├─ fs-extra@npm:9.0.0 → npm:9.0.0
+│     ├─ getenv@npm:^1.0.0 → npm:1.0.0
+│     ├─ jimp-compact@npm:jimp@latest → jimp@npm:1.6.0
+│     ├─ parse-png@npm:^2.1.0 → npm:2.1.0
+│     ├─ resolve-from@npm:^5.0.0 → npm:5.0.0
+│     ├─ semver@npm:^7.6.0 → npm:7.7.1
+│     ├─ temp-dir@npm:~2.0.0 → npm:2.0.0
+│     └─ unique-string@npm:~2.0.0 → npm:2.0.0
+│
+├─ @expo/json-file@npm:9.0.2
+│  ├─ Version: 9.0.2
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/code-frame@npm:~7.10.4 → npm:7.10.4
+│     ├─ json5@npm:^2.2.3 → npm:2.2.3
+│     └─ write-file-atomic@npm:^2.3.0 → npm:2.4.3
+│
+├─ @expo/metro-config@npm:0.19.10
+│  ├─ Version: 0.19.10
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/core@npm:^7.20.0 → npm:7.26.9
+│     ├─ @babel/generator@npm:^7.20.5 → npm:7.26.9
+│     ├─ @babel/parser@npm:^7.20.0 → npm:7.26.9
+│     ├─ @babel/types@npm:^7.20.0 → npm:7.26.9
+│     ├─ @expo/config@npm:~10.0.9 → npm:10.0.10
+│     ├─ @expo/env@npm:~0.4.1 → npm:0.4.2
+│     ├─ @expo/json-file@npm:~9.0.1 → npm:9.0.2
+│     ├─ @expo/spawn-async@npm:^1.7.2 → npm:1.7.2
+│     ├─ chalk@npm:^4.1.0 → npm:4.1.2
+│     ├─ fs-extra@npm:^9.1.0 → npm:9.1.0
+│     ├─ getenv@npm:^1.0.0 → npm:1.0.0
+│     ├─ glob@npm:^10.4.2 → npm:10.4.5
+│     ├─ jsc-safe-url@npm:^0.2.4 → npm:0.2.4
+│     ├─ lightningcss@npm:~1.27.0 → npm:1.27.0
+│     ├─ minimatch@npm:^3.0.4 → npm:3.1.2
+│     ├─ postcss@npm:~8.4.32 → npm:8.4.49
+│     ├─ resolve-from@npm:^5.0.0 → npm:5.0.0
+│     └─ debug@npm:^4.3.1 → npm:4.4.0 [5dc40]
+│
+├─ @expo/osascript@npm:2.1.6
+│  ├─ Version: 2.1.6
+│  │ 
+│  └─ Dependencies
+│     ├─ @expo/spawn-async@npm:^1.7.2 → npm:1.7.2
+│     └─ exec-async@npm:^2.2.0 → npm:2.2.0
+│
+├─ @expo/package-manager@npm:1.7.2
+│  ├─ Version: 1.7.2
+│  │ 
+│  └─ Dependencies
+│     ├─ @expo/json-file@npm:^9.0.2 → npm:9.0.2
+│     ├─ @expo/spawn-async@npm:^1.7.2 → npm:1.7.2
+│     ├─ ansi-regex@npm:^5.0.0 → npm:5.0.1
+│     ├─ chalk@npm:^4.0.0 → npm:4.1.2
+│     ├─ find-up@npm:^5.0.0 → npm:5.0.0
+│     ├─ js-yaml@npm:^3.13.1 → npm:3.14.1
+│     ├─ micromatch@npm:^4.0.8 → npm:4.0.8
+│     ├─ npm-package-arg@npm:^11.0.0 → npm:11.0.3
+│     ├─ ora@npm:^3.4.0 → npm:3.4.0
+│     ├─ resolve-workspace-root@npm:^2.0.0 → npm:2.0.0
+│     ├─ split@npm:^1.0.1 → npm:1.0.1
+│     └─ sudo-prompt@npm:9.1.1 → npm:9.1.1
+│
+├─ @expo/plist@npm:0.2.2
+│  ├─ Version: 0.2.2
+│  │ 
+│  └─ Dependencies
+│     ├─ @xmldom/xmldom@npm:~0.7.7 → npm:0.7.13
+│     ├─ base64-js@npm:^1.2.3 → npm:1.5.1
+│     └─ xmlbuilder@npm:^14.0.0 → npm:14.0.0
+│
+├─ @expo/prebuild-config@npm:8.0.27
+│  ├─ Version: 8.0.27
+│  │ 
+│  └─ Dependencies
+│     ├─ @expo/config-plugins@npm:~9.0.15 → npm:9.0.15
+│     ├─ @expo/config-types@npm:^52.0.4 → npm:52.0.4
+│     ├─ @expo/config@npm:~10.0.9 → npm:10.0.10
+│     ├─ @expo/image-utils@npm:^0.6.4 → npm:0.6.5
+│     ├─ @expo/json-file@npm:^9.0.1 → npm:9.0.2
+│     ├─ @react-native/normalize-colors@npm:0.76.7 → npm:0.76.7
+│     ├─ fs-extra@npm:^9.0.0 → npm:9.1.0
+│     ├─ resolve-from@npm:^5.0.0 → npm:5.0.0
+│     ├─ semver@npm:^7.6.0 → npm:7.7.1
+│     ├─ xml2js@npm:0.6.0 → npm:0.6.0
+│     └─ debug@npm:^4.3.1 → npm:4.4.0 [5dc40]
+│
+├─ @expo/rudder-sdk-node@npm:1.1.1
+│  ├─ Version: 1.1.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @expo/bunyan@npm:^4.0.0 → npm:4.0.1
+│     ├─ @segment/loosely-validate-event@npm:^2.0.0 → npm:2.0.0
+│     ├─ fetch-retry@npm:^4.1.1 → npm:4.1.1
+│     ├─ md5@npm:^2.2.1 → npm:2.3.0
+│     ├─ remove-trailing-slash@npm:^0.1.0 → npm:0.1.1
+│     ├─ uuid@npm:^8.3.2 → npm:8.3.2
+│     └─ node-fetch@npm:^2.6.1 → npm:2.7.0 [61067]
+│
+├─ @expo/sdk-runtime-versions@npm:1.0.0
+│  └─ Version: 1.0.0
+│
+├─ @expo/spawn-async@npm:1.7.2
+│  ├─ Version: 1.7.2
+│  │ 
+│  └─ Dependencies
+│     └─ cross-spawn@npm:^7.0.3 → npm:7.0.6
+│
+├─ @expo/vector-icons@npm:14.0.4
+│  ├─ Version: 14.0.4
+│  │ 
+│  └─ Dependencies
+│     └─ prop-types@npm:^15.8.1 → npm:15.8.1
+│
+├─ @expo/ws-tunnel@npm:1.0.4
+│  └─ Version: 1.0.4
+│
+├─ @expo/xcpretty@npm:4.3.2
+│  ├─ Version: 4.3.2
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ excpretty
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/code-frame@npm:7.10.4 → npm:7.10.4
+│     ├─ chalk@npm:^4.1.0 → npm:4.1.2
+│     ├─ find-up@npm:^5.0.0 → npm:5.0.0
+│     └─ js-yaml@npm:^4.1.0 → npm:4.1.0
+│
+├─ @firebase/analytics-compat@npm:0.2.17
+│  ├─ Instances: 1
+│  ├─ Version: 0.2.17
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/analytics-types@npm:0.8.3 → npm:0.8.3
+│     ├─ @firebase/analytics@npm:0.10.11 → npm:0.10.11
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/analytics-types@npm:0.8.3
+│  └─ Version: 0.8.3
+│
+├─ @firebase/analytics@npm:0.10.11
+│  ├─ Instances: 2
+│  ├─ Version: 0.10.11
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/installations@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/app-check-compat@npm:0.3.18
+│  ├─ Instances: 1
+│  ├─ Version: 0.3.18
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/app-check-types@npm:0.5.3 → npm:0.5.3
+│     ├─ @firebase/app-check@npm:0.8.11 → npm:0.8.11
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/app-check-interop-types@npm:0.3.3
+│  └─ Version: 0.3.3
+│
+├─ @firebase/app-check-types@npm:0.5.3
+│  └─ Version: 0.5.3
+│
+├─ @firebase/app-check@npm:0.8.11
+│  ├─ Instances: 2
+│  ├─ Version: 0.8.11
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/app-compat@npm:0.2.50
+│  ├─ Version: 0.2.50
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/app@npm:0.11.1 → npm:0.11.1
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/app-types@npm:0.9.3
+│  └─ Version: 0.9.3
+│
+├─ @firebase/app@npm:0.11.1
+│  ├─ Version: 0.11.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     ├─ idb@npm:7.1.1 → npm:7.1.1
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/auth-compat@npm:0.5.18
+│  ├─ Instances: 1
+│  ├─ Version: 0.5.18
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/auth-types@npm:0.13.0 → npm:0.13.0
+│     ├─ @firebase/auth@npm:1.9.0 → npm:1.9.0
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/auth-interop-types@npm:0.2.4
+│  └─ Version: 0.2.4
+│
+├─ @firebase/auth-types@npm:0.13.0
+│  ├─ Instances: 1
+│  └─ Version: 0.13.0
+│
+├─ @firebase/auth@npm:1.9.0
+│  ├─ Instances: 2
+│  ├─ Version: 1.9.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/component@npm:0.6.12
+│  ├─ Version: 0.6.12
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/data-connect@npm:0.3.0
+│  ├─ Instances: 1
+│  ├─ Version: 0.3.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/auth-interop-types@npm:0.2.4 → npm:0.2.4
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/database-compat@npm:2.0.3
+│  ├─ Version: 2.0.3
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/database-types@npm:1.0.8 → npm:1.0.8
+│     ├─ @firebase/database@npm:1.0.12 → npm:1.0.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/database-types@npm:1.0.8
+│  ├─ Version: 1.0.8
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/app-types@npm:0.9.3 → npm:0.9.3
+│     └─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│
+├─ @firebase/database@npm:1.0.12
+│  ├─ Version: 1.0.12
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/app-check-interop-types@npm:0.3.3 → npm:0.3.3
+│     ├─ @firebase/auth-interop-types@npm:0.2.4 → npm:0.2.4
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     ├─ faye-websocket@npm:0.11.4 → npm:0.11.4
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/firestore-compat@npm:0.3.43
+│  ├─ Instances: 1
+│  ├─ Version: 0.3.43
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/firestore-types@npm:3.0.3 → npm:3.0.3
+│     ├─ @firebase/firestore@npm:4.7.8 → npm:4.7.8
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/firestore-types@npm:3.0.3
+│  ├─ Instances: 1
+│  └─ Version: 3.0.3
+│
+├─ @firebase/firestore@npm:4.7.8
+│  ├─ Instances: 2
+│  ├─ Version: 4.7.8
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     ├─ @firebase/webchannel-wrapper@npm:1.0.3 → npm:1.0.3
+│     ├─ @grpc/grpc-js@npm:~1.9.0 → npm:1.9.15
+│     ├─ @grpc/proto-loader@npm:^0.7.8 → npm:0.7.13
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/functions-compat@npm:0.3.19
+│  ├─ Instances: 1
+│  ├─ Version: 0.3.19
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/functions-types@npm:0.6.3 → npm:0.6.3
+│     ├─ @firebase/functions@npm:0.12.2 → npm:0.12.2
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/functions-types@npm:0.6.3
+│  └─ Version: 0.6.3
+│
+├─ @firebase/functions@npm:0.12.2
+│  ├─ Instances: 2
+│  ├─ Version: 0.12.2
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/app-check-interop-types@npm:0.3.3 → npm:0.3.3
+│     ├─ @firebase/auth-interop-types@npm:0.2.4 → npm:0.2.4
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/messaging-interop-types@npm:0.2.3 → npm:0.2.3
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/installations-compat@npm:0.2.12
+│  ├─ Instances: 1
+│  ├─ Version: 0.2.12
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/installations-types@npm:0.5.3 → npm:0.5.3
+│     ├─ @firebase/installations@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/installations-types@npm:0.5.3
+│  ├─ Instances: 1
+│  └─ Version: 0.5.3
+│
+├─ @firebase/installations@npm:0.6.12
+│  ├─ Instances: 2
+│  ├─ Version: 0.6.12
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     ├─ idb@npm:7.1.1 → npm:7.1.1
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/logger@npm:0.4.4
+│  ├─ Version: 0.4.4
+│  │ 
+│  └─ Dependencies
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/messaging-compat@npm:0.2.16
+│  ├─ Instances: 1
+│  ├─ Version: 0.2.16
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/messaging@npm:0.12.16 → npm:0.12.16
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/messaging-interop-types@npm:0.2.3
+│  └─ Version: 0.2.3
+│
+├─ @firebase/messaging@npm:0.12.16
+│  ├─ Instances: 2
+│  ├─ Version: 0.12.16
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/installations@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/messaging-interop-types@npm:0.2.3 → npm:0.2.3
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     ├─ idb@npm:7.1.1 → npm:7.1.1
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/performance-compat@npm:0.2.13
+│  ├─ Instances: 1
+│  ├─ Version: 0.2.13
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/performance-types@npm:0.2.3 → npm:0.2.3
+│     ├─ @firebase/performance@npm:0.7.0 → npm:0.7.0
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/performance-types@npm:0.2.3
+│  └─ Version: 0.2.3
+│
+├─ @firebase/performance@npm:0.7.0
+│  ├─ Instances: 2
+│  ├─ Version: 0.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/installations@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     ├─ tslib@npm:^2.1.0 → npm:2.8.1
+│     └─ web-vitals@npm:^4.2.4 → npm:4.2.4
+│
+├─ @firebase/remote-config-compat@npm:0.2.12
+│  ├─ Instances: 1
+│  ├─ Version: 0.2.12
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/remote-config-types@npm:0.4.0 → npm:0.4.0
+│     ├─ @firebase/remote-config@npm:0.5.0 → npm:0.5.0
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/remote-config-types@npm:0.4.0
+│  └─ Version: 0.4.0
+│
+├─ @firebase/remote-config@npm:0.5.0
+│  ├─ Instances: 2
+│  ├─ Version: 0.5.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/installations@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/storage-compat@npm:0.3.16
+│  ├─ Instances: 1
+│  ├─ Version: 0.3.16
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/storage-types@npm:0.8.3 → npm:0.8.3
+│     ├─ @firebase/storage@npm:0.13.6 → npm:0.13.6
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/storage-types@npm:0.8.3
+│  ├─ Instances: 1
+│  └─ Version: 0.8.3
+│
+├─ @firebase/storage@npm:0.13.6
+│  ├─ Instances: 2
+│  ├─ Version: 0.13.6
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/util@npm:1.10.3
+│  ├─ Version: 1.10.3
+│  │ 
+│  └─ Dependencies
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/vertexai@npm:1.0.4
+│  ├─ Instances: 1
+│  ├─ Version: 1.0.4
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/app-check-interop-types@npm:0.3.3 → npm:0.3.3
+│     ├─ @firebase/component@npm:0.6.12 → npm:0.6.12
+│     ├─ @firebase/logger@npm:0.4.4 → npm:0.4.4
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     └─ tslib@npm:^2.1.0 → npm:2.8.1
+│
+├─ @firebase/webchannel-wrapper@npm:1.0.3
+│  └─ Version: 1.0.3
+│
+├─ @grpc/grpc-js@npm:1.9.15
+│  ├─ Version: 1.9.15
+│  │ 
+│  └─ Dependencies
+│     ├─ @grpc/proto-loader@npm:^0.7.8 → npm:0.7.13
+│     └─ @types/node@npm:>=12.12.47 → npm:22.13.4
+│
+├─ @grpc/proto-loader@npm:0.7.13
+│  ├─ Version: 0.7.13
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ proto-loader-gen-types
+│  │ 
+│  └─ Dependencies
+│     ├─ lodash.camelcase@npm:^4.3.0 → npm:4.3.0
+│     ├─ long@npm:^5.0.0 → npm:5.3.0
+│     ├─ protobufjs@npm:^7.2.5 → npm:7.4.0
+│     └─ yargs@npm:^17.7.2 → npm:17.7.2
+│
+├─ @humanfs/core@npm:0.19.1
+│  └─ Version: 0.19.1
+│
+├─ @humanfs/node@npm:0.16.6
+│  ├─ Version: 0.16.6
+│  │ 
+│  └─ Dependencies
+│     ├─ @humanfs/core@npm:^0.19.1 → npm:0.19.1
+│     └─ @humanwhocodes/retry@npm:^0.3.0 → npm:0.3.1
+│
+├─ @humanwhocodes/module-importer@npm:1.0.1
+│  └─ Version: 1.0.1
+│
+├─ @humanwhocodes/retry@npm:0.3.1
+│  └─ Version: 0.3.1
+│
+├─ @humanwhocodes/retry@npm:0.4.1
+│  └─ Version: 0.4.1
+│
+├─ @isaacs/cliui@npm:8.0.2
+│  ├─ Version: 8.0.2
+│  │ 
+│  └─ Dependencies
+│     ├─ string-width-cjs@npm:string-width@^4.2.0 → string-width@npm:4.2.3
+│     ├─ string-width@npm:^5.1.2 → npm:5.1.2
+│     ├─ strip-ansi-cjs@npm:strip-ansi@^6.0.1 → strip-ansi@npm:6.0.1
+│     ├─ strip-ansi@npm:^7.0.1 → npm:7.1.0
+│     ├─ wrap-ansi-cjs@npm:wrap-ansi@^7.0.0 → wrap-ansi@npm:7.0.0
+│     └─ wrap-ansi@npm:^8.1.0 → npm:8.1.0
+│
+├─ @isaacs/fs-minipass@npm:4.0.1
+│  ├─ Version: 4.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ minipass@npm:^7.0.4 → npm:7.1.2
+│
+├─ @isaacs/ttlcache@npm:1.4.1
+│  └─ Version: 1.4.1
+│
+├─ @istanbuljs/load-nyc-config@npm:1.1.0
+│  ├─ Version: 1.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ camelcase@npm:^5.3.1 → npm:5.3.1
+│     ├─ find-up@npm:^4.1.0 → npm:4.1.0
+│     ├─ get-package-type@npm:^0.1.0 → npm:0.1.0
+│     ├─ js-yaml@npm:^3.13.1 → npm:3.14.1
+│     └─ resolve-from@npm:^5.0.0 → npm:5.0.0
+│
+├─ @istanbuljs/schema@npm:0.1.3
+│  └─ Version: 0.1.3
+│
+├─ @jest/create-cache-key-function@npm:29.7.0
+│  ├─ Version: 29.7.0
+│  │ 
+│  └─ Dependencies
+│     └─ @jest/types@npm:^29.6.3 → npm:29.6.3
+│
+├─ @jest/environment@npm:29.7.0
+│  ├─ Version: 29.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jest/fake-timers@npm:^29.7.0 → npm:29.7.0
+│     ├─ @jest/types@npm:^29.6.3 → npm:29.6.3
+│     ├─ @types/node@npm:* → npm:22.13.4
+│     └─ jest-mock@npm:^29.7.0 → npm:29.7.0
+│
+├─ @jest/fake-timers@npm:29.7.0
+│  ├─ Version: 29.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jest/types@npm:^29.6.3 → npm:29.6.3
+│     ├─ @sinonjs/fake-timers@npm:^10.0.2 → npm:10.3.0
+│     ├─ @types/node@npm:* → npm:22.13.4
+│     ├─ jest-message-util@npm:^29.7.0 → npm:29.7.0
+│     ├─ jest-mock@npm:^29.7.0 → npm:29.7.0
+│     └─ jest-util@npm:^29.7.0 → npm:29.7.0
+│
+├─ @jest/schemas@npm:29.6.3
+│  ├─ Version: 29.6.3
+│  │ 
+│  └─ Dependencies
+│     └─ @sinclair/typebox@npm:^0.27.8 → npm:0.27.8
+│
+├─ @jest/transform@npm:29.7.0
+│  ├─ Version: 29.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/core@npm:^7.11.6 → npm:7.26.9
+│     ├─ @jest/types@npm:^29.6.3 → npm:29.6.3
+│     ├─ @jridgewell/trace-mapping@npm:^0.3.18 → npm:0.3.25
+│     ├─ babel-plugin-istanbul@npm:^6.1.1 → npm:6.1.1
+│     ├─ chalk@npm:^4.0.0 → npm:4.1.2
+│     ├─ convert-source-map@npm:^2.0.0 → npm:2.0.0
+│     ├─ fast-json-stable-stringify@npm:^2.1.0 → npm:2.1.0
+│     ├─ graceful-fs@npm:^4.2.9 → npm:4.2.11
+│     ├─ jest-haste-map@npm:^29.7.0 → npm:29.7.0
+│     ├─ jest-regex-util@npm:^29.6.3 → npm:29.6.3
+│     ├─ jest-util@npm:^29.7.0 → npm:29.7.0
+│     ├─ micromatch@npm:^4.0.4 → npm:4.0.8
+│     ├─ pirates@npm:^4.0.4 → npm:4.0.6
+│     ├─ slash@npm:^3.0.0 → npm:3.0.0
+│     └─ write-file-atomic@npm:^4.0.2 → npm:4.0.2
+│
+├─ @jest/types@npm:29.6.3
+│  ├─ Version: 29.6.3
+│  │ 
+│  └─ Dependencies
+│     ├─ @jest/schemas@npm:^29.6.3 → npm:29.6.3
+│     ├─ @types/istanbul-lib-coverage@npm:^2.0.0 → npm:2.0.6
+│     ├─ @types/istanbul-reports@npm:^3.0.0 → npm:3.0.4
+│     ├─ @types/node@npm:* → npm:22.13.4
+│     ├─ @types/yargs@npm:^17.0.8 → npm:17.0.33
+│     └─ chalk@npm:^4.0.0 → npm:4.1.2
+│
+├─ @jimp/core@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/file-ops@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│     ├─ await-to-js@npm:^3.0.0 → npm:3.0.0
+│     ├─ exif-parser@npm:^0.1.12 → npm:0.1.12
+│     ├─ file-type@npm:^16.0.0 → npm:16.5.4
+│     └─ mime@npm:3 → npm:3.0.0
+│
+├─ @jimp/diff@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/plugin-resize@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│     └─ pixelmatch@npm:^5.3.0 → npm:5.3.0
+│
+├─ @jimp/file-ops@npm:1.6.0
+│  └─ Version: 1.6.0
+│
+├─ @jimp/js-bmp@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│     └─ bmp-ts@npm:^1.0.9 → npm:1.0.9
+│
+├─ @jimp/js-gif@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ gifwrap@npm:^0.10.1 → npm:0.10.1
+│     └─ omggif@npm:^1.0.10 → npm:1.0.10
+│
+├─ @jimp/js-jpeg@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     └─ jpeg-js@npm:^0.4.4 → npm:0.4.4
+│
+├─ @jimp/js-png@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     └─ pngjs@npm:^7.0.0 → npm:7.0.0
+│
+├─ @jimp/js-tiff@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     └─ utif2@npm:^4.1.0 → npm:4.1.0
+│
+├─ @jimp/plugin-blit@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-blur@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     └─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│
+├─ @jimp/plugin-circle@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-color@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│     ├─ tinycolor2@npm:^1.6.0 → npm:1.6.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-contain@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-blit@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-resize@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-cover@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-crop@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-resize@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-crop@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-displace@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-dither@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     └─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│
+├─ @jimp/plugin-fisheye@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-flip@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-hash@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/js-bmp@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/js-jpeg@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/js-png@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/js-tiff@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-color@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-resize@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│     └─ any-base@npm:^1.1.0 → npm:1.1.0
+│
+├─ @jimp/plugin-mask@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-print@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/js-jpeg@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/js-png@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-blit@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ parse-bmfont-ascii@npm:^1.0.6 → npm:1.0.6
+│     ├─ parse-bmfont-binary@npm:^1.0.6 → npm:1.0.6
+│     ├─ parse-bmfont-xml@npm:^1.1.6 → npm:1.1.6
+│     ├─ simple-xml-to-json@npm:^1.2.2 → npm:1.2.3
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-quantize@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ image-q@npm:^4.0.0 → npm:4.0.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-resize@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-rotate@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-crop@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-resize@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/plugin-threshold@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-color@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-hash@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/types@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     └─ zod@npm:^3.23.8 → npm:3.24.2
+│
+├─ @jimp/utils@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     └─ tinycolor2@npm:^1.6.0 → npm:1.6.0
+│
+├─ @jridgewell/gen-mapping@npm:0.3.8
+│  ├─ Version: 0.3.8
+│  │ 
+│  └─ Dependencies
+│     ├─ @jridgewell/set-array@npm:^1.2.1 → npm:1.2.1
+│     ├─ @jridgewell/sourcemap-codec@npm:^1.4.10 → npm:1.5.0
+│     └─ @jridgewell/trace-mapping@npm:^0.3.24 → npm:0.3.25
+│
+├─ @jridgewell/resolve-uri@npm:3.1.2
+│  └─ Version: 3.1.2
+│
+├─ @jridgewell/set-array@npm:1.2.1
+│  └─ Version: 1.2.1
+│
+├─ @jridgewell/source-map@npm:0.3.6
+│  ├─ Version: 0.3.6
+│  │ 
+│  └─ Dependencies
+│     ├─ @jridgewell/gen-mapping@npm:^0.3.5 → npm:0.3.8
+│     └─ @jridgewell/trace-mapping@npm:^0.3.25 → npm:0.3.25
+│
+├─ @jridgewell/sourcemap-codec@npm:1.5.0
+│  └─ Version: 1.5.0
+│
+├─ @jridgewell/trace-mapping@npm:0.3.25
+│  ├─ Version: 0.3.25
+│  │ 
+│  └─ Dependencies
+│     ├─ @jridgewell/resolve-uri@npm:^3.1.0 → npm:3.1.2
+│     └─ @jridgewell/sourcemap-codec@npm:^1.4.14 → npm:1.5.0
+│
+├─ @nodelib/fs.scandir@npm:2.1.5
+│  ├─ Version: 2.1.5
+│  │ 
+│  └─ Dependencies
+│     ├─ @nodelib/fs.stat@npm:2.0.5 → npm:2.0.5
+│     └─ run-parallel@npm:^1.1.9 → npm:1.2.0
+│
+├─ @nodelib/fs.stat@npm:2.0.5
+│  └─ Version: 2.0.5
+│
+├─ @nodelib/fs.walk@npm:1.2.8
+│  ├─ Version: 1.2.8
+│  │ 
+│  └─ Dependencies
+│     ├─ @nodelib/fs.scandir@npm:2.1.5 → npm:2.1.5
+│     └─ fastq@npm:^1.6.0 → npm:1.19.0
+│
+├─ @npmcli/agent@npm:3.0.0
+│  ├─ Version: 3.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ agent-base@npm:^7.1.0 → npm:7.1.3
+│     ├─ http-proxy-agent@npm:^7.0.0 → npm:7.0.2
+│     ├─ https-proxy-agent@npm:^7.0.1 → npm:7.0.6
+│     ├─ lru-cache@npm:^10.0.1 → npm:10.4.3
+│     └─ socks-proxy-agent@npm:^8.0.3 → npm:8.0.5
+│
+├─ @npmcli/fs@npm:3.1.1
+│  ├─ Version: 3.1.1
+│  │ 
+│  └─ Dependencies
+│     └─ semver@npm:^7.3.5 → npm:7.7.1
+│
+├─ @npmcli/fs@npm:4.0.0
+│  ├─ Version: 4.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ semver@npm:^7.3.5 → npm:7.7.1
+│
+├─ @pkgjs/parseargs@npm:0.11.0
+│  └─ Version: 0.11.0
+│
+├─ @protobufjs/aspromise@npm:1.1.2
+│  └─ Version: 1.1.2
+│
+├─ @protobufjs/base64@npm:1.1.2
+│  └─ Version: 1.1.2
+│
+├─ @protobufjs/codegen@npm:2.0.4
+│  └─ Version: 2.0.4
+│
+├─ @protobufjs/eventemitter@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ @protobufjs/fetch@npm:1.1.0
+│  ├─ Version: 1.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @protobufjs/aspromise@npm:^1.1.1 → npm:1.1.2
+│     └─ @protobufjs/inquire@npm:^1.1.0 → npm:1.1.0
+│
+├─ @protobufjs/float@npm:1.0.2
+│  └─ Version: 1.0.2
+│
+├─ @protobufjs/inquire@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ @protobufjs/path@npm:1.1.2
+│  └─ Version: 1.1.2
+│
+├─ @protobufjs/pool@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ @protobufjs/utf8@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ @react-native/assets-registry@npm:0.77.1
+│  └─ Version: 0.77.1
+│
+├─ @react-native/babel-plugin-codegen@npm:0.76.7
+│  ├─ Version: 0.76.7
+│  │ 
+│  └─ Dependencies
+│     └─ @react-native/codegen@npm:0.76.7 → npm:0.76.7 [e715f]
+│
+├─ @react-native/babel-plugin-codegen@npm:0.77.1
+│  ├─ Version: 0.77.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/traverse@npm:^7.25.3 → npm:7.26.9
+│     └─ @react-native/codegen@npm:0.77.1 → npm:0.77.1 [c6537]
+│
+├─ @react-native/babel-preset@npm:0.76.7
+│  ├─ Instances: 1
+│  ├─ Version: 0.76.7
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/core@npm:^7.25.2 → npm:7.26.9
+│     ├─ @babel/plugin-proposal-export-default-from@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-syntax-dynamic-import@npm:^7.8.3 → npm:7.8.3
+│     ├─ @babel/plugin-syntax-export-default-from@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-syntax-nullish-coalescing-operator@npm:^7.8.3 → npm:7.8.3
+│     ├─ @babel/plugin-syntax-optional-chaining@npm:^7.8.3 → npm:7.8.3
+│     ├─ @babel/plugin-transform-arrow-functions@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-async-generator-functions@npm:^7.25.4 → npm:7.26.8
+│     ├─ @babel/plugin-transform-async-to-generator@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-block-scoping@npm:^7.25.0 → npm:7.25.9
+│     ├─ @babel/plugin-transform-class-properties@npm:^7.25.4 → npm:7.25.9
+│     ├─ @babel/plugin-transform-classes@npm:^7.25.4 → npm:7.25.9
+│     ├─ @babel/plugin-transform-computed-properties@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-destructuring@npm:^7.24.8 → npm:7.25.9
+│     ├─ @babel/plugin-transform-flow-strip-types@npm:^7.25.2 → npm:7.26.5
+│     ├─ @babel/plugin-transform-for-of@npm:^7.24.7 → npm:7.26.9
+│     ├─ @babel/plugin-transform-function-name@npm:^7.25.1 → npm:7.25.9
+│     ├─ @babel/plugin-transform-literals@npm:^7.25.2 → npm:7.25.9
+│     ├─ @babel/plugin-transform-logical-assignment-operators@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-modules-commonjs@npm:^7.24.8 → npm:7.26.3
+│     ├─ @babel/plugin-transform-named-capturing-groups-regex@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-nullish-coalescing-operator@npm:^7.24.7 → npm:7.26.6
+│     ├─ @babel/plugin-transform-numeric-separator@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-object-rest-spread@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-optional-catch-binding@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-optional-chaining@npm:^7.24.8 → npm:7.25.9
+│     ├─ @babel/plugin-transform-parameters@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-private-methods@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-private-property-in-object@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-react-display-name@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-react-jsx-self@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-react-jsx-source@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-react-jsx@npm:^7.25.2 → npm:7.25.9
+│     ├─ @babel/plugin-transform-regenerator@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-runtime@npm:^7.24.7 → npm:7.26.9
+│     ├─ @babel/plugin-transform-shorthand-properties@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-spread@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-sticky-regex@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-typescript@npm:^7.25.2 → npm:7.26.8
+│     ├─ @babel/plugin-transform-unicode-regex@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/template@npm:^7.25.0 → npm:7.26.9
+│     ├─ @react-native/babel-plugin-codegen@npm:0.76.7 → npm:0.76.7
+│     ├─ babel-plugin-syntax-hermes-parser@npm:^0.25.1 → npm:0.25.1
+│     ├─ babel-plugin-transform-flow-enums@npm:^0.0.2 → npm:0.0.2
+│     └─ react-refresh@npm:^0.14.0 → npm:0.14.2
+│
+├─ @react-native/babel-preset@npm:0.77.1
+│  ├─ Instances: 1
+│  ├─ Version: 0.77.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/core@npm:^7.25.2 → npm:7.26.9
+│     ├─ @babel/plugin-proposal-export-default-from@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-syntax-dynamic-import@npm:^7.8.3 → npm:7.8.3
+│     ├─ @babel/plugin-syntax-export-default-from@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-syntax-nullish-coalescing-operator@npm:^7.8.3 → npm:7.8.3
+│     ├─ @babel/plugin-syntax-optional-chaining@npm:^7.8.3 → npm:7.8.3
+│     ├─ @babel/plugin-transform-arrow-functions@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-async-generator-functions@npm:^7.25.4 → npm:7.26.8
+│     ├─ @babel/plugin-transform-async-to-generator@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-block-scoping@npm:^7.25.0 → npm:7.25.9
+│     ├─ @babel/plugin-transform-class-properties@npm:^7.25.4 → npm:7.25.9
+│     ├─ @babel/plugin-transform-classes@npm:^7.25.4 → npm:7.25.9
+│     ├─ @babel/plugin-transform-computed-properties@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-destructuring@npm:^7.24.8 → npm:7.25.9
+│     ├─ @babel/plugin-transform-flow-strip-types@npm:^7.25.2 → npm:7.26.5
+│     ├─ @babel/plugin-transform-for-of@npm:^7.24.7 → npm:7.26.9
+│     ├─ @babel/plugin-transform-function-name@npm:^7.25.1 → npm:7.25.9
+│     ├─ @babel/plugin-transform-literals@npm:^7.25.2 → npm:7.25.9
+│     ├─ @babel/plugin-transform-logical-assignment-operators@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-modules-commonjs@npm:^7.24.8 → npm:7.26.3
+│     ├─ @babel/plugin-transform-named-capturing-groups-regex@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-nullish-coalescing-operator@npm:^7.24.7 → npm:7.26.6
+│     ├─ @babel/plugin-transform-numeric-separator@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-object-rest-spread@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-optional-catch-binding@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-optional-chaining@npm:^7.24.8 → npm:7.25.9
+│     ├─ @babel/plugin-transform-parameters@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-private-methods@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-private-property-in-object@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-react-display-name@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-react-jsx-self@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-react-jsx-source@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-react-jsx@npm:^7.25.2 → npm:7.25.9
+│     ├─ @babel/plugin-transform-regenerator@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-runtime@npm:^7.24.7 → npm:7.26.9
+│     ├─ @babel/plugin-transform-shorthand-properties@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-spread@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-sticky-regex@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-typescript@npm:^7.25.2 → npm:7.26.8
+│     ├─ @babel/plugin-transform-unicode-regex@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/template@npm:^7.25.0 → npm:7.26.9
+│     ├─ @react-native/babel-plugin-codegen@npm:0.77.1 → npm:0.77.1
+│     ├─ babel-plugin-syntax-hermes-parser@npm:0.25.1 → npm:0.25.1
+│     ├─ babel-plugin-transform-flow-enums@npm:^0.0.2 → npm:0.0.2
+│     └─ react-refresh@npm:^0.14.0 → npm:0.14.2
+│
+├─ @react-native/codegen@npm:0.76.7
+│  ├─ Instances: 1
+│  ├─ Version: 0.76.7
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/parser@npm:^7.25.3 → npm:7.26.9
+│     ├─ glob@npm:^7.1.1 → npm:7.2.3
+│     ├─ hermes-parser@npm:0.23.1 → npm:0.23.1
+│     ├─ invariant@npm:^2.2.4 → npm:2.2.4
+│     ├─ jscodeshift@npm:^0.14.0 → npm:0.14.0
+│     ├─ mkdirp@npm:^0.5.1 → npm:0.5.6
+│     ├─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│     └─ yargs@npm:^17.6.2 → npm:17.7.2
+│
+├─ @react-native/codegen@npm:0.77.1
+│  ├─ Instances: 1
+│  ├─ Version: 0.77.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/parser@npm:^7.25.3 → npm:7.26.9
+│     ├─ glob@npm:^7.1.1 → npm:7.2.3
+│     ├─ hermes-parser@npm:0.25.1 → npm:0.25.1
+│     ├─ invariant@npm:^2.2.4 → npm:2.2.4
+│     ├─ jscodeshift@npm:^17.0.0 → npm:17.1.2
+│     ├─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│     └─ yargs@npm:^17.6.2 → npm:17.7.2
+│
+├─ @react-native/community-cli-plugin@npm:0.77.1
+│  ├─ Instances: 1
+│  ├─ Version: 0.77.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @react-native/dev-middleware@npm:0.77.1 → npm:0.77.1
+│     ├─ @react-native/metro-babel-transformer@npm:0.77.1 → npm:0.77.1
+│     ├─ chalk@npm:^4.0.0 → npm:4.1.2
+│     ├─ debug@npm:^2.2.0 → npm:2.6.9
+│     ├─ invariant@npm:^2.2.4 → npm:2.2.4
+│     ├─ metro-config@npm:^0.81.0 → npm:0.81.1
+│     ├─ metro-core@npm:^0.81.0 → npm:0.81.1
+│     ├─ metro@npm:^0.81.0 → npm:0.81.1
+│     ├─ readline@npm:^1.3.0 → npm:1.3.0
+│     └─ semver@npm:^7.1.3 → npm:7.7.1
+│
+├─ @react-native/debugger-frontend@npm:0.76.7
+│  └─ Version: 0.76.7
+│
+├─ @react-native/debugger-frontend@npm:0.77.1
+│  └─ Version: 0.77.1
+│
+├─ @react-native/dev-middleware@npm:0.76.7
+│  ├─ Version: 0.76.7
+│  │ 
+│  └─ Dependencies
+│     ├─ @isaacs/ttlcache@npm:^1.4.1 → npm:1.4.1
+│     ├─ @react-native/debugger-frontend@npm:0.76.7 → npm:0.76.7
+│     ├─ chrome-launcher@npm:^0.15.2 → npm:0.15.2
+│     ├─ chromium-edge-launcher@npm:^0.2.0 → npm:0.2.0
+│     ├─ connect@npm:^3.6.5 → npm:3.7.0
+│     ├─ invariant@npm:^2.2.4 → npm:2.2.4
+│     ├─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│     ├─ open@npm:^7.0.3 → npm:7.4.2
+│     ├─ selfsigned@npm:^2.4.1 → npm:2.4.1
+│     ├─ serve-static@npm:^1.13.1 → npm:1.16.2
+│     ├─ debug@npm:^2.6.9 → npm:2.6.9 [04e17]
+│     └─ ws@npm:^6.2.3 → npm:6.2.3 [c6537]
+│
+├─ @react-native/dev-middleware@npm:0.77.1
+│  ├─ Version: 0.77.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @isaacs/ttlcache@npm:^1.4.1 → npm:1.4.1
+│     ├─ @react-native/debugger-frontend@npm:0.77.1 → npm:0.77.1
+│     ├─ chrome-launcher@npm:^0.15.2 → npm:0.15.2
+│     ├─ chromium-edge-launcher@npm:^0.2.0 → npm:0.2.0
+│     ├─ connect@npm:^3.6.5 → npm:3.7.0
+│     ├─ invariant@npm:^2.2.4 → npm:2.2.4
+│     ├─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│     ├─ open@npm:^7.0.3 → npm:7.4.2
+│     ├─ selfsigned@npm:^2.4.1 → npm:2.4.1
+│     ├─ serve-static@npm:^1.16.2 → npm:1.16.2
+│     ├─ debug@npm:^2.6.9 → npm:2.6.9 [04e17]
+│     └─ ws@npm:^6.2.3 → npm:6.2.3 [c6537]
+│
+├─ @react-native/gradle-plugin@npm:0.77.1
+│  └─ Version: 0.77.1
+│
+├─ @react-native/js-polyfills@npm:0.77.1
+│  └─ Version: 0.77.1
+│
+├─ @react-native/metro-babel-transformer@npm:0.77.1
+│  ├─ Instances: 1
+│  ├─ Version: 0.77.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/core@npm:^7.25.2 → npm:7.26.9
+│     ├─ @react-native/babel-preset@npm:0.77.1 → npm:0.77.1
+│     ├─ hermes-parser@npm:0.25.1 → npm:0.25.1
+│     └─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│
+├─ @react-native/normalize-colors@npm:0.74.89
+│  └─ Version: 0.74.89
+│
+├─ @react-native/normalize-colors@npm:0.76.7
+│  └─ Version: 0.76.7
+│
+├─ @react-native/normalize-colors@npm:0.77.1
+│  └─ Version: 0.77.1
+│
+├─ @react-native/virtualized-lists@npm:0.77.1
+│  ├─ Instances: 2
+│  ├─ Version: 0.77.1
+│  │ 
+│  └─ Dependencies
+│     ├─ invariant@npm:^2.2.4 → npm:2.2.4
+│     └─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│
+├─ @react-navigation/bottom-tabs@npm:7.2.0
+│  ├─ Instances: 1
+│  ├─ Version: 7.2.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @react-navigation/elements@npm:^2.2.5 → npm:2.2.5
+│     └─ color@npm:^4.2.3 → npm:4.2.3
+│
+├─ @react-navigation/core@npm:7.3.1
+│  ├─ Instances: 1
+│  ├─ Version: 7.3.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @react-navigation/routers@npm:^7.1.2 → npm:7.1.2
+│     ├─ escape-string-regexp@npm:^4.0.0 → npm:4.0.0
+│     ├─ nanoid@npm:3.3.8 → npm:3.3.8
+│     ├─ query-string@npm:^7.1.3 → npm:7.1.3
+│     ├─ react-is@npm:^18.2.0 → npm:18.3.1
+│     ├─ use-latest-callback@npm:^0.2.1 → npm:0.2.3
+│     └─ use-sync-external-store@npm:^1.2.2 → npm:1.4.0
+│
+├─ @react-navigation/elements@npm:2.2.5
+│  ├─ Instances: 1
+│  ├─ Version: 2.2.5
+│  │ 
+│  └─ Dependencies
+│     └─ color@npm:^4.2.3 → npm:4.2.3
+│
+├─ @react-navigation/native@npm:7.0.14
+│  ├─ Instances: 1
+│  ├─ Version: 7.0.14
+│  │ 
+│  └─ Dependencies
+│     ├─ @react-navigation/core@npm:^7.3.1 → npm:7.3.1
+│     ├─ escape-string-regexp@npm:^4.0.0 → npm:4.0.0
+│     ├─ fast-deep-equal@npm:^3.1.3 → npm:3.1.3
+│     ├─ nanoid@npm:3.3.8 → npm:3.3.8
+│     └─ use-latest-callback@npm:^0.2.1 → npm:0.2.3
+│
+├─ @react-navigation/routers@npm:7.1.2
+│  ├─ Version: 7.1.2
+│  │ 
+│  └─ Dependencies
+│     └─ nanoid@npm:3.3.8 → npm:3.3.8
+│
+├─ @react-navigation/stack@npm:7.1.1
+│  ├─ Instances: 1
+│  ├─ Version: 7.1.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @react-navigation/elements@npm:^2.2.5 → npm:2.2.5
+│     └─ color@npm:^4.2.3 → npm:4.2.3
+│
+├─ @segment/loosely-validate-event@npm:2.0.0
+│  ├─ Version: 2.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ component-type@npm:^1.2.1 → npm:1.2.2
+│     └─ join-component@npm:^1.1.0 → npm:1.1.0
+│
+├─ @sinclair/typebox@npm:0.27.8
+│  └─ Version: 0.27.8
+│
+├─ @sinonjs/commons@npm:3.0.1
+│  ├─ Version: 3.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ type-detect@npm:4.0.8 → npm:4.0.8
+│
+├─ @sinonjs/fake-timers@npm:10.3.0
+│  ├─ Version: 10.3.0
+│  │ 
+│  └─ Dependencies
+│     └─ @sinonjs/commons@npm:^3.0.0 → npm:3.0.1
+│
+├─ @tokenizer/token@npm:0.3.0
+│  └─ Version: 0.3.0
+│
+├─ @types/babel__core@npm:7.20.5
+│  ├─ Version: 7.20.5
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/parser@npm:^7.20.7 → npm:7.26.9
+│     ├─ @babel/types@npm:^7.20.7 → npm:7.26.9
+│     ├─ @types/babel__generator@npm:* → npm:7.6.8
+│     ├─ @types/babel__template@npm:* → npm:7.4.4
+│     └─ @types/babel__traverse@npm:* → npm:7.20.6
+│
+├─ @types/babel__generator@npm:7.6.8
+│  ├─ Version: 7.6.8
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/types@npm:^7.0.0 → npm:7.26.9
+│
+├─ @types/babel__template@npm:7.4.4
+│  ├─ Version: 7.4.4
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/parser@npm:^7.1.0 → npm:7.26.9
+│     └─ @babel/types@npm:^7.0.0 → npm:7.26.9
+│
+├─ @types/babel__traverse@npm:7.20.6
+│  ├─ Version: 7.20.6
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/types@npm:^7.20.7 → npm:7.26.9
+│
+├─ @types/estree@npm:1.0.6
+│  └─ Version: 1.0.6
+│
+├─ @types/graceful-fs@npm:4.1.9
+│  ├─ Version: 4.1.9
+│  │ 
+│  └─ Dependencies
+│     └─ @types/node@npm:* → npm:22.13.4
+│
+├─ @types/hammerjs@npm:2.0.46
+│  └─ Version: 2.0.46
+│
+├─ @types/istanbul-lib-coverage@npm:2.0.6
+│  └─ Version: 2.0.6
+│
+├─ @types/istanbul-lib-report@npm:3.0.3
+│  ├─ Version: 3.0.3
+│  │ 
+│  └─ Dependencies
+│     └─ @types/istanbul-lib-coverage@npm:* → npm:2.0.6
+│
+├─ @types/istanbul-reports@npm:3.0.4
+│  ├─ Version: 3.0.4
+│  │ 
+│  └─ Dependencies
+│     └─ @types/istanbul-lib-report@npm:* → npm:3.0.3
+│
+├─ @types/json-schema@npm:7.0.15
+│  └─ Version: 7.0.15
+│
+├─ @types/node-forge@npm:1.3.11
+│  ├─ Version: 1.3.11
+│  │ 
+│  └─ Dependencies
+│     └─ @types/node@npm:* → npm:22.13.4
+│
+├─ @types/node@npm:16.9.1
+│  └─ Version: 16.9.1
+│
+├─ @types/node@npm:22.13.4
+│  ├─ Version: 22.13.4
+│  │ 
+│  └─ Dependencies
+│     └─ undici-types@npm:~6.20.0 → npm:6.20.0
+│
+├─ @types/react-dom@npm:19.0.3
+│  ├─ Instances: 1
+│  └─ Version: 19.0.3
+│
+├─ @types/react-native-web@npm:0.19.0
+│  ├─ Version: 0.19.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @types/react@npm:* → npm:19.0.9
+│     └─ react-native@npm:* → npm:0.77.1 [135ac]
+│
+├─ @types/react@npm:19.0.9
+│  ├─ Version: 19.0.9
+│  │ 
+│  └─ Dependencies
+│     └─ csstype@npm:^3.0.2 → npm:3.1.3
+│
+├─ @types/stack-utils@npm:2.0.3
+│  └─ Version: 2.0.3
+│
+├─ @types/yargs-parser@npm:21.0.3
+│  └─ Version: 21.0.3
+│
+├─ @types/yargs@npm:17.0.33
+│  ├─ Version: 17.0.33
+│  │ 
+│  └─ Dependencies
+│     └─ @types/yargs-parser@npm:* → npm:21.0.3
+│
+├─ @urql/core@npm:5.1.0
+│  ├─ Version: 5.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ wonka@npm:^6.3.2 → npm:6.3.4
+│     └─ @0no-co/graphql.web@npm:^1.0.5 → npm:1.1.1 [ab2fd]
+│
+├─ @urql/exchange-retry@npm:1.3.0
+│  ├─ Instances: 1
+│  ├─ Version: 1.3.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @urql/core@npm:^5.0.0 → npm:5.1.0
+│     └─ wonka@npm:^6.3.2 → npm:6.3.4
+│
+├─ @xmldom/xmldom@npm:0.7.13
+│  └─ Version: 0.7.13
+│
+├─ @xmldom/xmldom@npm:0.8.10
+│  └─ Version: 0.8.10
+│
+├─ abbrev@npm:3.0.0
+│  └─ Version: 3.0.0
+│
+├─ abort-controller@npm:3.0.0
+│  ├─ Version: 3.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ event-target-shim@npm:^5.0.0 → npm:5.0.1
+│
+├─ accepts@npm:1.3.8
+│  ├─ Version: 1.3.8
+│  │ 
+│  └─ Dependencies
+│     ├─ mime-types@npm:~2.1.34 → npm:2.1.35
+│     └─ negotiator@npm:0.6.3 → npm:0.6.3
+│
+├─ acorn-jsx@npm:5.3.2
+│  ├─ Instances: 1
+│  └─ Version: 5.3.2
+│
+├─ acorn@npm:8.14.0
+│  ├─ Version: 8.14.0
+│  │ 
+│  └─ Exported Binaries
+│     └─ acorn
+│
+├─ agent-base@npm:7.1.3
+│  └─ Version: 7.1.3
+│
+├─ aggregate-error@npm:3.1.0
+│  ├─ Version: 3.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ clean-stack@npm:^2.0.0 → npm:2.2.0
+│     └─ indent-string@npm:^4.0.0 → npm:4.0.0
+│
+├─ ajv@npm:6.12.6
+│  ├─ Version: 6.12.6
+│  │ 
+│  └─ Dependencies
+│     ├─ fast-deep-equal@npm:^3.1.1 → npm:3.1.3
+│     ├─ fast-json-stable-stringify@npm:^2.0.0 → npm:2.1.0
+│     ├─ json-schema-traverse@npm:^0.4.1 → npm:0.4.1
+│     └─ uri-js@npm:^4.2.2 → npm:4.4.1
+│
+├─ anser@npm:1.4.10
+│  └─ Version: 1.4.10
+│
+├─ ansi-escapes@npm:4.3.2
+│  ├─ Version: 4.3.2
+│  │ 
+│  └─ Dependencies
+│     └─ type-fest@npm:^0.21.3 → npm:0.21.3
+│
+├─ ansi-regex@npm:4.1.1
+│  └─ Version: 4.1.1
+│
+├─ ansi-regex@npm:5.0.1
+│  └─ Version: 5.0.1
+│
+├─ ansi-regex@npm:6.1.0
+│  └─ Version: 6.1.0
+│
+├─ ansi-styles@npm:3.2.1
+│  ├─ Version: 3.2.1
+│  │ 
+│  └─ Dependencies
+│     └─ color-convert@npm:^1.9.0 → npm:1.9.3
+│
+├─ ansi-styles@npm:4.3.0
+│  ├─ Version: 4.3.0
+│  │ 
+│  └─ Dependencies
+│     └─ color-convert@npm:^2.0.1 → npm:2.0.1
+│
+├─ ansi-styles@npm:5.2.0
+│  └─ Version: 5.2.0
+│
+├─ ansi-styles@npm:6.2.1
+│  └─ Version: 6.2.1
+│
+├─ any-base@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ any-promise@npm:1.3.0
+│  └─ Version: 1.3.0
+│
+├─ anymatch@npm:3.1.3
+│  ├─ Version: 3.1.3
+│  │ 
+│  └─ Dependencies
+│     ├─ normalize-path@npm:^3.0.0 → npm:3.0.0
+│     └─ picomatch@npm:^2.0.4 → npm:2.3.1
+│
+├─ application-config-path@npm:0.1.1
+│  └─ Version: 0.1.1
+│
+├─ arg@npm:5.0.2
+│  └─ Version: 5.0.2
+│
+├─ argparse@npm:1.0.10
+│  ├─ Version: 1.0.10
+│  │ 
+│  └─ Dependencies
+│     └─ sprintf-js@npm:~1.0.2 → npm:1.0.3
+│
+├─ argparse@npm:2.0.1
+│  └─ Version: 2.0.1
+│
+├─ array-union@npm:2.1.0
+│  └─ Version: 2.1.0
+│
+├─ asap@npm:2.0.6
+│  └─ Version: 2.0.6
+│
+├─ ast-types@npm:0.15.2
+│  ├─ Version: 0.15.2
+│  │ 
+│  └─ Dependencies
+│     └─ tslib@npm:^2.0.1 → npm:2.8.1
+│
+├─ ast-types@npm:0.16.1
+│  ├─ Version: 0.16.1
+│  │ 
+│  └─ Dependencies
+│     └─ tslib@npm:^2.0.1 → npm:2.8.1
+│
+├─ async-limiter@npm:1.0.1
+│  └─ Version: 1.0.1
+│
+├─ asynckit@npm:0.4.0
+│  └─ Version: 0.4.0
+│
+├─ at-least-node@npm:1.0.0
+│  └─ Version: 1.0.0
+│
+├─ await-to-js@npm:3.0.0
+│  └─ Version: 3.0.0
+│
+├─ babel-core@npm:7.0.0-bridge.0
+│  ├─ Instances: 1
+│  └─ Version: 7.0.0-bridge.0
+│
+├─ babel-jest@npm:29.7.0
+│  ├─ Instances: 1
+│  ├─ Version: 29.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jest/transform@npm:^29.7.0 → npm:29.7.0
+│     ├─ @types/babel__core@npm:^7.1.14 → npm:7.20.5
+│     ├─ babel-plugin-istanbul@npm:^6.1.1 → npm:6.1.1
+│     ├─ babel-preset-jest@npm:^29.6.3 → npm:29.6.3
+│     ├─ chalk@npm:^4.0.0 → npm:4.1.2
+│     ├─ graceful-fs@npm:^4.2.9 → npm:4.2.11
+│     └─ slash@npm:^3.0.0 → npm:3.0.0
+│
+├─ babel-plugin-istanbul@npm:6.1.1
+│  ├─ Version: 6.1.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-plugin-utils@npm:^7.0.0 → npm:7.26.5
+│     ├─ @istanbuljs/load-nyc-config@npm:^1.0.0 → npm:1.1.0
+│     ├─ @istanbuljs/schema@npm:^0.1.2 → npm:0.1.3
+│     ├─ istanbul-lib-instrument@npm:^5.0.4 → npm:5.2.1
+│     └─ test-exclude@npm:^6.0.0 → npm:6.0.0
+│
+├─ babel-plugin-jest-hoist@npm:29.6.3
+│  ├─ Version: 29.6.3
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/template@npm:^7.3.3 → npm:7.26.9
+│     ├─ @babel/types@npm:^7.3.3 → npm:7.26.9
+│     ├─ @types/babel__core@npm:^7.1.14 → npm:7.20.5
+│     └─ @types/babel__traverse@npm:^7.0.6 → npm:7.20.6
+│
+├─ babel-plugin-polyfill-corejs2@npm:0.4.12
+│  ├─ Instances: 1
+│  ├─ Version: 0.4.12
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/compat-data@npm:^7.22.6 → npm:7.26.8
+│     ├─ @babel/helper-define-polyfill-provider@npm:^0.6.3 → npm:0.6.3
+│     └─ semver@npm:^6.3.1 → npm:6.3.1
+│
+├─ babel-plugin-polyfill-corejs3@npm:0.10.6
+│  ├─ Instances: 1
+│  ├─ Version: 0.10.6
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/helper-define-polyfill-provider@npm:^0.6.2 → npm:0.6.3
+│     └─ core-js-compat@npm:^3.38.0 → npm:3.40.0
+│
+├─ babel-plugin-polyfill-regenerator@npm:0.6.3
+│  ├─ Instances: 1
+│  ├─ Version: 0.6.3
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/helper-define-polyfill-provider@npm:^0.6.3 → npm:0.6.3
+│
+├─ babel-plugin-react-native-web@npm:0.19.13
+│  └─ Version: 0.19.13
+│
+├─ babel-plugin-syntax-hermes-parser@npm:0.25.1
+│  ├─ Version: 0.25.1
+│  │ 
+│  └─ Dependencies
+│     └─ hermes-parser@npm:0.25.1 → npm:0.25.1
+│
+├─ babel-plugin-transform-flow-enums@npm:0.0.2
+│  ├─ Version: 0.0.2
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/plugin-syntax-flow@npm:^7.12.1 → npm:7.26.0 [dbfa5]
+│
+├─ babel-preset-current-node-syntax@npm:1.1.0
+│  ├─ Instances: 1
+│  ├─ Version: 1.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/plugin-syntax-async-generators@npm:^7.8.4 → npm:7.8.4
+│     ├─ @babel/plugin-syntax-bigint@npm:^7.8.3 → npm:7.8.3
+│     ├─ @babel/plugin-syntax-class-properties@npm:^7.12.13 → npm:7.12.13
+│     ├─ @babel/plugin-syntax-class-static-block@npm:^7.14.5 → npm:7.14.5
+│     ├─ @babel/plugin-syntax-import-attributes@npm:^7.24.7 → npm:7.26.0
+│     ├─ @babel/plugin-syntax-import-meta@npm:^7.10.4 → npm:7.10.4
+│     ├─ @babel/plugin-syntax-json-strings@npm:^7.8.3 → npm:7.8.3
+│     ├─ @babel/plugin-syntax-logical-assignment-operators@npm:^7.10.4 → npm:7.10.4
+│     ├─ @babel/plugin-syntax-nullish-coalescing-operator@npm:^7.8.3 → npm:7.8.3
+│     ├─ @babel/plugin-syntax-numeric-separator@npm:^7.10.4 → npm:7.10.4
+│     ├─ @babel/plugin-syntax-object-rest-spread@npm:^7.8.3 → npm:7.8.3
+│     ├─ @babel/plugin-syntax-optional-catch-binding@npm:^7.8.3 → npm:7.8.3
+│     ├─ @babel/plugin-syntax-optional-chaining@npm:^7.8.3 → npm:7.8.3
+│     ├─ @babel/plugin-syntax-private-property-in-object@npm:^7.14.5 → npm:7.14.5
+│     └─ @babel/plugin-syntax-top-level-await@npm:^7.14.5 → npm:7.14.5
+│
+├─ babel-preset-expo@npm:12.0.8
+│  ├─ Instances: 1
+│  ├─ Version: 12.0.8
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/plugin-proposal-decorators@npm:^7.12.9 → npm:7.25.9
+│     ├─ @babel/plugin-transform-export-namespace-from@npm:^7.22.11 → npm:7.25.9
+│     ├─ @babel/plugin-transform-object-rest-spread@npm:^7.12.13 → npm:7.25.9
+│     ├─ @babel/plugin-transform-parameters@npm:^7.22.15 → npm:7.25.9
+│     ├─ @babel/preset-react@npm:^7.22.15 → npm:7.26.3
+│     ├─ @babel/preset-typescript@npm:^7.23.0 → npm:7.26.0
+│     ├─ @react-native/babel-preset@npm:0.76.7 → npm:0.76.7
+│     ├─ babel-plugin-react-native-web@npm:~0.19.13 → npm:0.19.13
+│     └─ react-refresh@npm:^0.14.2 → npm:0.14.2
+│
+├─ babel-preset-jest@npm:29.6.3
+│  ├─ Instances: 1
+│  ├─ Version: 29.6.3
+│  │ 
+│  └─ Dependencies
+│     ├─ babel-plugin-jest-hoist@npm:^29.6.3 → npm:29.6.3
+│     └─ babel-preset-current-node-syntax@npm:^1.0.0 → npm:1.1.0
+│
+├─ balanced-match@npm:1.0.2
+│  └─ Version: 1.0.2
+│
+├─ base64-js@npm:1.5.1
+│  └─ Version: 1.5.1
+│
+├─ better-opn@npm:3.0.2
+│  ├─ Version: 3.0.2
+│  │ 
+│  └─ Dependencies
+│     └─ open@npm:^8.0.4 → npm:8.4.2
+│
+├─ big-integer@npm:1.6.52
+│  └─ Version: 1.6.52
+│
+├─ bmp-ts@npm:1.0.9
+│  └─ Version: 1.0.9
+│
+├─ bplist-creator@npm:0.0.7
+│  ├─ Version: 0.0.7
+│  │ 
+│  └─ Dependencies
+│     └─ stream-buffers@npm:~2.2.0 → npm:2.2.0
+│
+├─ bplist-creator@npm:0.1.1
+│  ├─ Version: 0.1.1
+│  │ 
+│  └─ Dependencies
+│     └─ stream-buffers@npm:2.2.x → npm:2.2.0
+│
+├─ bplist-parser@npm:0.3.2
+│  ├─ Version: 0.3.2
+│  │ 
+│  └─ Dependencies
+│     └─ big-integer@npm:1.6.x → npm:1.6.52
+│
+├─ brace-expansion@npm:1.1.11
+│  ├─ Version: 1.1.11
+│  │ 
+│  └─ Dependencies
+│     ├─ balanced-match@npm:^1.0.0 → npm:1.0.2
+│     └─ concat-map@npm:0.0.1 → npm:0.0.1
+│
+├─ brace-expansion@npm:2.0.1
+│  ├─ Version: 2.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ balanced-match@npm:^1.0.0 → npm:1.0.2
+│
+├─ braces@npm:3.0.3
+│  ├─ Version: 3.0.3
+│  │ 
+│  └─ Dependencies
+│     └─ fill-range@npm:^7.1.1 → npm:7.1.1
+│
+├─ browserslist@npm:4.24.4
+│  ├─ Version: 4.24.4
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ browserslist
+│  │ 
+│  └─ Dependencies
+│     ├─ caniuse-lite@npm:^1.0.30001688 → npm:1.0.30001700
+│     ├─ electron-to-chromium@npm:^1.5.73 → npm:1.5.101
+│     ├─ node-releases@npm:^2.0.19 → npm:2.0.19
+│     └─ update-browserslist-db@npm:^1.1.1 → npm:1.1.2 [2fdeb]
+│
+├─ bser@npm:2.1.1
+│  ├─ Version: 2.1.1
+│  │ 
+│  └─ Dependencies
+│     └─ node-int64@npm:^0.4.0 → npm:0.4.0
+│
+├─ buffer-alloc-unsafe@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ buffer-alloc@npm:1.2.0
+│  ├─ Version: 1.2.0
+│  │ 
+│  └─ Dependencies
+│     ├─ buffer-alloc-unsafe@npm:^1.1.0 → npm:1.1.0
+│     └─ buffer-fill@npm:^1.0.0 → npm:1.0.0
+│
+├─ buffer-fill@npm:1.0.0
+│  └─ Version: 1.0.0
+│
+├─ buffer-from@npm:1.1.2
+│  └─ Version: 1.1.2
+│
+├─ buffer@npm:5.7.1
+│  ├─ Version: 5.7.1
+│  │ 
+│  └─ Dependencies
+│     ├─ base64-js@npm:^1.3.1 → npm:1.5.1
+│     └─ ieee754@npm:^1.1.13 → npm:1.2.1
+│
+├─ buffer@npm:6.0.3
+│  ├─ Version: 6.0.3
+│  │ 
+│  └─ Dependencies
+│     ├─ base64-js@npm:^1.3.1 → npm:1.5.1
+│     └─ ieee754@npm:^1.2.1 → npm:1.2.1
+│
+├─ bytes@npm:3.1.2
+│  └─ Version: 3.1.2
+│
+├─ cacache@npm:18.0.4
+│  ├─ Version: 18.0.4
+│  │ 
+│  └─ Dependencies
+│     ├─ @npmcli/fs@npm:^3.1.0 → npm:3.1.1
+│     ├─ fs-minipass@npm:^3.0.0 → npm:3.0.3
+│     ├─ glob@npm:^10.2.2 → npm:10.4.5
+│     ├─ lru-cache@npm:^10.0.1 → npm:10.4.3
+│     ├─ minipass-collect@npm:^2.0.1 → npm:2.0.1
+│     ├─ minipass-flush@npm:^1.0.5 → npm:1.0.5
+│     ├─ minipass-pipeline@npm:^1.2.4 → npm:1.2.4
+│     ├─ minipass@npm:^7.0.3 → npm:7.1.2
+│     ├─ p-map@npm:^4.0.0 → npm:4.0.0
+│     ├─ ssri@npm:^10.0.0 → npm:10.0.6
+│     ├─ tar@npm:^6.1.11 → npm:6.2.1
+│     └─ unique-filename@npm:^3.0.0 → npm:3.0.0
+│
+├─ cacache@npm:19.0.1
+│  ├─ Version: 19.0.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @npmcli/fs@npm:^4.0.0 → npm:4.0.0
+│     ├─ fs-minipass@npm:^3.0.0 → npm:3.0.3
+│     ├─ glob@npm:^10.2.2 → npm:10.4.5
+│     ├─ lru-cache@npm:^10.0.1 → npm:10.4.3
+│     ├─ minipass-collect@npm:^2.0.1 → npm:2.0.1
+│     ├─ minipass-flush@npm:^1.0.5 → npm:1.0.5
+│     ├─ minipass-pipeline@npm:^1.2.4 → npm:1.2.4
+│     ├─ minipass@npm:^7.0.3 → npm:7.1.2
+│     ├─ p-map@npm:^7.0.2 → npm:7.0.3
+│     ├─ ssri@npm:^12.0.0 → npm:12.0.0
+│     ├─ tar@npm:^7.4.3 → npm:7.4.3
+│     └─ unique-filename@npm:^4.0.0 → npm:4.0.0
+│
+├─ call-bind-apply-helpers@npm:1.0.2
+│  ├─ Version: 1.0.2
+│  │ 
+│  └─ Dependencies
+│     ├─ es-errors@npm:^1.3.0 → npm:1.3.0
+│     └─ function-bind@npm:^1.1.2 → npm:1.1.2
+│
+├─ caller-callsite@npm:2.0.0
+│  ├─ Version: 2.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ callsites@npm:^2.0.0 → npm:2.0.0
+│
+├─ caller-path@npm:2.0.0
+│  ├─ Version: 2.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ caller-callsite@npm:^2.0.0 → npm:2.0.0
+│
+├─ callsites@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ callsites@npm:3.1.0
+│  └─ Version: 3.1.0
+│
+├─ camelcase@npm:5.3.1
+│  └─ Version: 5.3.1
+│
+├─ camelcase@npm:6.3.0
+│  └─ Version: 6.3.0
+│
+├─ caniuse-lite@npm:1.0.30001700
+│  └─ Version: 1.0.30001700
+│
+├─ chalk@npm:2.4.2
+│  ├─ Version: 2.4.2
+│  │ 
+│  └─ Dependencies
+│     ├─ ansi-styles@npm:^3.2.1 → npm:3.2.1
+│     ├─ escape-string-regexp@npm:^1.0.5 → npm:1.0.5
+│     └─ supports-color@npm:^5.3.0 → npm:5.5.0
+│
+├─ chalk@npm:4.1.2
+│  ├─ Version: 4.1.2
+│  │ 
+│  └─ Dependencies
+│     ├─ ansi-styles@npm:^4.1.0 → npm:4.3.0
+│     └─ supports-color@npm:^7.1.0 → npm:7.2.0
+│
+├─ charenc@npm:0.0.2
+│  └─ Version: 0.0.2
+│
+├─ chownr@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ chownr@npm:3.0.0
+│  └─ Version: 3.0.0
+│
+├─ chrome-launcher@npm:0.15.2
+│  ├─ Version: 0.15.2
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ print-chrome-path
+│  │ 
+│  └─ Dependencies
+│     ├─ @types/node@npm:* → npm:22.13.4
+│     ├─ escape-string-regexp@npm:^4.0.0 → npm:4.0.0
+│     ├─ is-wsl@npm:^2.2.0 → npm:2.2.0
+│     └─ lighthouse-logger@npm:^1.0.0 → npm:1.4.2
+│
+├─ chromium-edge-launcher@npm:0.2.0
+│  ├─ Version: 0.2.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @types/node@npm:* → npm:22.13.4
+│     ├─ escape-string-regexp@npm:^4.0.0 → npm:4.0.0
+│     ├─ is-wsl@npm:^2.2.0 → npm:2.2.0
+│     ├─ lighthouse-logger@npm:^1.0.0 → npm:1.4.2
+│     ├─ mkdirp@npm:^1.0.4 → npm:1.0.4
+│     └─ rimraf@npm:^3.0.2 → npm:3.0.2
+│
+├─ ci-info@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ ci-info@npm:3.9.0
+│  └─ Version: 3.9.0
+│
+├─ clean-stack@npm:2.2.0
+│  └─ Version: 2.2.0
+│
+├─ cli-cursor@npm:2.1.0
+│  ├─ Version: 2.1.0
+│  │ 
+│  └─ Dependencies
+│     └─ restore-cursor@npm:^2.0.0 → npm:2.0.0
+│
+├─ cli-spinners@npm:2.9.2
+│  └─ Version: 2.9.2
+│
+├─ cliui@npm:8.0.1
+│  ├─ Version: 8.0.1
+│  │ 
+│  └─ Dependencies
+│     ├─ string-width@npm:^4.2.0 → npm:4.2.3
+│     ├─ strip-ansi@npm:^6.0.1 → npm:6.0.1
+│     └─ wrap-ansi@npm:^7.0.0 → npm:7.0.0
+│
+├─ clone-deep@npm:4.0.1
+│  ├─ Version: 4.0.1
+│  │ 
+│  └─ Dependencies
+│     ├─ is-plain-object@npm:^2.0.4 → npm:2.0.4
+│     ├─ kind-of@npm:^6.0.2 → npm:6.0.3
+│     └─ shallow-clone@npm:^3.0.0 → npm:3.0.1
+│
+├─ clone@npm:1.0.4
+│  └─ Version: 1.0.4
+│
+├─ color-convert@npm:1.9.3
+│  ├─ Version: 1.9.3
+│  │ 
+│  └─ Dependencies
+│     └─ color-name@npm:1.1.3 → npm:1.1.3
+│
+├─ color-convert@npm:2.0.1
+│  ├─ Version: 2.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ color-name@npm:~1.1.4 → npm:1.1.4
+│
+├─ color-name@npm:1.1.3
+│  └─ Version: 1.1.3
+│
+├─ color-name@npm:1.1.4
+│  └─ Version: 1.1.4
+│
+├─ color-string@npm:1.9.1
+│  ├─ Version: 1.9.1
+│  │ 
+│  └─ Dependencies
+│     ├─ color-name@npm:^1.0.0 → npm:1.1.4
+│     └─ simple-swizzle@npm:^0.2.2 → npm:0.2.2
+│
+├─ color@npm:4.2.3
+│  ├─ Version: 4.2.3
+│  │ 
+│  └─ Dependencies
+│     ├─ color-convert@npm:^2.0.1 → npm:2.0.1
+│     └─ color-string@npm:^1.9.0 → npm:1.9.1
+│
+├─ combined-stream@npm:1.0.8
+│  ├─ Version: 1.0.8
+│  │ 
+│  └─ Dependencies
+│     └─ delayed-stream@npm:~1.0.0 → npm:1.0.0
+│
+├─ command-exists@npm:1.2.9
+│  └─ Version: 1.2.9
+│
+├─ commander@npm:12.1.0
+│  └─ Version: 12.1.0
+│
+├─ commander@npm:2.20.3
+│  └─ Version: 2.20.3
+│
+├─ commander@npm:4.1.1
+│  └─ Version: 4.1.1
+│
+├─ commander@npm:7.2.0
+│  └─ Version: 7.2.0
+│
+├─ commondir@npm:1.0.1
+│  └─ Version: 1.0.1
+│
+├─ component-type@npm:1.2.2
+│  └─ Version: 1.2.2
+│
+├─ compressible@npm:2.0.18
+│  ├─ Version: 2.0.18
+│  │ 
+│  └─ Dependencies
+│     └─ mime-db@npm:>= 1.43.0 < 2 → npm:1.53.0
+│
+├─ compression@npm:1.8.0
+│  ├─ Version: 1.8.0
+│  │ 
+│  └─ Dependencies
+│     ├─ bytes@npm:3.1.2 → npm:3.1.2
+│     ├─ compressible@npm:~2.0.18 → npm:2.0.18
+│     ├─ negotiator@npm:~0.6.4 → npm:0.6.4
+│     ├─ on-headers@npm:~1.0.2 → npm:1.0.2
+│     ├─ safe-buffer@npm:5.2.1 → npm:5.2.1
+│     ├─ vary@npm:~1.1.2 → npm:1.1.2
+│     └─ debug@npm:^2.6.9 → npm:2.6.9 [04e17]
+│
+├─ concat-map@npm:0.0.1
+│  └─ Version: 0.0.1
+│
+├─ connect@npm:3.7.0
+│  ├─ Version: 3.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ finalhandler@npm:1.1.2 → npm:1.1.2
+│     ├─ parseurl@npm:~1.3.3 → npm:1.3.3
+│     ├─ utils-merge@npm:1.0.1 → npm:1.0.1
+│     └─ debug@npm:^2.6.9 → npm:2.6.9 [04e17]
+│
+├─ convert-source-map@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ core-js-compat@npm:3.40.0
+│  ├─ Version: 3.40.0
+│  │ 
+│  └─ Dependencies
+│     └─ browserslist@npm:^4.24.3 → npm:4.24.4
+│
+├─ cosmiconfig@npm:5.2.1
+│  ├─ Version: 5.2.1
+│  │ 
+│  └─ Dependencies
+│     ├─ import-fresh@npm:^2.0.0 → npm:2.0.0
+│     ├─ is-directory@npm:^0.3.1 → npm:0.3.1
+│     ├─ js-yaml@npm:^3.13.1 → npm:3.14.1
+│     └─ parse-json@npm:^4.0.0 → npm:4.0.0
+│
+├─ cross-fetch@npm:3.2.0
+│  ├─ Version: 3.2.0
+│  │ 
+│  └─ Dependencies
+│     └─ node-fetch@npm:^2.6.1 → npm:2.7.0 [61067]
+│
+├─ cross-spawn@npm:6.0.6
+│  ├─ Version: 6.0.6
+│  │ 
+│  └─ Dependencies
+│     ├─ nice-try@npm:^1.0.4 → npm:1.0.5
+│     ├─ path-key@npm:^2.0.1 → npm:2.0.1
+│     ├─ semver@npm:^5.5.0 → npm:5.7.2
+│     ├─ shebang-command@npm:^1.2.0 → npm:1.2.0
+│     └─ which@npm:^1.2.9 → npm:1.3.1
+│
+├─ cross-spawn@npm:7.0.6
+│  ├─ Version: 7.0.6
+│  │ 
+│  └─ Dependencies
+│     ├─ path-key@npm:^3.1.0 → npm:3.1.1
+│     ├─ shebang-command@npm:^2.0.0 → npm:2.0.0
+│     └─ which@npm:^2.0.1 → npm:2.0.2
+│
+├─ crypt@npm:0.0.2
+│  └─ Version: 0.0.2
+│
+├─ crypto-random-string@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ css-in-js-utils@npm:3.1.0
+│  ├─ Version: 3.1.0
+│  │ 
+│  └─ Dependencies
+│     └─ hyphenate-style-name@npm:^1.0.3 → npm:1.1.0
+│
+├─ csstype@npm:3.1.3
+│  └─ Version: 3.1.3
+│
+├─ debug@npm:2.6.9
+│  ├─ Instances: 1
+│  ├─ Version: 2.6.9
+│  │ 
+│  └─ Dependencies
+│     └─ ms@npm:2.0.0 → npm:2.0.0
+│
+├─ debug@npm:3.2.7
+│  ├─ Instances: 1
+│  ├─ Version: 3.2.7
+│  │ 
+│  └─ Dependencies
+│     └─ ms@npm:^2.1.1 → npm:2.1.3
+│
+├─ debug@npm:4.4.0
+│  ├─ Instances: 1
+│  ├─ Version: 4.4.0
+│  │ 
+│  └─ Dependencies
+│     └─ ms@npm:^2.1.3 → npm:2.1.3
+│
+├─ decode-uri-component@npm:0.2.2
+│  └─ Version: 0.2.2
+│
+├─ deep-extend@npm:0.6.0
+│  └─ Version: 0.6.0
+│
+├─ deep-is@npm:0.1.4
+│  └─ Version: 0.1.4
+│
+├─ deepmerge@npm:4.3.1
+│  └─ Version: 4.3.1
+│
+├─ default-gateway@npm:4.2.0
+│  ├─ Version: 4.2.0
+│  │ 
+│  └─ Dependencies
+│     ├─ execa@npm:^1.0.0 → npm:1.0.0
+│     └─ ip-regex@npm:^2.1.0 → npm:2.1.0
+│
+├─ defaults@npm:1.0.4
+│  ├─ Version: 1.0.4
+│  │ 
+│  └─ Dependencies
+│     └─ clone@npm:^1.0.2 → npm:1.0.4
+│
+├─ define-lazy-prop@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ del@npm:6.1.1
+│  ├─ Version: 6.1.1
+│  │ 
+│  └─ Dependencies
+│     ├─ globby@npm:^11.0.1 → npm:11.1.0
+│     ├─ graceful-fs@npm:^4.2.4 → npm:4.2.11
+│     ├─ is-glob@npm:^4.0.1 → npm:4.0.3
+│     ├─ is-path-cwd@npm:^2.2.0 → npm:2.2.0
+│     ├─ is-path-inside@npm:^3.0.2 → npm:3.0.3
+│     ├─ p-map@npm:^4.0.0 → npm:4.0.0
+│     ├─ rimraf@npm:^3.0.2 → npm:3.0.2
+│     └─ slash@npm:^3.0.0 → npm:3.0.0
+│
+├─ delayed-stream@npm:1.0.0
+│  └─ Version: 1.0.0
+│
+├─ depd@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ destroy@npm:1.2.0
+│  └─ Version: 1.2.0
+│
+├─ detect-libc@npm:1.0.3
+│  ├─ Version: 1.0.3
+│  │ 
+│  └─ Exported Binaries
+│     └─ detect-libc
+│
+├─ dir-glob@npm:3.0.1
+│  ├─ Version: 3.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ path-type@npm:^4.0.0 → npm:4.0.0
+│
+├─ dotenv-expand@npm:11.0.7
+│  ├─ Version: 11.0.7
+│  │ 
+│  └─ Dependencies
+│     └─ dotenv@npm:^16.4.5 → npm:16.4.7
+│
+├─ dotenv@npm:16.4.7
+│  └─ Version: 16.4.7
+│
+├─ dunder-proto@npm:1.0.1
+│  ├─ Version: 1.0.1
+│  │ 
+│  └─ Dependencies
+│     ├─ call-bind-apply-helpers@npm:^1.0.1 → npm:1.0.2
+│     ├─ es-errors@npm:^1.3.0 → npm:1.3.0
+│     └─ gopd@npm:^1.2.0 → npm:1.2.0
+│
+├─ eastasianwidth@npm:0.2.0
+│  └─ Version: 0.2.0
+│
+├─ ee-first@npm:1.1.1
+│  └─ Version: 1.1.1
+│
+├─ electron-to-chromium@npm:1.5.101
+│  └─ Version: 1.5.101
+│
+├─ emoji-regex@npm:8.0.0
+│  └─ Version: 8.0.0
+│
+├─ emoji-regex@npm:9.2.2
+│  └─ Version: 9.2.2
+│
+├─ encodeurl@npm:1.0.2
+│  └─ Version: 1.0.2
+│
+├─ encodeurl@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ encoding@npm:0.1.13
+│  ├─ Version: 0.1.13
+│  │ 
+│  └─ Dependencies
+│     └─ iconv-lite@npm:^0.6.2 → npm:0.6.3
+│
+├─ end-of-stream@npm:1.4.4
+│  ├─ Version: 1.4.4
+│  │ 
+│  └─ Dependencies
+│     └─ once@npm:^1.4.0 → npm:1.4.0
+│
+├─ env-editor@npm:0.4.2
+│  └─ Version: 0.4.2
+│
+├─ env-paths@npm:2.2.1
+│  └─ Version: 2.2.1
+│
+├─ eol@npm:0.9.1
+│  └─ Version: 0.9.1
+│
+├─ err-code@npm:2.0.3
+│  └─ Version: 2.0.3
+│
+├─ error-ex@npm:1.3.2
+│  ├─ Version: 1.3.2
+│  │ 
+│  └─ Dependencies
+│     └─ is-arrayish@npm:^0.2.1 → npm:0.2.1
+│
+├─ error-stack-parser@npm:2.1.4
+│  ├─ Version: 2.1.4
+│  │ 
+│  └─ Dependencies
+│     └─ stackframe@npm:^1.3.4 → npm:1.3.4
+│
+├─ es-define-property@npm:1.0.1
+│  └─ Version: 1.0.1
+│
+├─ es-errors@npm:1.3.0
+│  └─ Version: 1.3.0
+│
+├─ es-object-atoms@npm:1.1.1
+│  ├─ Version: 1.1.1
+│  │ 
+│  └─ Dependencies
+│     └─ es-errors@npm:^1.3.0 → npm:1.3.0
+│
+├─ es-set-tostringtag@npm:2.1.0
+│  ├─ Version: 2.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ es-errors@npm:^1.3.0 → npm:1.3.0
+│     ├─ get-intrinsic@npm:^1.2.6 → npm:1.2.7
+│     ├─ has-tostringtag@npm:^1.0.2 → npm:1.0.2
+│     └─ hasown@npm:^2.0.2 → npm:2.0.2
+│
+├─ escalade@npm:3.2.0
+│  └─ Version: 3.2.0
+│
+├─ escape-html@npm:1.0.3
+│  └─ Version: 1.0.3
+│
+├─ escape-string-regexp@npm:1.0.5
+│  └─ Version: 1.0.5
+│
+├─ escape-string-regexp@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ escape-string-regexp@npm:4.0.0
+│  └─ Version: 4.0.0
+│
+├─ eslint-scope@npm:8.2.0
+│  ├─ Version: 8.2.0
+│  │ 
+│  └─ Dependencies
+│     ├─ esrecurse@npm:^4.3.0 → npm:4.3.0
+│     └─ estraverse@npm:^5.2.0 → npm:5.3.0
+│
+├─ eslint-visitor-keys@npm:3.4.3
+│  └─ Version: 3.4.3
+│
+├─ eslint-visitor-keys@npm:4.2.0
+│  └─ Version: 4.2.0
+│
+├─ eslint@npm:9.20.1
+│  ├─ Instances: 1
+│  ├─ Version: 9.20.1
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ eslint
+│  │ 
+│  └─ Dependencies
+│     ├─ @eslint-community/eslint-utils@npm:^4.2.0 → npm:4.4.1
+│     ├─ @eslint-community/regexpp@npm:^4.12.1 → npm:4.12.1
+│     ├─ @eslint/config-array@npm:^0.19.0 → npm:0.19.2
+│     ├─ @eslint/core@npm:^0.11.0 → npm:0.11.0
+│     ├─ @eslint/eslintrc@npm:^3.2.0 → npm:3.2.0
+│     ├─ @eslint/js@npm:9.20.0 → npm:9.20.0
+│     ├─ @eslint/plugin-kit@npm:^0.2.5 → npm:0.2.5
+│     ├─ @humanfs/node@npm:^0.16.6 → npm:0.16.6
+│     ├─ @humanwhocodes/module-importer@npm:^1.0.1 → npm:1.0.1
+│     ├─ @humanwhocodes/retry@npm:^0.4.1 → npm:0.4.1
+│     ├─ @types/estree@npm:^1.0.6 → npm:1.0.6
+│     ├─ @types/json-schema@npm:^7.0.15 → npm:7.0.15
+│     ├─ ajv@npm:^6.12.4 → npm:6.12.6
+│     ├─ chalk@npm:^4.0.0 → npm:4.1.2
+│     ├─ cross-spawn@npm:^7.0.6 → npm:7.0.6
+│     ├─ debug@npm:^4.3.2 → npm:4.4.0
+│     ├─ escape-string-regexp@npm:^4.0.0 → npm:4.0.0
+│     ├─ eslint-scope@npm:^8.2.0 → npm:8.2.0
+│     ├─ eslint-visitor-keys@npm:^4.2.0 → npm:4.2.0
+│     ├─ espree@npm:^10.3.0 → npm:10.3.0
+│     ├─ esquery@npm:^1.5.0 → npm:1.6.0
+│     ├─ esutils@npm:^2.0.2 → npm:2.0.3
+│     ├─ fast-deep-equal@npm:^3.1.3 → npm:3.1.3
+│     ├─ file-entry-cache@npm:^8.0.0 → npm:8.0.0
+│     ├─ find-up@npm:^5.0.0 → npm:5.0.0
+│     ├─ glob-parent@npm:^6.0.2 → npm:6.0.2
+│     ├─ ignore@npm:^5.2.0 → npm:5.3.2
+│     ├─ imurmurhash@npm:^0.1.4 → npm:0.1.4
+│     ├─ is-glob@npm:^4.0.0 → npm:4.0.3
+│     ├─ json-stable-stringify-without-jsonify@npm:^1.0.1 → npm:1.0.1
+│     ├─ lodash.merge@npm:^4.6.2 → npm:4.6.2
+│     ├─ minimatch@npm:^3.1.2 → npm:3.1.2
+│     ├─ natural-compare@npm:^1.4.0 → npm:1.4.0
+│     └─ optionator@npm:^0.9.3 → npm:0.9.4
+│
+├─ espree@npm:10.3.0
+│  ├─ Version: 10.3.0
+│  │ 
+│  └─ Dependencies
+│     ├─ acorn@npm:^8.14.0 → npm:8.14.0
+│     ├─ eslint-visitor-keys@npm:^4.2.0 → npm:4.2.0
+│     └─ acorn-jsx@npm:^5.3.2 → npm:5.3.2 [e5b10]
+│
+├─ esprima@npm:4.0.1
+│  ├─ Version: 4.0.1
+│  │ 
+│  └─ Exported Binaries
+│     ├─ esparse
+│     └─ esvalidate
+│
+├─ esquery@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     └─ estraverse@npm:^5.1.0 → npm:5.3.0
+│
+├─ esrecurse@npm:4.3.0
+│  ├─ Version: 4.3.0
+│  │ 
+│  └─ Dependencies
+│     └─ estraverse@npm:^5.2.0 → npm:5.3.0
+│
+├─ estraverse@npm:5.3.0
+│  └─ Version: 5.3.0
+│
+├─ esutils@npm:2.0.3
+│  └─ Version: 2.0.3
+│
+├─ etag@npm:1.8.1
+│  └─ Version: 1.8.1
+│
+├─ event-target-shim@npm:5.0.1
+│  └─ Version: 5.0.1
+│
+├─ events@npm:3.3.0
+│  └─ Version: 3.3.0
+│
+├─ exec-async@npm:2.2.0
+│  └─ Version: 2.2.0
+│
+├─ execa@npm:1.0.0
+│  ├─ Version: 1.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ cross-spawn@npm:^6.0.0 → npm:6.0.6
+│     ├─ get-stream@npm:^4.0.0 → npm:4.1.0
+│     ├─ is-stream@npm:^1.1.0 → npm:1.1.0
+│     ├─ npm-run-path@npm:^2.0.0 → npm:2.0.2
+│     ├─ p-finally@npm:^1.0.0 → npm:1.0.0
+│     ├─ signal-exit@npm:^3.0.0 → npm:3.0.7
+│     └─ strip-eof@npm:^1.0.0 → npm:1.0.0
+│
+├─ exif-parser@npm:0.1.12
+│  └─ Version: 0.1.12
+│
+├─ expo-asset@npm:11.0.3
+│  ├─ Instances: 1
+│  ├─ Version: 11.0.3
+│  │ 
+│  └─ Dependencies
+│     ├─ @expo/image-utils@npm:^0.6.4 → npm:0.6.5
+│     ├─ expo-constants@npm:~17.0.5 → npm:17.0.6
+│     ├─ invariant@npm:^2.2.4 → npm:2.2.4
+│     └─ md5-file@npm:^3.2.3 → npm:3.2.3
+│
+├─ expo-constants@npm:17.0.6
+│  ├─ Instances: 1
+│  ├─ Version: 17.0.6
+│  │ 
+│  └─ Dependencies
+│     ├─ @expo/config@npm:~10.0.9 → npm:10.0.10
+│     └─ @expo/env@npm:~0.4.1 → npm:0.4.2
+│
+├─ expo-device@npm:7.0.2
+│  ├─ Instances: 1
+│  ├─ Version: 7.0.2
+│  │ 
+│  └─ Dependencies
+│     └─ ua-parser-js@npm:^0.7.33 → npm:0.7.40
+│
+├─ expo-file-system@npm:18.0.10
+│  ├─ Instances: 1
+│  ├─ Version: 18.0.10
+│  │ 
+│  └─ Dependencies
+│     └─ web-streams-polyfill@npm:^3.3.2 → npm:3.3.3
+│
+├─ expo-font@npm:13.0.3
+│  ├─ Instances: 1
+│  ├─ Version: 13.0.3
+│  │ 
+│  └─ Dependencies
+│     └─ fontfaceobserver@npm:^2.1.0 → npm:2.3.0
+│
+├─ expo-keep-awake@npm:14.0.2
+│  ├─ Instances: 1
+│  └─ Version: 14.0.2
+│
+├─ expo-modules-autolinking@npm:2.0.7
+│  ├─ Version: 2.0.7
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ expo-modules-autolinking
+│  │ 
+│  └─ Dependencies
+│     ├─ @expo/spawn-async@npm:^1.7.2 → npm:1.7.2
+│     ├─ chalk@npm:^4.1.0 → npm:4.1.2
+│     ├─ commander@npm:^7.2.0 → npm:7.2.0
+│     ├─ fast-glob@npm:^3.2.5 → npm:3.3.3
+│     ├─ find-up@npm:^5.0.0 → npm:5.0.0
+│     ├─ fs-extra@npm:^9.1.0 → npm:9.1.0
+│     ├─ require-from-string@npm:^2.0.2 → npm:2.0.2
+│     └─ resolve-from@npm:^5.0.0 → npm:5.0.0
+│
+├─ expo-modules-core@npm:2.2.2
+│  ├─ Version: 2.2.2
+│  │ 
+│  └─ Dependencies
+│     └─ invariant@npm:^2.2.4 → npm:2.2.4
+│
+├─ expo-permissions@npm:14.4.0
+│  ├─ Instances: 1
+│  └─ Version: 14.4.0
+│
+├─ expo-sensors@npm:14.0.2
+│  ├─ Instances: 1
+│  ├─ Version: 14.0.2
+│  │ 
+│  └─ Dependencies
+│     └─ invariant@npm:^2.2.4 → npm:2.2.4
+│
+├─ expo@npm:52.0.35
+│  ├─ Instances: 1
+│  ├─ Version: 52.0.35
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ expo
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/runtime@npm:^7.20.0 → npm:7.26.9
+│     ├─ @expo/cli@npm:0.22.16 → npm:0.22.16
+│     ├─ @expo/config-plugins@npm:~9.0.15 → npm:9.0.15
+│     ├─ @expo/config@npm:~10.0.10 → npm:10.0.10
+│     ├─ @expo/fingerprint@npm:0.11.10 → npm:0.11.10
+│     ├─ @expo/metro-config@npm:0.19.10 → npm:0.19.10
+│     ├─ @expo/vector-icons@npm:^14.0.0 → npm:14.0.4
+│     ├─ babel-preset-expo@npm:~12.0.8 → npm:12.0.8
+│     ├─ expo-asset@npm:~11.0.3 → npm:11.0.3
+│     ├─ expo-constants@npm:~17.0.6 → npm:17.0.6
+│     ├─ expo-file-system@npm:~18.0.10 → npm:18.0.10
+│     ├─ expo-font@npm:~13.0.3 → npm:13.0.3
+│     ├─ expo-keep-awake@npm:~14.0.2 → npm:14.0.2
+│     ├─ expo-modules-autolinking@npm:2.0.7 → npm:2.0.7
+│     ├─ expo-modules-core@npm:2.2.2 → npm:2.2.2
+│     ├─ fbemitter@npm:^3.0.0 → npm:3.0.0
+│     ├─ web-streams-polyfill@npm:^3.3.2 → npm:3.3.3
+│     └─ whatwg-url-without-unicode@npm:8.0.0-3 → npm:8.0.0-3
+│
+├─ exponential-backoff@npm:3.1.2
+│  └─ Version: 3.1.2
+│
+├─ fast-deep-equal@npm:3.1.3
+│  └─ Version: 3.1.3
+│
+├─ fast-glob@npm:3.3.3
+│  ├─ Version: 3.3.3
+│  │ 
+│  └─ Dependencies
+│     ├─ @nodelib/fs.stat@npm:^2.0.2 → npm:2.0.5
+│     ├─ @nodelib/fs.walk@npm:^1.2.3 → npm:1.2.8
+│     ├─ glob-parent@npm:^5.1.2 → npm:5.1.2
+│     ├─ merge2@npm:^1.3.0 → npm:1.4.1
+│     └─ micromatch@npm:^4.0.8 → npm:4.0.8
+│
+├─ fast-json-stable-stringify@npm:2.1.0
+│  └─ Version: 2.1.0
+│
+├─ fast-levenshtein@npm:2.0.6
+│  └─ Version: 2.0.6
+│
+├─ fast-loops@npm:1.1.4
+│  └─ Version: 1.1.4
+│
+├─ fastq@npm:1.19.0
+│  ├─ Version: 1.19.0
+│  │ 
+│  └─ Dependencies
+│     └─ reusify@npm:^1.0.4 → npm:1.0.4
+│
+├─ faye-websocket@npm:0.11.4
+│  ├─ Version: 0.11.4
+│  │ 
+│  └─ Dependencies
+│     └─ websocket-driver@npm:>=0.5.1 → npm:0.7.4
+│
+├─ fb-watchman@npm:2.0.2
+│  ├─ Version: 2.0.2
+│  │ 
+│  └─ Dependencies
+│     └─ bser@npm:2.1.1 → npm:2.1.1
+│
+├─ fbemitter@npm:3.0.0
+│  ├─ Version: 3.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ fbjs@npm:^3.0.0 → npm:3.0.5
+│
+├─ fbjs-css-vars@npm:1.0.2
+│  └─ Version: 1.0.2
+│
+├─ fbjs@npm:3.0.5
+│  ├─ Version: 3.0.5
+│  │ 
+│  └─ Dependencies
+│     ├─ cross-fetch@npm:^3.1.5 → npm:3.2.0
+│     ├─ fbjs-css-vars@npm:^1.0.0 → npm:1.0.2
+│     ├─ loose-envify@npm:^1.0.0 → npm:1.4.0
+│     ├─ object-assign@npm:^4.1.0 → npm:4.1.1
+│     ├─ promise@npm:^7.1.1 → npm:7.3.1
+│     ├─ setimmediate@npm:^1.0.5 → npm:1.0.5
+│     └─ ua-parser-js@npm:^1.0.35 → npm:1.0.40
+│
+├─ fetch-retry@npm:4.1.1
+│  └─ Version: 4.1.1
+│
+├─ file-entry-cache@npm:8.0.0
+│  ├─ Version: 8.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ flat-cache@npm:^4.0.0 → npm:4.0.1
+│
+├─ file-type@npm:16.5.4
+│  ├─ Version: 16.5.4
+│  │ 
+│  └─ Dependencies
+│     ├─ readable-web-to-node-stream@npm:^3.0.0 → npm:3.0.4
+│     ├─ strtok3@npm:^6.2.4 → npm:6.3.0
+│     └─ token-types@npm:^4.1.1 → npm:4.2.1
+│
+├─ fill-range@npm:7.1.1
+│  ├─ Version: 7.1.1
+│  │ 
+│  └─ Dependencies
+│     └─ to-regex-range@npm:^5.0.1 → npm:5.0.1
+│
+├─ filter-obj@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ finalhandler@npm:1.1.2
+│  ├─ Version: 1.1.2
+│  │ 
+│  └─ Dependencies
+│     ├─ encodeurl@npm:~1.0.2 → npm:1.0.2
+│     ├─ escape-html@npm:~1.0.3 → npm:1.0.3
+│     ├─ on-finished@npm:~2.3.0 → npm:2.3.0
+│     ├─ parseurl@npm:~1.3.3 → npm:1.3.3
+│     ├─ statuses@npm:~1.5.0 → npm:1.5.0
+│     ├─ unpipe@npm:~1.0.0 → npm:1.0.0
+│     └─ debug@npm:^2.6.9 → npm:2.6.9 [04e17]
+│
+├─ find-cache-dir@npm:2.1.0
+│  ├─ Version: 2.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ commondir@npm:^1.0.1 → npm:1.0.1
+│     ├─ make-dir@npm:^2.0.0 → npm:2.1.0
+│     └─ pkg-dir@npm:^3.0.0 → npm:3.0.0
+│
+├─ find-up@npm:3.0.0
+│  ├─ Version: 3.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ locate-path@npm:^3.0.0 → npm:3.0.0
+│
+├─ find-up@npm:4.1.0
+│  ├─ Version: 4.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ locate-path@npm:^5.0.0 → npm:5.0.0
+│     └─ path-exists@npm:^4.0.0 → npm:4.0.0
+│
+├─ find-up@npm:5.0.0
+│  ├─ Version: 5.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ locate-path@npm:^6.0.0 → npm:6.0.0
+│     └─ path-exists@npm:^4.0.0 → npm:4.0.0
+│
+├─ firebase@npm:11.3.1
+│  ├─ Version: 11.3.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @firebase/app-compat@npm:0.2.50 → npm:0.2.50
+│     ├─ @firebase/app-types@npm:0.9.3 → npm:0.9.3
+│     ├─ @firebase/app@npm:0.11.1 → npm:0.11.1
+│     ├─ @firebase/database-compat@npm:2.0.3 → npm:2.0.3
+│     ├─ @firebase/database@npm:1.0.12 → npm:1.0.12
+│     ├─ @firebase/util@npm:1.10.3 → npm:1.10.3
+│     ├─ @firebase/analytics-compat@npm:0.2.17 → npm:0.2.17 [2c5ad]
+│     ├─ @firebase/analytics@npm:0.10.11 → npm:0.10.11 [2c5ad]
+│     ├─ @firebase/app-check-compat@npm:0.3.18 → npm:0.3.18 [2c5ad]
+│     ├─ @firebase/app-check@npm:0.8.11 → npm:0.8.11 [2c5ad]
+│     ├─ @firebase/auth-compat@npm:0.5.18 → npm:0.5.18 [2c5ad]
+│     ├─ @firebase/auth@npm:1.9.0 → npm:1.9.0 [2c5ad]
+│     ├─ @firebase/data-connect@npm:0.3.0 → npm:0.3.0 [2c5ad]
+│     ├─ @firebase/firestore-compat@npm:0.3.43 → npm:0.3.43 [2c5ad]
+│     ├─ @firebase/firestore@npm:4.7.8 → npm:4.7.8 [2c5ad]
+│     ├─ @firebase/functions-compat@npm:0.3.19 → npm:0.3.19 [2c5ad]
+│     ├─ @firebase/functions@npm:0.12.2 → npm:0.12.2 [2c5ad]
+│     ├─ @firebase/installations-compat@npm:0.2.12 → npm:0.2.12 [2c5ad]
+│     ├─ @firebase/installations@npm:0.6.12 → npm:0.6.12 [2c5ad]
+│     ├─ @firebase/messaging-compat@npm:0.2.16 → npm:0.2.16 [2c5ad]
+│     ├─ @firebase/messaging@npm:0.12.16 → npm:0.12.16 [2c5ad]
+│     ├─ @firebase/performance-compat@npm:0.2.13 → npm:0.2.13 [2c5ad]
+│     ├─ @firebase/performance@npm:0.7.0 → npm:0.7.0 [2c5ad]
+│     ├─ @firebase/remote-config-compat@npm:0.2.12 → npm:0.2.12 [2c5ad]
+│     ├─ @firebase/remote-config@npm:0.5.0 → npm:0.5.0 [2c5ad]
+│     ├─ @firebase/storage-compat@npm:0.3.16 → npm:0.3.16 [2c5ad]
+│     ├─ @firebase/storage@npm:0.13.6 → npm:0.13.6 [2c5ad]
+│     └─ @firebase/vertexai@npm:1.0.4 → npm:1.0.4 [2c5ad]
+│
+├─ flat-cache@npm:4.0.1
+│  ├─ Version: 4.0.1
+│  │ 
+│  └─ Dependencies
+│     ├─ flatted@npm:^3.2.9 → npm:3.3.2
+│     └─ keyv@npm:^4.5.4 → npm:4.5.4
+│
+├─ flatted@npm:3.3.2
+│  └─ Version: 3.3.2
+│
+├─ flow-enums-runtime@npm:0.0.6
+│  └─ Version: 0.0.6
+│
+├─ flow-parser@npm:0.261.1
+│  └─ Version: 0.261.1
+│
+├─ fontfaceobserver@npm:2.3.0
+│  └─ Version: 2.3.0
+│
+├─ foreground-child@npm:3.3.0
+│  ├─ Version: 3.3.0
+│  │ 
+│  └─ Dependencies
+│     ├─ cross-spawn@npm:^7.0.0 → npm:7.0.6
+│     └─ signal-exit@npm:^4.0.1 → npm:4.1.0
+│
+├─ form-data@npm:3.0.3
+│  ├─ Version: 3.0.3
+│  │ 
+│  └─ Dependencies
+│     ├─ asynckit@npm:^0.4.0 → npm:0.4.0
+│     ├─ combined-stream@npm:^1.0.8 → npm:1.0.8
+│     ├─ es-set-tostringtag@npm:^2.1.0 → npm:2.1.0
+│     └─ mime-types@npm:^2.1.35 → npm:2.1.35
+│
+├─ freeport-async@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ fresh@npm:0.5.2
+│  └─ Version: 0.5.2
+│
+├─ fs-extra@npm:8.1.0
+│  ├─ Version: 8.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ graceful-fs@npm:^4.2.0 → npm:4.2.11
+│     ├─ jsonfile@npm:^4.0.0 → npm:4.0.0
+│     └─ universalify@npm:^0.1.0 → npm:0.1.2
+│
+├─ fs-extra@npm:9.0.0
+│  ├─ Version: 9.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ at-least-node@npm:^1.0.0 → npm:1.0.0
+│     ├─ graceful-fs@npm:^4.2.0 → npm:4.2.11
+│     ├─ jsonfile@npm:^6.0.1 → npm:6.1.0
+│     └─ universalify@npm:^1.0.0 → npm:1.0.0
+│
+├─ fs-extra@npm:9.1.0
+│  ├─ Version: 9.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ at-least-node@npm:^1.0.0 → npm:1.0.0
+│     ├─ graceful-fs@npm:^4.2.0 → npm:4.2.11
+│     ├─ jsonfile@npm:^6.0.1 → npm:6.1.0
+│     └─ universalify@npm:^2.0.0 → npm:2.0.1
+│
+├─ fs-minipass@npm:2.1.0
+│  ├─ Version: 2.1.0
+│  │ 
+│  └─ Dependencies
+│     └─ minipass@npm:^3.0.0 → npm:3.3.6
+│
+├─ fs-minipass@npm:3.0.3
+│  ├─ Version: 3.0.3
+│  │ 
+│  └─ Dependencies
+│     └─ minipass@npm:^7.0.3 → npm:7.1.2
+│
+├─ fs.realpath@npm:1.0.0
+│  └─ Version: 1.0.0
+│
+├─ fsevents@patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1
+│  ├─ Version: 2.3.3
+│  │ 
+│  └─ Dependencies
+│     └─ node-gyp@npm:latest → npm:11.1.0
+│
+├─ function-bind@npm:1.1.2
+│  └─ Version: 1.1.2
+│
+├─ gensync@npm:1.0.0-beta.2
+│  └─ Version: 1.0.0-beta.2
+│
+├─ get-caller-file@npm:2.0.5
+│  └─ Version: 2.0.5
+│
+├─ get-intrinsic@npm:1.2.7
+│  ├─ Version: 1.2.7
+│  │ 
+│  └─ Dependencies
+│     ├─ call-bind-apply-helpers@npm:^1.0.1 → npm:1.0.2
+│     ├─ es-define-property@npm:^1.0.1 → npm:1.0.1
+│     ├─ es-errors@npm:^1.3.0 → npm:1.3.0
+│     ├─ es-object-atoms@npm:^1.0.0 → npm:1.1.1
+│     ├─ function-bind@npm:^1.1.2 → npm:1.1.2
+│     ├─ get-proto@npm:^1.0.0 → npm:1.0.1
+│     ├─ gopd@npm:^1.2.0 → npm:1.2.0
+│     ├─ has-symbols@npm:^1.1.0 → npm:1.1.0
+│     ├─ hasown@npm:^2.0.2 → npm:2.0.2
+│     └─ math-intrinsics@npm:^1.1.0 → npm:1.1.0
+│
+├─ get-package-type@npm:0.1.0
+│  └─ Version: 0.1.0
+│
+├─ get-port@npm:3.2.0
+│  └─ Version: 3.2.0
+│
+├─ get-proto@npm:1.0.1
+│  ├─ Version: 1.0.1
+│  │ 
+│  └─ Dependencies
+│     ├─ dunder-proto@npm:^1.0.1 → npm:1.0.1
+│     └─ es-object-atoms@npm:^1.0.0 → npm:1.1.1
+│
+├─ get-stream@npm:4.1.0
+│  ├─ Version: 4.1.0
+│  │ 
+│  └─ Dependencies
+│     └─ pump@npm:^3.0.0 → npm:3.0.2
+│
+├─ getenv@npm:1.0.0
+│  └─ Version: 1.0.0
+│
+├─ gifwrap@npm:0.10.1
+│  ├─ Version: 0.10.1
+│  │ 
+│  └─ Dependencies
+│     ├─ image-q@npm:^4.0.0 → npm:4.0.0
+│     └─ omggif@npm:^1.0.10 → npm:1.0.10
+│
+├─ glob-parent@npm:5.1.2
+│  ├─ Version: 5.1.2
+│  │ 
+│  └─ Dependencies
+│     └─ is-glob@npm:^4.0.1 → npm:4.0.3
+│
+├─ glob-parent@npm:6.0.2
+│  ├─ Version: 6.0.2
+│  │ 
+│  └─ Dependencies
+│     └─ is-glob@npm:^4.0.3 → npm:4.0.3
+│
+├─ glob@npm:10.4.5
+│  ├─ Version: 10.4.5
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ glob
+│  │ 
+│  └─ Dependencies
+│     ├─ foreground-child@npm:^3.1.0 → npm:3.3.0
+│     ├─ jackspeak@npm:^3.1.2 → npm:3.4.3
+│     ├─ minimatch@npm:^9.0.4 → npm:9.0.5
+│     ├─ minipass@npm:^7.1.2 → npm:7.1.2
+│     ├─ package-json-from-dist@npm:^1.0.0 → npm:1.0.1
+│     └─ path-scurry@npm:^1.11.1 → npm:1.11.1
+│
+├─ glob@npm:7.2.3
+│  ├─ Version: 7.2.3
+│  │ 
+│  └─ Dependencies
+│     ├─ fs.realpath@npm:^1.0.0 → npm:1.0.0
+│     ├─ inflight@npm:^1.0.4 → npm:1.0.6
+│     ├─ inherits@npm:2 → npm:2.0.4
+│     ├─ minimatch@npm:^3.1.1 → npm:3.1.2
+│     ├─ once@npm:^1.3.0 → npm:1.4.0
+│     └─ path-is-absolute@npm:^1.0.0 → npm:1.0.1
+│
+├─ globals@npm:11.12.0
+│  └─ Version: 11.12.0
+│
+├─ globals@npm:14.0.0
+│  └─ Version: 14.0.0
+│
+├─ globby@npm:11.1.0
+│  ├─ Version: 11.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ array-union@npm:^2.1.0 → npm:2.1.0
+│     ├─ dir-glob@npm:^3.0.1 → npm:3.0.1
+│     ├─ fast-glob@npm:^3.2.9 → npm:3.3.3
+│     ├─ ignore@npm:^5.2.0 → npm:5.3.2
+│     ├─ merge2@npm:^1.4.1 → npm:1.4.1
+│     └─ slash@npm:^3.0.0 → npm:3.0.0
+│
+├─ gopd@npm:1.2.0
+│  └─ Version: 1.2.0
+│
+├─ graceful-fs@npm:4.2.11
+│  └─ Version: 4.2.11
+│
+├─ has-flag@npm:3.0.0
+│  └─ Version: 3.0.0
+│
+├─ has-flag@npm:4.0.0
+│  └─ Version: 4.0.0
+│
+├─ has-symbols@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ has-tostringtag@npm:1.0.2
+│  ├─ Version: 1.0.2
+│  │ 
+│  └─ Dependencies
+│     └─ has-symbols@npm:^1.0.3 → npm:1.1.0
+│
+├─ hasown@npm:2.0.2
+│  ├─ Version: 2.0.2
+│  │ 
+│  └─ Dependencies
+│     └─ function-bind@npm:^1.1.2 → npm:1.1.2
+│
+├─ hermes-estree@npm:0.23.1
+│  └─ Version: 0.23.1
+│
+├─ hermes-estree@npm:0.25.1
+│  └─ Version: 0.25.1
+│
+├─ hermes-parser@npm:0.23.1
+│  ├─ Version: 0.23.1
+│  │ 
+│  └─ Dependencies
+│     └─ hermes-estree@npm:0.23.1 → npm:0.23.1
+│
+├─ hermes-parser@npm:0.25.1
+│  ├─ Version: 0.25.1
+│  │ 
+│  └─ Dependencies
+│     └─ hermes-estree@npm:0.25.1 → npm:0.25.1
+│
+├─ hoist-non-react-statics@npm:3.3.2
+│  ├─ Version: 3.3.2
+│  │ 
+│  └─ Dependencies
+│     └─ react-is@npm:^16.7.0 → npm:16.13.1
+│
+├─ hosted-git-info@npm:7.0.2
+│  ├─ Version: 7.0.2
+│  │ 
+│  └─ Dependencies
+│     └─ lru-cache@npm:^10.0.1 → npm:10.4.3
+│
+├─ http-cache-semantics@npm:4.1.1
+│  └─ Version: 4.1.1
+│
+├─ http-errors@npm:2.0.0
+│  ├─ Version: 2.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ depd@npm:2.0.0 → npm:2.0.0
+│     ├─ inherits@npm:2.0.4 → npm:2.0.4
+│     ├─ setprototypeof@npm:1.2.0 → npm:1.2.0
+│     ├─ statuses@npm:2.0.1 → npm:2.0.1
+│     └─ toidentifier@npm:1.0.1 → npm:1.0.1
+│
+├─ http-parser-js@npm:0.5.9
+│  └─ Version: 0.5.9
+│
+├─ http-proxy-agent@npm:7.0.2
+│  ├─ Version: 7.0.2
+│  │ 
+│  └─ Dependencies
+│     ├─ agent-base@npm:^7.1.0 → npm:7.1.3
+│     └─ debug@npm:^4.3.1 → npm:4.4.0 [5dc40]
+│
+├─ https-proxy-agent@npm:7.0.6
+│  ├─ Version: 7.0.6
+│  │ 
+│  └─ Dependencies
+│     ├─ agent-base@npm:^7.1.2 → npm:7.1.3
+│     └─ debug@npm:^4.3.1 → npm:4.4.0 [5dc40]
+│
+├─ hyphenate-style-name@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ iconv-lite@npm:0.6.3
+│  ├─ Version: 0.6.3
+│  │ 
+│  └─ Dependencies
+│     └─ safer-buffer@npm:>= 2.1.2 < 3.0.0 → npm:2.1.2
+│
+├─ idb@npm:7.1.1
+│  └─ Version: 7.1.1
+│
+├─ ieee754@npm:1.2.1
+│  └─ Version: 1.2.1
+│
+├─ ignore@npm:5.3.2
+│  └─ Version: 5.3.2
+│
+├─ image-q@npm:4.0.0
+│  ├─ Version: 4.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ @types/node@npm:16.9.1 → npm:16.9.1
+│
+├─ image-size@npm:1.2.0
+│  ├─ Version: 1.2.0
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ image-size
+│  │ 
+│  └─ Dependencies
+│     └─ queue@npm:6.0.2 → npm:6.0.2
+│
+├─ import-fresh@npm:2.0.0
+│  ├─ Version: 2.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ caller-path@npm:^2.0.0 → npm:2.0.0
+│     └─ resolve-from@npm:^3.0.0 → npm:3.0.0
+│
+├─ import-fresh@npm:3.3.1
+│  ├─ Version: 3.3.1
+│  │ 
+│  └─ Dependencies
+│     ├─ parent-module@npm:^1.0.0 → npm:1.0.1
+│     └─ resolve-from@npm:^4.0.0 → npm:4.0.0
+│
+├─ imurmurhash@npm:0.1.4
+│  └─ Version: 0.1.4
+│
+├─ indent-string@npm:4.0.0
+│  └─ Version: 4.0.0
+│
+├─ inflight@npm:1.0.6
+│  ├─ Version: 1.0.6
+│  │ 
+│  └─ Dependencies
+│     ├─ once@npm:^1.3.0 → npm:1.4.0
+│     └─ wrappy@npm:1 → npm:1.0.2
+│
+├─ inherits@npm:2.0.4
+│  └─ Version: 2.0.4
+│
+├─ ini@npm:1.3.8
+│  └─ Version: 1.3.8
+│
+├─ inline-style-prefixer@npm:6.0.4
+│  ├─ Version: 6.0.4
+│  │ 
+│  └─ Dependencies
+│     ├─ css-in-js-utils@npm:^3.1.0 → npm:3.1.0
+│     └─ fast-loops@npm:^1.1.3 → npm:1.1.4
+│
+├─ internal-ip@npm:4.3.0
+│  ├─ Version: 4.3.0
+│  │ 
+│  └─ Dependencies
+│     ├─ default-gateway@npm:^4.2.0 → npm:4.2.0
+│     └─ ipaddr.js@npm:^1.9.0 → npm:1.9.1
+│
+├─ invariant@npm:2.2.4
+│  ├─ Version: 2.2.4
+│  │ 
+│  └─ Dependencies
+│     └─ loose-envify@npm:^1.0.0 → npm:1.4.0
+│
+├─ ip-address@npm:9.0.5
+│  ├─ Version: 9.0.5
+│  │ 
+│  └─ Dependencies
+│     ├─ jsbn@npm:1.1.0 → npm:1.1.0
+│     └─ sprintf-js@npm:^1.1.3 → npm:1.1.3
+│
+├─ ip-regex@npm:2.1.0
+│  └─ Version: 2.1.0
+│
+├─ ipaddr.js@npm:1.9.1
+│  └─ Version: 1.9.1
+│
+├─ is-arrayish@npm:0.2.1
+│  └─ Version: 0.2.1
+│
+├─ is-arrayish@npm:0.3.2
+│  └─ Version: 0.3.2
+│
+├─ is-buffer@npm:1.1.6
+│  └─ Version: 1.1.6
+│
+├─ is-core-module@npm:2.16.1
+│  ├─ Version: 2.16.1
+│  │ 
+│  └─ Dependencies
+│     └─ hasown@npm:^2.0.2 → npm:2.0.2
+│
+├─ is-directory@npm:0.3.1
+│  └─ Version: 0.3.1
+│
+├─ is-docker@npm:2.2.1
+│  ├─ Version: 2.2.1
+│  │ 
+│  └─ Exported Binaries
+│     └─ is-docker
+│
+├─ is-extglob@npm:2.1.1
+│  └─ Version: 2.1.1
+│
+├─ is-fullwidth-code-point@npm:3.0.0
+│  └─ Version: 3.0.0
+│
+├─ is-glob@npm:4.0.3
+│  ├─ Version: 4.0.3
+│  │ 
+│  └─ Dependencies
+│     └─ is-extglob@npm:^2.1.1 → npm:2.1.1
+│
+├─ is-number@npm:7.0.0
+│  └─ Version: 7.0.0
+│
+├─ is-path-cwd@npm:2.2.0
+│  └─ Version: 2.2.0
+│
+├─ is-path-inside@npm:3.0.3
+│  └─ Version: 3.0.3
+│
+├─ is-plain-object@npm:2.0.4
+│  ├─ Version: 2.0.4
+│  │ 
+│  └─ Dependencies
+│     └─ isobject@npm:^3.0.1 → npm:3.0.1
+│
+├─ is-stream@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ is-stream@npm:2.0.1
+│  └─ Version: 2.0.1
+│
+├─ is-wsl@npm:2.2.0
+│  ├─ Version: 2.2.0
+│  │ 
+│  └─ Dependencies
+│     └─ is-docker@npm:^2.0.0 → npm:2.2.1
+│
+├─ isexe@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ isexe@npm:3.1.1
+│  └─ Version: 3.1.1
+│
+├─ isobject@npm:3.0.1
+│  └─ Version: 3.0.1
+│
+├─ istanbul-lib-coverage@npm:3.2.2
+│  └─ Version: 3.2.2
+│
+├─ istanbul-lib-instrument@npm:5.2.1
+│  ├─ Version: 5.2.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/core@npm:^7.12.3 → npm:7.26.9
+│     ├─ @babel/parser@npm:^7.14.7 → npm:7.26.9
+│     ├─ @istanbuljs/schema@npm:^0.1.2 → npm:0.1.3
+│     ├─ istanbul-lib-coverage@npm:^3.2.0 → npm:3.2.2
+│     └─ semver@npm:^6.3.0 → npm:6.3.1
+│
+├─ jackspeak@npm:3.4.3
+│  ├─ Version: 3.4.3
+│  │ 
+│  └─ Dependencies
+│     ├─ @isaacs/cliui@npm:^8.0.2 → npm:8.0.2
+│     └─ @pkgjs/parseargs@npm:^0.11.0 → npm:0.11.0
+│
+├─ jest-environment-node@npm:29.7.0
+│  ├─ Version: 29.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jest/environment@npm:^29.7.0 → npm:29.7.0
+│     ├─ @jest/fake-timers@npm:^29.7.0 → npm:29.7.0
+│     ├─ @jest/types@npm:^29.6.3 → npm:29.6.3
+│     ├─ @types/node@npm:* → npm:22.13.4
+│     ├─ jest-mock@npm:^29.7.0 → npm:29.7.0
+│     └─ jest-util@npm:^29.7.0 → npm:29.7.0
+│
+├─ jest-get-type@npm:29.6.3
+│  └─ Version: 29.6.3
+│
+├─ jest-haste-map@npm:29.7.0
+│  ├─ Version: 29.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jest/types@npm:^29.6.3 → npm:29.6.3
+│     ├─ @types/graceful-fs@npm:^4.1.3 → npm:4.1.9
+│     ├─ @types/node@npm:* → npm:22.13.4
+│     ├─ anymatch@npm:^3.0.3 → npm:3.1.3
+│     ├─ fb-watchman@npm:^2.0.0 → npm:2.0.2
+│     ├─ fsevents@patch:fsevents@npm%3A^2.3.2#optional!builtin<compat/fsevents> → patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1
+│     ├─ graceful-fs@npm:^4.2.9 → npm:4.2.11
+│     ├─ jest-regex-util@npm:^29.6.3 → npm:29.6.3
+│     ├─ jest-util@npm:^29.7.0 → npm:29.7.0
+│     ├─ jest-worker@npm:^29.7.0 → npm:29.7.0
+│     ├─ micromatch@npm:^4.0.4 → npm:4.0.8
+│     └─ walker@npm:^1.0.8 → npm:1.0.8
+│
+├─ jest-message-util@npm:29.7.0
+│  ├─ Version: 29.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/code-frame@npm:^7.12.13 → npm:7.26.2
+│     ├─ @jest/types@npm:^29.6.3 → npm:29.6.3
+│     ├─ @types/stack-utils@npm:^2.0.0 → npm:2.0.3
+│     ├─ chalk@npm:^4.0.0 → npm:4.1.2
+│     ├─ graceful-fs@npm:^4.2.9 → npm:4.2.11
+│     ├─ micromatch@npm:^4.0.4 → npm:4.0.8
+│     ├─ pretty-format@npm:^29.7.0 → npm:29.7.0
+│     ├─ slash@npm:^3.0.0 → npm:3.0.0
+│     └─ stack-utils@npm:^2.0.3 → npm:2.0.6
+│
+├─ jest-mock@npm:29.7.0
+│  ├─ Version: 29.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jest/types@npm:^29.6.3 → npm:29.6.3
+│     ├─ @types/node@npm:* → npm:22.13.4
+│     └─ jest-util@npm:^29.7.0 → npm:29.7.0
+│
+├─ jest-regex-util@npm:29.6.3
+│  └─ Version: 29.6.3
+│
+├─ jest-util@npm:29.7.0
+│  ├─ Version: 29.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jest/types@npm:^29.6.3 → npm:29.6.3
+│     ├─ @types/node@npm:* → npm:22.13.4
+│     ├─ chalk@npm:^4.0.0 → npm:4.1.2
+│     ├─ ci-info@npm:^3.2.0 → npm:3.9.0
+│     ├─ graceful-fs@npm:^4.2.9 → npm:4.2.11
+│     └─ picomatch@npm:^2.2.3 → npm:2.3.1
+│
+├─ jest-validate@npm:29.7.0
+│  ├─ Version: 29.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jest/types@npm:^29.6.3 → npm:29.6.3
+│     ├─ camelcase@npm:^6.2.0 → npm:6.3.0
+│     ├─ chalk@npm:^4.0.0 → npm:4.1.2
+│     ├─ jest-get-type@npm:^29.6.3 → npm:29.6.3
+│     ├─ leven@npm:^3.1.0 → npm:3.1.0
+│     └─ pretty-format@npm:^29.7.0 → npm:29.7.0
+│
+├─ jest-worker@npm:29.7.0
+│  ├─ Version: 29.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @types/node@npm:* → npm:22.13.4
+│     ├─ jest-util@npm:^29.7.0 → npm:29.7.0
+│     ├─ merge-stream@npm:^2.0.0 → npm:2.0.0
+│     └─ supports-color@npm:^8.0.0 → npm:8.1.1
+│
+├─ jimp@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jimp/core@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/diff@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/js-bmp@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/js-gif@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/js-jpeg@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/js-png@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/js-tiff@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-blit@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-blur@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-circle@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-color@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-contain@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-cover@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-crop@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-displace@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-dither@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-fisheye@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-flip@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-hash@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-mask@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-print@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-quantize@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-resize@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-rotate@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/plugin-threshold@npm:1.6.0 → npm:1.6.0
+│     ├─ @jimp/types@npm:1.6.0 → npm:1.6.0
+│     └─ @jimp/utils@npm:1.6.0 → npm:1.6.0
+│
+├─ join-component@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ jpeg-js@npm:0.4.4
+│  └─ Version: 0.4.4
+│
+├─ js-tokens@npm:4.0.0
+│  └─ Version: 4.0.0
+│
+├─ js-yaml@npm:3.14.1
+│  ├─ Version: 3.14.1
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ js-yaml
+│  │ 
+│  └─ Dependencies
+│     ├─ argparse@npm:^1.0.7 → npm:1.0.10
+│     └─ esprima@npm:^4.0.0 → npm:4.0.1
+│
+├─ js-yaml@npm:4.1.0
+│  ├─ Version: 4.1.0
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ js-yaml
+│  │ 
+│  └─ Dependencies
+│     └─ argparse@npm:^2.0.1 → npm:2.0.1
+│
+├─ jsbn@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ jsc-android@npm:250231.0.0
+│  └─ Version: 250231.0.0
+│
+├─ jsc-safe-url@npm:0.2.4
+│  └─ Version: 0.2.4
+│
+├─ jscodeshift@npm:0.14.0
+│  ├─ Instances: 1
+│  ├─ Version: 0.14.0
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ jscodeshift
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/core@npm:^7.13.16 → npm:7.26.9
+│     ├─ @babel/parser@npm:^7.13.16 → npm:7.26.9
+│     ├─ @babel/plugin-proposal-class-properties@npm:^7.13.0 → npm:7.18.6
+│     ├─ @babel/plugin-proposal-nullish-coalescing-operator@npm:^7.13.8 → npm:7.18.6
+│     ├─ @babel/plugin-proposal-optional-chaining@npm:^7.13.12 → npm:7.21.0
+│     ├─ @babel/plugin-transform-modules-commonjs@npm:^7.13.8 → npm:7.26.3
+│     ├─ @babel/preset-flow@npm:^7.13.13 → npm:7.25.9
+│     ├─ @babel/preset-typescript@npm:^7.13.0 → npm:7.26.0
+│     ├─ @babel/register@npm:^7.13.16 → npm:7.25.9
+│     ├─ babel-core@npm:^7.0.0-bridge.0 → npm:7.0.0-bridge.0
+│     ├─ chalk@npm:^4.1.2 → npm:4.1.2
+│     ├─ flow-parser@npm:0.* → npm:0.261.1
+│     ├─ graceful-fs@npm:^4.2.4 → npm:4.2.11
+│     ├─ micromatch@npm:^4.0.4 → npm:4.0.8
+│     ├─ neo-async@npm:^2.5.0 → npm:2.6.2
+│     ├─ node-dir@npm:^0.1.17 → npm:0.1.17
+│     ├─ recast@npm:^0.21.0 → npm:0.21.5
+│     ├─ temp@npm:^0.8.4 → npm:0.8.4
+│     └─ write-file-atomic@npm:^2.3.0 → npm:2.4.3
+│
+├─ jscodeshift@npm:17.1.2
+│  ├─ Instances: 1
+│  ├─ Version: 17.1.2
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ jscodeshift
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/core@npm:^7.24.7 → npm:7.26.9
+│     ├─ @babel/parser@npm:^7.24.7 → npm:7.26.9
+│     ├─ @babel/plugin-transform-class-properties@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-modules-commonjs@npm:^7.24.7 → npm:7.26.3
+│     ├─ @babel/plugin-transform-nullish-coalescing-operator@npm:^7.24.7 → npm:7.26.6
+│     ├─ @babel/plugin-transform-optional-chaining@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/plugin-transform-private-methods@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/preset-flow@npm:^7.24.7 → npm:7.25.9
+│     ├─ @babel/preset-typescript@npm:^7.24.7 → npm:7.26.0
+│     ├─ @babel/register@npm:^7.24.6 → npm:7.25.9
+│     ├─ flow-parser@npm:0.* → npm:0.261.1
+│     ├─ graceful-fs@npm:^4.2.4 → npm:4.2.11
+│     ├─ micromatch@npm:^4.0.7 → npm:4.0.8
+│     ├─ neo-async@npm:^2.5.0 → npm:2.6.2
+│     ├─ picocolors@npm:^1.0.1 → npm:1.1.1
+│     ├─ recast@npm:^0.23.9 → npm:0.23.9
+│     ├─ tmp@npm:^0.2.3 → npm:0.2.3
+│     └─ write-file-atomic@npm:^5.0.1 → npm:5.0.1
+│
+├─ jsesc@npm:3.0.2
+│  ├─ Version: 3.0.2
+│  │ 
+│  └─ Exported Binaries
+│     └─ jsesc
+│
+├─ jsesc@npm:3.1.0
+│  ├─ Version: 3.1.0
+│  │ 
+│  └─ Exported Binaries
+│     └─ jsesc
+│
+├─ json-buffer@npm:3.0.1
+│  └─ Version: 3.0.1
+│
+├─ json-parse-better-errors@npm:1.0.2
+│  └─ Version: 1.0.2
+│
+├─ json-schema-traverse@npm:0.4.1
+│  └─ Version: 0.4.1
+│
+├─ json-stable-stringify-without-jsonify@npm:1.0.1
+│  └─ Version: 1.0.1
+│
+├─ json5@npm:2.2.3
+│  ├─ Version: 2.2.3
+│  │ 
+│  └─ Exported Binaries
+│     └─ json5
+│
+├─ jsonfile@npm:4.0.0
+│  ├─ Version: 4.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ graceful-fs@npm:^4.1.6 → npm:4.2.11
+│
+├─ jsonfile@npm:6.1.0
+│  ├─ Version: 6.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ graceful-fs@npm:^4.1.6 → npm:4.2.11
+│     └─ universalify@npm:^2.0.0 → npm:2.0.1
+│
+├─ keyv@npm:4.5.4
+│  ├─ Version: 4.5.4
+│  │ 
+│  └─ Dependencies
+│     └─ json-buffer@npm:3.0.1 → npm:3.0.1
+│
+├─ kind-of@npm:6.0.3
+│  └─ Version: 6.0.3
+│
+├─ kleur@npm:3.0.3
+│  └─ Version: 3.0.3
+│
+├─ leven@npm:3.1.0
+│  └─ Version: 3.1.0
+│
+├─ levn@npm:0.4.1
+│  ├─ Version: 0.4.1
+│  │ 
+│  └─ Dependencies
+│     ├─ prelude-ls@npm:^1.2.1 → npm:1.2.1
+│     └─ type-check@npm:~0.4.0 → npm:0.4.0
+│
+├─ lighthouse-logger@npm:1.4.2
+│  ├─ Version: 1.4.2
+│  │ 
+│  └─ Dependencies
+│     ├─ marky@npm:^1.2.2 → npm:1.2.5
+│     └─ debug@npm:^2.6.9 → npm:2.6.9 [04e17]
+│
+├─ lightningcss-darwin-arm64@npm:1.27.0
+│  └─ Version: 1.27.0
+│
+├─ lightningcss-darwin-x64@npm:1.27.0
+│  └─ Version: 1.27.0
+│
+├─ lightningcss-freebsd-x64@npm:1.27.0
+│  └─ Version: 1.27.0
+│
+├─ lightningcss-linux-arm-gnueabihf@npm:1.27.0
+│  └─ Version: 1.27.0
+│
+├─ lightningcss-linux-arm64-gnu@npm:1.27.0
+│  └─ Version: 1.27.0
+│
+├─ lightningcss-linux-arm64-musl@npm:1.27.0
+│  └─ Version: 1.27.0
+│
+├─ lightningcss-linux-x64-gnu@npm:1.27.0
+│  └─ Version: 1.27.0
+│
+├─ lightningcss-linux-x64-musl@npm:1.27.0
+│  └─ Version: 1.27.0
+│
+├─ lightningcss-win32-arm64-msvc@npm:1.27.0
+│  └─ Version: 1.27.0
+│
+├─ lightningcss-win32-x64-msvc@npm:1.27.0
+│  └─ Version: 1.27.0
+│
+├─ lightningcss@npm:1.27.0
+│  ├─ Version: 1.27.0
+│  │ 
+│  └─ Dependencies
+│     ├─ detect-libc@npm:^1.0.3 → npm:1.0.3
+│     ├─ lightningcss-darwin-arm64@npm:1.27.0 → npm:1.27.0
+│     ├─ lightningcss-darwin-x64@npm:1.27.0 → npm:1.27.0
+│     ├─ lightningcss-freebsd-x64@npm:1.27.0 → npm:1.27.0
+│     ├─ lightningcss-linux-arm-gnueabihf@npm:1.27.0 → npm:1.27.0
+│     ├─ lightningcss-linux-arm64-gnu@npm:1.27.0 → npm:1.27.0
+│     ├─ lightningcss-linux-arm64-musl@npm:1.27.0 → npm:1.27.0
+│     ├─ lightningcss-linux-x64-gnu@npm:1.27.0 → npm:1.27.0
+│     ├─ lightningcss-linux-x64-musl@npm:1.27.0 → npm:1.27.0
+│     ├─ lightningcss-win32-arm64-msvc@npm:1.27.0 → npm:1.27.0
+│     └─ lightningcss-win32-x64-msvc@npm:1.27.0 → npm:1.27.0
+│
+├─ lines-and-columns@npm:1.2.4
+│  └─ Version: 1.2.4
+│
+├─ locate-path@npm:3.0.0
+│  ├─ Version: 3.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ p-locate@npm:^3.0.0 → npm:3.0.0
+│     └─ path-exists@npm:^3.0.0 → npm:3.0.0
+│
+├─ locate-path@npm:5.0.0
+│  ├─ Version: 5.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ p-locate@npm:^4.1.0 → npm:4.1.0
+│
+├─ locate-path@npm:6.0.0
+│  ├─ Version: 6.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ p-locate@npm:^5.0.0 → npm:5.0.0
+│
+├─ lodash.camelcase@npm:4.3.0
+│  └─ Version: 4.3.0
+│
+├─ lodash.debounce@npm:4.0.8
+│  └─ Version: 4.0.8
+│
+├─ lodash.merge@npm:4.6.2
+│  └─ Version: 4.6.2
+│
+├─ lodash.throttle@npm:4.1.1
+│  └─ Version: 4.1.1
+│
+├─ lodash@npm:4.17.21
+│  └─ Version: 4.17.21
+│
+├─ log-symbols@npm:2.2.0
+│  ├─ Version: 2.2.0
+│  │ 
+│  └─ Dependencies
+│     └─ chalk@npm:^2.0.1 → npm:2.4.2
+│
+├─ long@npm:5.3.0
+│  └─ Version: 5.3.0
+│
+├─ loose-envify@npm:1.4.0
+│  ├─ Version: 1.4.0
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ loose-envify
+│  │ 
+│  └─ Dependencies
+│     └─ js-tokens@npm:^3.0.0 || ^4.0.0 → npm:4.0.0
+│
+├─ lru-cache@npm:10.4.3
+│  └─ Version: 10.4.3
+│
+├─ lru-cache@npm:5.1.1
+│  ├─ Version: 5.1.1
+│  │ 
+│  └─ Dependencies
+│     └─ yallist@npm:^3.0.2 → npm:3.1.1
+│
+├─ make-dir@npm:2.1.0
+│  ├─ Version: 2.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ pify@npm:^4.0.1 → npm:4.0.1
+│     └─ semver@npm:^5.6.0 → npm:5.7.2
+│
+├─ make-fetch-happen@npm:14.0.3
+│  ├─ Version: 14.0.3
+│  │ 
+│  └─ Dependencies
+│     ├─ @npmcli/agent@npm:^3.0.0 → npm:3.0.0
+│     ├─ cacache@npm:^19.0.1 → npm:19.0.1
+│     ├─ http-cache-semantics@npm:^4.1.1 → npm:4.1.1
+│     ├─ minipass-fetch@npm:^4.0.0 → npm:4.0.0
+│     ├─ minipass-flush@npm:^1.0.5 → npm:1.0.5
+│     ├─ minipass-pipeline@npm:^1.2.4 → npm:1.2.4
+│     ├─ minipass@npm:^7.0.2 → npm:7.1.2
+│     ├─ negotiator@npm:^1.0.0 → npm:1.0.0
+│     ├─ proc-log@npm:^5.0.0 → npm:5.0.0
+│     ├─ promise-retry@npm:^2.0.1 → npm:2.0.1
+│     └─ ssri@npm:^12.0.0 → npm:12.0.0
+│
+├─ makeerror@npm:1.0.12
+│  ├─ Version: 1.0.12
+│  │ 
+│  └─ Dependencies
+│     └─ tmpl@npm:1.0.5 → npm:1.0.5
+│
+├─ marky@npm:1.2.5
+│  └─ Version: 1.2.5
+│
+├─ math-intrinsics@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ md5-file@npm:3.2.3
+│  ├─ Version: 3.2.3
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ md5-file
+│  │ 
+│  └─ Dependencies
+│     └─ buffer-alloc@npm:^1.1.0 → npm:1.2.0
+│
+├─ md5@npm:2.3.0
+│  ├─ Version: 2.3.0
+│  │ 
+│  └─ Dependencies
+│     ├─ charenc@npm:0.0.2 → npm:0.0.2
+│     ├─ crypt@npm:0.0.2 → npm:0.0.2
+│     └─ is-buffer@npm:~1.1.6 → npm:1.1.6
+│
+├─ memoize-one@npm:5.2.1
+│  └─ Version: 5.2.1
+│
+├─ memoize-one@npm:6.0.0
+│  └─ Version: 6.0.0
+│
+├─ merge-stream@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ merge2@npm:1.4.1
+│  └─ Version: 1.4.1
+│
+├─ metro-babel-transformer@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/core@npm:^7.25.2 → npm:7.26.9
+│     ├─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│     ├─ hermes-parser@npm:0.25.1 → npm:0.25.1
+│     └─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│
+├─ metro-cache-key@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  └─ Dependencies
+│     └─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│
+├─ metro-cache@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  └─ Dependencies
+│     ├─ exponential-backoff@npm:^3.1.1 → npm:3.1.2
+│     ├─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│     └─ metro-core@npm:0.81.1 → npm:0.81.1
+│
+├─ metro-config@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  └─ Dependencies
+│     ├─ connect@npm:^3.6.5 → npm:3.7.0
+│     ├─ cosmiconfig@npm:^5.0.5 → npm:5.2.1
+│     ├─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│     ├─ jest-validate@npm:^29.6.3 → npm:29.7.0
+│     ├─ metro-cache@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-core@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-runtime@npm:0.81.1 → npm:0.81.1
+│     └─ metro@npm:0.81.1 → npm:0.81.1
+│
+├─ metro-core@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  └─ Dependencies
+│     ├─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│     ├─ lodash.throttle@npm:^4.1.1 → npm:4.1.1
+│     └─ metro-resolver@npm:0.81.1 → npm:0.81.1
+│
+├─ metro-file-map@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  └─ Dependencies
+│     ├─ fb-watchman@npm:^2.0.0 → npm:2.0.2
+│     ├─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│     ├─ graceful-fs@npm:^4.2.4 → npm:4.2.11
+│     ├─ invariant@npm:^2.2.4 → npm:2.2.4
+│     ├─ jest-worker@npm:^29.6.3 → npm:29.7.0
+│     ├─ micromatch@npm:^4.0.4 → npm:4.0.8
+│     ├─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│     ├─ walker@npm:^1.0.7 → npm:1.0.8
+│     └─ debug@npm:^2.6.9 → npm:2.6.9 [04e17]
+│
+├─ metro-minify-terser@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  └─ Dependencies
+│     ├─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│     └─ terser@npm:^5.15.0 → npm:5.39.0
+│
+├─ metro-resolver@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  └─ Dependencies
+│     └─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│
+├─ metro-runtime@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/runtime@npm:^7.25.0 → npm:7.26.9
+│     └─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│
+├─ metro-source-map@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/traverse--for-generate-function-map@npm:@babel/traverse@^7.25.3 → @babel/traverse@npm:7.26.9
+│     ├─ @babel/traverse@npm:^7.25.3 → npm:7.26.9
+│     ├─ @babel/types@npm:^7.25.2 → npm:7.26.9
+│     ├─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│     ├─ invariant@npm:^2.2.4 → npm:2.2.4
+│     ├─ metro-symbolicate@npm:0.81.1 → npm:0.81.1
+│     ├─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│     ├─ ob1@npm:0.81.1 → npm:0.81.1
+│     ├─ source-map@npm:^0.5.6 → npm:0.5.7
+│     └─ vlq@npm:^1.0.0 → npm:1.0.1
+│
+├─ metro-symbolicate@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ metro-symbolicate
+│  │ 
+│  └─ Dependencies
+│     ├─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│     ├─ invariant@npm:^2.2.4 → npm:2.2.4
+│     ├─ metro-source-map@npm:0.81.1 → npm:0.81.1
+│     ├─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│     ├─ source-map@npm:^0.5.6 → npm:0.5.7
+│     └─ vlq@npm:^1.0.0 → npm:1.0.1
+│
+├─ metro-transform-plugins@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/core@npm:^7.25.2 → npm:7.26.9
+│     ├─ @babel/generator@npm:^7.25.0 → npm:7.26.9
+│     ├─ @babel/template@npm:^7.25.0 → npm:7.26.9
+│     ├─ @babel/traverse@npm:^7.25.3 → npm:7.26.9
+│     ├─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│     └─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│
+├─ metro-transform-worker@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/core@npm:^7.25.2 → npm:7.26.9
+│     ├─ @babel/generator@npm:^7.25.0 → npm:7.26.9
+│     ├─ @babel/parser@npm:^7.25.3 → npm:7.26.9
+│     ├─ @babel/types@npm:^7.25.2 → npm:7.26.9
+│     ├─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│     ├─ metro-babel-transformer@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-cache-key@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-cache@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-minify-terser@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-source-map@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-transform-plugins@npm:0.81.1 → npm:0.81.1
+│     ├─ metro@npm:0.81.1 → npm:0.81.1
+│     └─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│
+├─ metro@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ metro
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/code-frame@npm:^7.24.7 → npm:7.26.2
+│     ├─ @babel/core@npm:^7.25.2 → npm:7.26.9
+│     ├─ @babel/generator@npm:^7.25.0 → npm:7.26.9
+│     ├─ @babel/parser@npm:^7.25.3 → npm:7.26.9
+│     ├─ @babel/template@npm:^7.25.0 → npm:7.26.9
+│     ├─ @babel/traverse@npm:^7.25.3 → npm:7.26.9
+│     ├─ @babel/types@npm:^7.25.2 → npm:7.26.9
+│     ├─ accepts@npm:^1.3.7 → npm:1.3.8
+│     ├─ chalk@npm:^4.0.0 → npm:4.1.2
+│     ├─ ci-info@npm:^2.0.0 → npm:2.0.0
+│     ├─ connect@npm:^3.6.5 → npm:3.7.0
+│     ├─ error-stack-parser@npm:^2.0.6 → npm:2.1.4
+│     ├─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│     ├─ graceful-fs@npm:^4.2.4 → npm:4.2.11
+│     ├─ hermes-parser@npm:0.25.1 → npm:0.25.1
+│     ├─ image-size@npm:^1.0.2 → npm:1.2.0
+│     ├─ invariant@npm:^2.2.4 → npm:2.2.4
+│     ├─ jest-worker@npm:^29.6.3 → npm:29.7.0
+│     ├─ jsc-safe-url@npm:^0.2.2 → npm:0.2.4
+│     ├─ lodash.throttle@npm:^4.1.1 → npm:4.1.1
+│     ├─ metro-babel-transformer@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-cache-key@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-cache@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-config@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-core@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-file-map@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-resolver@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-runtime@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-source-map@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-symbolicate@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-transform-plugins@npm:0.81.1 → npm:0.81.1
+│     ├─ metro-transform-worker@npm:0.81.1 → npm:0.81.1
+│     ├─ mime-types@npm:^2.1.27 → npm:2.1.35
+│     ├─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│     ├─ serialize-error@npm:^2.1.0 → npm:2.1.0
+│     ├─ source-map@npm:^0.5.6 → npm:0.5.7
+│     ├─ throat@npm:^5.0.0 → npm:5.0.0
+│     ├─ yargs@npm:^17.6.2 → npm:17.7.2
+│     ├─ debug@npm:^2.6.9 → npm:2.6.9 [04e17]
+│     └─ ws@npm:^7 → npm:7.5.10 [2ff08]
+│
+├─ micromatch@npm:4.0.8
+│  ├─ Version: 4.0.8
+│  │ 
+│  └─ Dependencies
+│     ├─ braces@npm:^3.0.3 → npm:3.0.3
+│     └─ picomatch@npm:^2.3.1 → npm:2.3.1
+│
+├─ mime-db@npm:1.52.0
+│  └─ Version: 1.52.0
+│
+├─ mime-db@npm:1.53.0
+│  └─ Version: 1.53.0
+│
+├─ mime-types@npm:2.1.35
+│  ├─ Version: 2.1.35
+│  │ 
+│  └─ Dependencies
+│     └─ mime-db@npm:1.52.0 → npm:1.52.0
+│
+├─ mime@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Exported Binaries
+│     └─ mime
+│
+├─ mime@npm:3.0.0
+│  ├─ Version: 3.0.0
+│  │ 
+│  └─ Exported Binaries
+│     └─ mime
+│
+├─ mimic-fn@npm:1.2.0
+│  └─ Version: 1.2.0
+│
+├─ minimatch@npm:3.1.2
+│  ├─ Version: 3.1.2
+│  │ 
+│  └─ Dependencies
+│     └─ brace-expansion@npm:^1.1.7 → npm:1.1.11
+│
+├─ minimatch@npm:9.0.5
+│  ├─ Version: 9.0.5
+│  │ 
+│  └─ Dependencies
+│     └─ brace-expansion@npm:^2.0.1 → npm:2.0.1
+│
+├─ minimist@npm:1.2.8
+│  └─ Version: 1.2.8
+│
+├─ minipass-collect@npm:2.0.1
+│  ├─ Version: 2.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ minipass@npm:^7.0.3 → npm:7.1.2
+│
+├─ minipass-fetch@npm:4.0.0
+│  ├─ Version: 4.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ encoding@npm:^0.1.13 → npm:0.1.13
+│     ├─ minipass-sized@npm:^1.0.3 → npm:1.0.3
+│     ├─ minipass@npm:^7.0.3 → npm:7.1.2
+│     └─ minizlib@npm:^3.0.1 → npm:3.0.1
+│
+├─ minipass-flush@npm:1.0.5
+│  ├─ Version: 1.0.5
+│  │ 
+│  └─ Dependencies
+│     └─ minipass@npm:^3.0.0 → npm:3.3.6
+│
+├─ minipass-pipeline@npm:1.2.4
+│  ├─ Version: 1.2.4
+│  │ 
+│  └─ Dependencies
+│     └─ minipass@npm:^3.0.0 → npm:3.3.6
+│
+├─ minipass-sized@npm:1.0.3
+│  ├─ Version: 1.0.3
+│  │ 
+│  └─ Dependencies
+│     └─ minipass@npm:^3.0.0 → npm:3.3.6
+│
+├─ minipass@npm:3.3.6
+│  ├─ Version: 3.3.6
+│  │ 
+│  └─ Dependencies
+│     └─ yallist@npm:^4.0.0 → npm:4.0.0
+│
+├─ minipass@npm:5.0.0
+│  └─ Version: 5.0.0
+│
+├─ minipass@npm:7.1.2
+│  └─ Version: 7.1.2
+│
+├─ minizlib@npm:2.1.2
+│  ├─ Version: 2.1.2
+│  │ 
+│  └─ Dependencies
+│     ├─ minipass@npm:^3.0.0 → npm:3.3.6
+│     └─ yallist@npm:^4.0.0 → npm:4.0.0
+│
+├─ minizlib@npm:3.0.1
+│  ├─ Version: 3.0.1
+│  │ 
+│  └─ Dependencies
+│     ├─ minipass@npm:^7.0.4 → npm:7.1.2
+│     └─ rimraf@npm:^5.0.5 → npm:5.0.10
+│
+├─ mitt@npm:3.0.1
+│  └─ Version: 3.0.1
+│
+├─ mkdirp@npm:0.5.6
+│  ├─ Version: 0.5.6
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ mkdirp
+│  │ 
+│  └─ Dependencies
+│     └─ minimist@npm:^1.2.6 → npm:1.2.8
+│
+├─ mkdirp@npm:1.0.4
+│  ├─ Version: 1.0.4
+│  │ 
+│  └─ Exported Binaries
+│     └─ mkdirp
+│
+├─ mkdirp@npm:3.0.1
+│  ├─ Version: 3.0.1
+│  │ 
+│  └─ Exported Binaries
+│     └─ mkdirp
+│
+├─ ms@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ ms@npm:2.1.3
+│  └─ Version: 2.1.3
+│
+├─ mz@npm:2.7.0
+│  ├─ Version: 2.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ any-promise@npm:^1.0.0 → npm:1.3.0
+│     ├─ object-assign@npm:^4.0.1 → npm:4.1.1
+│     └─ thenify-all@npm:^1.0.0 → npm:1.6.0
+│
+├─ nanoid@npm:3.3.8
+│  ├─ Version: 3.3.8
+│  │ 
+│  └─ Exported Binaries
+│     └─ nanoid
+│
+├─ natural-compare@npm:1.4.0
+│  └─ Version: 1.4.0
+│
+├─ negotiator@npm:0.6.3
+│  └─ Version: 0.6.3
+│
+├─ negotiator@npm:0.6.4
+│  └─ Version: 0.6.4
+│
+├─ negotiator@npm:1.0.0
+│  └─ Version: 1.0.0
+│
+├─ neo-async@npm:2.6.2
+│  └─ Version: 2.6.2
+│
+├─ nested-error-stacks@npm:2.0.1
+│  └─ Version: 2.0.1
+│
+├─ nice-try@npm:1.0.5
+│  └─ Version: 1.0.5
+│
+├─ node-dir@npm:0.1.17
+│  ├─ Version: 0.1.17
+│  │ 
+│  └─ Dependencies
+│     └─ minimatch@npm:^3.0.2 → npm:3.1.2
+│
+├─ node-fetch@npm:2.7.0
+│  ├─ Instances: 1
+│  ├─ Version: 2.7.0
+│  │ 
+│  └─ Dependencies
+│     └─ whatwg-url@npm:^5.0.0 → npm:5.0.0
+│
+├─ node-forge@npm:1.3.1
+│  └─ Version: 1.3.1
+│
+├─ node-gyp@npm:11.1.0
+│  ├─ Version: 11.1.0
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ node-gyp
+│  │ 
+│  └─ Dependencies
+│     ├─ env-paths@npm:^2.2.0 → npm:2.2.1
+│     ├─ exponential-backoff@npm:^3.1.1 → npm:3.1.2
+│     ├─ glob@npm:^10.3.10 → npm:10.4.5
+│     ├─ graceful-fs@npm:^4.2.6 → npm:4.2.11
+│     ├─ make-fetch-happen@npm:^14.0.3 → npm:14.0.3
+│     ├─ nopt@npm:^8.0.0 → npm:8.1.0
+│     ├─ proc-log@npm:^5.0.0 → npm:5.0.0
+│     ├─ semver@npm:^7.3.5 → npm:7.7.1
+│     ├─ tar@npm:^7.4.3 → npm:7.4.3
+│     └─ which@npm:^5.0.0 → npm:5.0.0
+│
+├─ node-int64@npm:0.4.0
+│  └─ Version: 0.4.0
+│
+├─ node-releases@npm:2.0.19
+│  └─ Version: 2.0.19
+│
+├─ nopt@npm:8.1.0
+│  ├─ Version: 8.1.0
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ nopt
+│  │ 
+│  └─ Dependencies
+│     └─ abbrev@npm:^3.0.0 → npm:3.0.0
+│
+├─ normalize-path@npm:3.0.0
+│  └─ Version: 3.0.0
+│
+├─ npm-package-arg@npm:11.0.3
+│  ├─ Version: 11.0.3
+│  │ 
+│  └─ Dependencies
+│     ├─ hosted-git-info@npm:^7.0.0 → npm:7.0.2
+│     ├─ proc-log@npm:^4.0.0 → npm:4.2.0
+│     ├─ semver@npm:^7.3.5 → npm:7.7.1
+│     └─ validate-npm-package-name@npm:^5.0.0 → npm:5.0.1
+│
+├─ npm-run-path@npm:2.0.2
+│  ├─ Version: 2.0.2
+│  │ 
+│  └─ Dependencies
+│     └─ path-key@npm:^2.0.0 → npm:2.0.1
+│
+├─ nullthrows@npm:1.1.1
+│  └─ Version: 1.1.1
+│
+├─ ob1@npm:0.81.1
+│  ├─ Version: 0.81.1
+│  │ 
+│  └─ Dependencies
+│     └─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│
+├─ object-assign@npm:4.1.1
+│  └─ Version: 4.1.1
+│
+├─ omggif@npm:1.0.10
+│  └─ Version: 1.0.10
+│
+├─ on-finished@npm:2.3.0
+│  ├─ Version: 2.3.0
+│  │ 
+│  └─ Dependencies
+│     └─ ee-first@npm:1.1.1 → npm:1.1.1
+│
+├─ on-finished@npm:2.4.1
+│  ├─ Version: 2.4.1
+│  │ 
+│  └─ Dependencies
+│     └─ ee-first@npm:1.1.1 → npm:1.1.1
+│
+├─ on-headers@npm:1.0.2
+│  └─ Version: 1.0.2
+│
+├─ once@npm:1.4.0
+│  ├─ Version: 1.4.0
+│  │ 
+│  └─ Dependencies
+│     └─ wrappy@npm:1 → npm:1.0.2
+│
+├─ onetime@npm:2.0.1
+│  ├─ Version: 2.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ mimic-fn@npm:^1.0.0 → npm:1.2.0
+│
+├─ open@npm:7.4.2
+│  ├─ Version: 7.4.2
+│  │ 
+│  └─ Dependencies
+│     ├─ is-docker@npm:^2.0.0 → npm:2.2.1
+│     └─ is-wsl@npm:^2.1.1 → npm:2.2.0
+│
+├─ open@npm:8.4.2
+│  ├─ Version: 8.4.2
+│  │ 
+│  └─ Dependencies
+│     ├─ define-lazy-prop@npm:^2.0.0 → npm:2.0.0
+│     ├─ is-docker@npm:^2.1.1 → npm:2.2.1
+│     └─ is-wsl@npm:^2.2.0 → npm:2.2.0
+│
+├─ optionator@npm:0.9.4
+│  ├─ Version: 0.9.4
+│  │ 
+│  └─ Dependencies
+│     ├─ deep-is@npm:^0.1.3 → npm:0.1.4
+│     ├─ fast-levenshtein@npm:^2.0.6 → npm:2.0.6
+│     ├─ levn@npm:^0.4.1 → npm:0.4.1
+│     ├─ prelude-ls@npm:^1.2.1 → npm:1.2.1
+│     ├─ type-check@npm:^0.4.0 → npm:0.4.0
+│     └─ word-wrap@npm:^1.2.5 → npm:1.2.5
+│
+├─ ora@npm:3.4.0
+│  ├─ Version: 3.4.0
+│  │ 
+│  └─ Dependencies
+│     ├─ chalk@npm:^2.4.2 → npm:2.4.2
+│     ├─ cli-cursor@npm:^2.1.0 → npm:2.1.0
+│     ├─ cli-spinners@npm:^2.0.0 → npm:2.9.2
+│     ├─ log-symbols@npm:^2.2.0 → npm:2.2.0
+│     ├─ strip-ansi@npm:^5.2.0 → npm:5.2.0
+│     └─ wcwidth@npm:^1.0.1 → npm:1.0.1
+│
+├─ os-tmpdir@npm:1.0.2
+│  └─ Version: 1.0.2
+│
+├─ p-finally@npm:1.0.0
+│  └─ Version: 1.0.0
+│
+├─ p-limit@npm:2.3.0
+│  ├─ Version: 2.3.0
+│  │ 
+│  └─ Dependencies
+│     └─ p-try@npm:^2.0.0 → npm:2.2.0
+│
+├─ p-limit@npm:3.1.0
+│  ├─ Version: 3.1.0
+│  │ 
+│  └─ Dependencies
+│     └─ yocto-queue@npm:^0.1.0 → npm:0.1.0
+│
+├─ p-locate@npm:3.0.0
+│  ├─ Version: 3.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ p-limit@npm:^2.0.0 → npm:2.3.0
+│
+├─ p-locate@npm:4.1.0
+│  ├─ Version: 4.1.0
+│  │ 
+│  └─ Dependencies
+│     └─ p-limit@npm:^2.2.0 → npm:2.3.0
+│
+├─ p-locate@npm:5.0.0
+│  ├─ Version: 5.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ p-limit@npm:^3.0.2 → npm:3.1.0
+│
+├─ p-map@npm:4.0.0
+│  ├─ Version: 4.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ aggregate-error@npm:^3.0.0 → npm:3.1.0
+│
+├─ p-map@npm:7.0.3
+│  └─ Version: 7.0.3
+│
+├─ p-try@npm:2.2.0
+│  └─ Version: 2.2.0
+│
+├─ package-json-from-dist@npm:1.0.1
+│  └─ Version: 1.0.1
+│
+├─ pako@npm:1.0.11
+│  └─ Version: 1.0.11
+│
+├─ parent-module@npm:1.0.1
+│  ├─ Version: 1.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ callsites@npm:^3.0.0 → npm:3.1.0
+│
+├─ parse-bmfont-ascii@npm:1.0.6
+│  └─ Version: 1.0.6
+│
+├─ parse-bmfont-binary@npm:1.0.6
+│  └─ Version: 1.0.6
+│
+├─ parse-bmfont-xml@npm:1.1.6
+│  ├─ Version: 1.1.6
+│  │ 
+│  └─ Dependencies
+│     ├─ xml-parse-from-string@npm:^1.0.0 → npm:1.0.1
+│     └─ xml2js@npm:^0.5.0 → npm:0.5.0
+│
+├─ parse-json@npm:4.0.0
+│  ├─ Version: 4.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ error-ex@npm:^1.3.1 → npm:1.3.2
+│     └─ json-parse-better-errors@npm:^1.0.1 → npm:1.0.2
+│
+├─ parse-png@npm:2.1.0
+│  ├─ Version: 2.1.0
+│  │ 
+│  └─ Dependencies
+│     └─ pngjs@npm:^3.3.0 → npm:3.4.0
+│
+├─ parseurl@npm:1.3.3
+│  └─ Version: 1.3.3
+│
+├─ password-prompt@npm:1.1.3
+│  ├─ Version: 1.1.3
+│  │ 
+│  └─ Dependencies
+│     ├─ ansi-escapes@npm:^4.3.2 → npm:4.3.2
+│     └─ cross-spawn@npm:^7.0.3 → npm:7.0.6
+│
+├─ path-exists@npm:3.0.0
+│  └─ Version: 3.0.0
+│
+├─ path-exists@npm:4.0.0
+│  └─ Version: 4.0.0
+│
+├─ path-is-absolute@npm:1.0.1
+│  └─ Version: 1.0.1
+│
+├─ path-key@npm:2.0.1
+│  └─ Version: 2.0.1
+│
+├─ path-key@npm:3.1.1
+│  └─ Version: 3.1.1
+│
+├─ path-parse@npm:1.0.7
+│  └─ Version: 1.0.7
+│
+├─ path-scurry@npm:1.11.1
+│  ├─ Version: 1.11.1
+│  │ 
+│  └─ Dependencies
+│     ├─ lru-cache@npm:^10.2.0 → npm:10.4.3
+│     └─ minipass@npm:^5.0.0 || ^6.0.2 || ^7.0.0 → npm:7.1.2
+│
+├─ path-type@npm:4.0.0
+│  └─ Version: 4.0.0
+│
+├─ peek-readable@npm:4.1.0
+│  └─ Version: 4.1.0
+│
+├─ picocolors@npm:1.1.1
+│  └─ Version: 1.1.1
+│
+├─ picomatch@npm:2.3.1
+│  └─ Version: 2.3.1
+│
+├─ picomatch@npm:3.0.1
+│  └─ Version: 3.0.1
+│
+├─ pify@npm:4.0.1
+│  └─ Version: 4.0.1
+│
+├─ pirates@npm:4.0.6
+│  └─ Version: 4.0.6
+│
+├─ pixelmatch@npm:5.3.0
+│  ├─ Version: 5.3.0
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ pixelmatch
+│  │ 
+│  └─ Dependencies
+│     └─ pngjs@npm:^6.0.0 → npm:6.0.0
+│
+├─ pkg-dir@npm:3.0.0
+│  ├─ Version: 3.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ find-up@npm:^3.0.0 → npm:3.0.0
+│
+├─ plist@npm:3.1.0
+│  ├─ Version: 3.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @xmldom/xmldom@npm:^0.8.8 → npm:0.8.10
+│     ├─ base64-js@npm:^1.5.1 → npm:1.5.1
+│     └─ xmlbuilder@npm:^15.1.1 → npm:15.1.1
+│
+├─ pngjs@npm:3.4.0
+│  └─ Version: 3.4.0
+│
+├─ pngjs@npm:6.0.0
+│  └─ Version: 6.0.0
+│
+├─ pngjs@npm:7.0.0
+│  └─ Version: 7.0.0
+│
+├─ postcss-value-parser@npm:4.2.0
+│  └─ Version: 4.2.0
+│
+├─ postcss@npm:8.4.49
+│  ├─ Version: 8.4.49
+│  │ 
+│  └─ Dependencies
+│     ├─ nanoid@npm:^3.3.7 → npm:3.3.8
+│     ├─ picocolors@npm:^1.1.1 → npm:1.1.1
+│     └─ source-map-js@npm:^1.2.1 → npm:1.2.1
+│
+├─ prelude-ls@npm:1.2.1
+│  └─ Version: 1.2.1
+│
+├─ prettier@npm:3.5.1
+│  ├─ Version: 3.5.1
+│  │ 
+│  └─ Exported Binaries
+│     └─ prettier
+│
+├─ pretty-bytes@npm:5.6.0
+│  └─ Version: 5.6.0
+│
+├─ pretty-format@npm:29.7.0
+│  ├─ Version: 29.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @jest/schemas@npm:^29.6.3 → npm:29.6.3
+│     ├─ ansi-styles@npm:^5.0.0 → npm:5.2.0
+│     └─ react-is@npm:^18.0.0 → npm:18.3.1
+│
+├─ proc-log@npm:4.2.0
+│  └─ Version: 4.2.0
+│
+├─ proc-log@npm:5.0.0
+│  └─ Version: 5.0.0
+│
+├─ process@npm:0.11.10
+│  └─ Version: 0.11.10
+│
+├─ progress@npm:2.0.3
+│  └─ Version: 2.0.3
+│
+├─ promise-retry@npm:2.0.1
+│  ├─ Version: 2.0.1
+│  │ 
+│  └─ Dependencies
+│     ├─ err-code@npm:^2.0.2 → npm:2.0.3
+│     └─ retry@npm:^0.12.0 → npm:0.12.0
+│
+├─ promise@npm:7.3.1
+│  ├─ Version: 7.3.1
+│  │ 
+│  └─ Dependencies
+│     └─ asap@npm:~2.0.3 → npm:2.0.6
+│
+├─ promise@npm:8.3.0
+│  ├─ Version: 8.3.0
+│  │ 
+│  └─ Dependencies
+│     └─ asap@npm:~2.0.6 → npm:2.0.6
+│
+├─ prompts@npm:2.4.2
+│  ├─ Version: 2.4.2
+│  │ 
+│  └─ Dependencies
+│     ├─ kleur@npm:^3.0.3 → npm:3.0.3
+│     └─ sisteransi@npm:^1.0.5 → npm:1.0.5
+│
+├─ prop-types@npm:15.8.1
+│  ├─ Version: 15.8.1
+│  │ 
+│  └─ Dependencies
+│     ├─ loose-envify@npm:^1.4.0 → npm:1.4.0
+│     ├─ object-assign@npm:^4.1.1 → npm:4.1.1
+│     └─ react-is@npm:^16.13.1 → npm:16.13.1
+│
+├─ protobufjs@npm:7.4.0
+│  ├─ Version: 7.4.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @protobufjs/aspromise@npm:^1.1.2 → npm:1.1.2
+│     ├─ @protobufjs/base64@npm:^1.1.2 → npm:1.1.2
+│     ├─ @protobufjs/codegen@npm:^2.0.4 → npm:2.0.4
+│     ├─ @protobufjs/eventemitter@npm:^1.1.0 → npm:1.1.0
+│     ├─ @protobufjs/fetch@npm:^1.1.0 → npm:1.1.0
+│     ├─ @protobufjs/float@npm:^1.0.2 → npm:1.0.2
+│     ├─ @protobufjs/inquire@npm:^1.1.0 → npm:1.1.0
+│     ├─ @protobufjs/path@npm:^1.1.2 → npm:1.1.2
+│     ├─ @protobufjs/pool@npm:^1.1.0 → npm:1.1.0
+│     ├─ @protobufjs/utf8@npm:^1.1.0 → npm:1.1.0
+│     ├─ @types/node@npm:>=13.7.0 → npm:22.13.4
+│     └─ long@npm:^5.0.0 → npm:5.3.0
+│
+├─ pump@npm:3.0.2
+│  ├─ Version: 3.0.2
+│  │ 
+│  └─ Dependencies
+│     ├─ end-of-stream@npm:^1.1.0 → npm:1.4.4
+│     └─ once@npm:^1.3.1 → npm:1.4.0
+│
+├─ punycode@npm:2.3.1
+│  └─ Version: 2.3.1
+│
+├─ qrcode-terminal@npm:0.11.0
+│  ├─ Version: 0.11.0
+│  │ 
+│  └─ Exported Binaries
+│     └─ qrcode-terminal
+│
+├─ query-string@npm:7.1.3
+│  ├─ Version: 7.1.3
+│  │ 
+│  └─ Dependencies
+│     ├─ decode-uri-component@npm:^0.2.2 → npm:0.2.2
+│     ├─ filter-obj@npm:^1.1.0 → npm:1.1.0
+│     ├─ split-on-first@npm:^1.0.0 → npm:1.1.0
+│     └─ strict-uri-encode@npm:^2.0.0 → npm:2.0.0
+│
+├─ queue-microtask@npm:1.2.3
+│  └─ Version: 1.2.3
+│
+├─ queue@npm:6.0.2
+│  ├─ Version: 6.0.2
+│  │ 
+│  └─ Dependencies
+│     └─ inherits@npm:~2.0.3 → npm:2.0.4
+│
+├─ range-parser@npm:1.2.1
+│  └─ Version: 1.2.1
+│
+├─ rc@npm:1.2.8
+│  ├─ Version: 1.2.8
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ rc
+│  │ 
+│  └─ Dependencies
+│     ├─ deep-extend@npm:^0.6.0 → npm:0.6.0
+│     ├─ ini@npm:~1.3.0 → npm:1.3.8
+│     ├─ minimist@npm:^1.2.0 → npm:1.2.8
+│     └─ strip-json-comments@npm:~2.0.1 → npm:2.0.1
+│
+├─ react-devtools-core@npm:6.1.1
+│  ├─ Version: 6.1.1
+│  │ 
+│  └─ Dependencies
+│     ├─ shell-quote@npm:^1.6.1 → npm:1.8.2
+│     └─ ws@npm:^7 → npm:7.5.10 [2ff08]
+│
+├─ react-dom@npm:18.3.1
+│  ├─ Instances: 1
+│  ├─ Version: 18.3.1
+│  │ 
+│  └─ Dependencies
+│     ├─ loose-envify@npm:^1.1.0 → npm:1.4.0
+│     └─ scheduler@npm:^0.23.2 → npm:0.23.2
+│
+├─ react-freeze@npm:1.0.4
+│  ├─ Instances: 1
+│  └─ Version: 1.0.4
+│
+├─ react-is@npm:16.13.1
+│  └─ Version: 16.13.1
+│
+├─ react-is@npm:18.3.1
+│  └─ Version: 18.3.1
+│
+├─ react-native-gesture-handler@npm:2.23.1
+│  ├─ Instances: 1
+│  ├─ Version: 2.23.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @egjs/hammerjs@npm:^2.0.17 → npm:2.0.17
+│     ├─ hoist-non-react-statics@npm:^3.3.0 → npm:3.3.2
+│     └─ invariant@npm:^2.2.4 → npm:2.2.4
+│
+├─ react-native-reanimated@npm:3.16.7
+│  ├─ Instances: 1
+│  ├─ Version: 3.16.7
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/plugin-transform-arrow-functions@npm:^7.0.0-0 → npm:7.25.9
+│     ├─ @babel/plugin-transform-class-properties@npm:^7.0.0-0 → npm:7.25.9
+│     ├─ @babel/plugin-transform-classes@npm:^7.0.0-0 → npm:7.25.9
+│     ├─ @babel/plugin-transform-nullish-coalescing-operator@npm:^7.0.0-0 → npm:7.26.6
+│     ├─ @babel/plugin-transform-optional-chaining@npm:^7.0.0-0 → npm:7.25.9
+│     ├─ @babel/plugin-transform-shorthand-properties@npm:^7.0.0-0 → npm:7.25.9
+│     ├─ @babel/plugin-transform-template-literals@npm:^7.0.0-0 → npm:7.26.8
+│     ├─ @babel/plugin-transform-unicode-regex@npm:^7.0.0-0 → npm:7.25.9
+│     ├─ @babel/preset-typescript@npm:^7.16.7 → npm:7.26.0
+│     ├─ convert-source-map@npm:^2.0.0 → npm:2.0.0
+│     └─ invariant@npm:^2.2.4 → npm:2.2.4
+│
+├─ react-native-safe-area-context@npm:5.2.0
+│  ├─ Instances: 1
+│  └─ Version: 5.2.0
+│
+├─ react-native-screens@npm:4.6.0
+│  ├─ Instances: 1
+│  ├─ Version: 4.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ react-freeze@npm:^1.0.0 → npm:1.0.4
+│     └─ warn-once@npm:^0.1.0 → npm:0.1.1
+│
+├─ react-native-web@npm:0.19.13
+│  ├─ Instances: 1
+│  ├─ Version: 0.19.13
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/runtime@npm:^7.18.6 → npm:7.26.9
+│     ├─ @react-native/normalize-colors@npm:^0.74.1 → npm:0.74.89
+│     ├─ fbjs@npm:^3.0.4 → npm:3.0.5
+│     ├─ inline-style-prefixer@npm:^6.0.1 → npm:6.0.4
+│     ├─ memoize-one@npm:^6.0.0 → npm:6.0.0
+│     ├─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│     ├─ postcss-value-parser@npm:^4.2.0 → npm:4.2.0
+│     └─ styleq@npm:^0.1.3 → npm:0.1.3
+│
+├─ react-native@npm:0.77.1
+│  ├─ Instances: 2
+│  ├─ Version: 0.77.1
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ react-native
+│  │ 
+│  └─ Dependencies
+│     ├─ @jest/create-cache-key-function@npm:^29.6.3 → npm:29.7.0
+│     ├─ @react-native/assets-registry@npm:0.77.1 → npm:0.77.1
+│     ├─ @react-native/codegen@npm:0.77.1 → npm:0.77.1
+│     ├─ @react-native/community-cli-plugin@npm:0.77.1 → npm:0.77.1
+│     ├─ @react-native/gradle-plugin@npm:0.77.1 → npm:0.77.1
+│     ├─ @react-native/js-polyfills@npm:0.77.1 → npm:0.77.1
+│     ├─ @react-native/normalize-colors@npm:0.77.1 → npm:0.77.1
+│     ├─ @react-native/virtualized-lists@npm:0.77.1 → npm:0.77.1
+│     ├─ abort-controller@npm:^3.0.0 → npm:3.0.0
+│     ├─ anser@npm:^1.4.9 → npm:1.4.10
+│     ├─ ansi-regex@npm:^5.0.0 → npm:5.0.1
+│     ├─ babel-jest@npm:^29.7.0 → npm:29.7.0
+│     ├─ babel-plugin-syntax-hermes-parser@npm:0.25.1 → npm:0.25.1
+│     ├─ base64-js@npm:^1.5.1 → npm:1.5.1
+│     ├─ chalk@npm:^4.0.0 → npm:4.1.2
+│     ├─ commander@npm:^12.0.0 → npm:12.1.0
+│     ├─ event-target-shim@npm:^5.0.1 → npm:5.0.1
+│     ├─ flow-enums-runtime@npm:^0.0.6 → npm:0.0.6
+│     ├─ glob@npm:^7.1.1 → npm:7.2.3
+│     ├─ invariant@npm:^2.2.4 → npm:2.2.4
+│     ├─ jest-environment-node@npm:^29.6.3 → npm:29.7.0
+│     ├─ jsc-android@npm:^250231.0.0 → npm:250231.0.0
+│     ├─ memoize-one@npm:^5.0.0 → npm:5.2.1
+│     ├─ metro-runtime@npm:^0.81.0 → npm:0.81.1
+│     ├─ metro-source-map@npm:^0.81.0 → npm:0.81.1
+│     ├─ nullthrows@npm:^1.1.1 → npm:1.1.1
+│     ├─ pretty-format@npm:^29.7.0 → npm:29.7.0
+│     ├─ promise@npm:^8.3.0 → npm:8.3.0
+│     ├─ react-devtools-core@npm:^6.0.1 → npm:6.1.1
+│     ├─ react-refresh@npm:^0.14.0 → npm:0.14.2
+│     ├─ regenerator-runtime@npm:^0.13.2 → npm:0.13.11
+│     ├─ scheduler@npm:0.24.0-canary-efb381bbf-20230505 → npm:0.24.0-canary-efb381bbf-20230505
+│     ├─ semver@npm:^7.1.3 → npm:7.7.1
+│     ├─ stacktrace-parser@npm:^0.1.10 → npm:0.1.10
+│     ├─ whatwg-fetch@npm:^3.0.0 → npm:3.6.20
+│     ├─ ws@npm:^6.2.3 → npm:6.2.3
+│     └─ yargs@npm:^17.6.2 → npm:17.7.2
+│
+├─ react-refresh@npm:0.14.2
+│  └─ Version: 0.14.2
+│
+├─ react@npm:18.3.1
+│  ├─ Version: 18.3.1
+│  │ 
+│  └─ Dependencies
+│     └─ loose-envify@npm:^1.1.0 → npm:1.4.0
+│
+├─ reactotron-core-client@npm:2.9.7
+│  ├─ Version: 2.9.7
+│  │ 
+│  └─ Dependencies
+│     └─ reactotron-core-contract@npm:0.2.5 → npm:0.2.5
+│
+├─ reactotron-core-contract@npm:0.2.5
+│  └─ Version: 0.2.5
+│
+├─ reactotron-react-native@npm:5.1.12
+│  ├─ Instances: 1
+│  ├─ Version: 5.1.12
+│  │ 
+│  └─ Dependencies
+│     ├─ mitt@npm:^3.0.1 → npm:3.0.1
+│     └─ reactotron-core-client@npm:2.9.7 → npm:2.9.7
+│
+├─ readable-stream@npm:4.7.0
+│  ├─ Version: 4.7.0
+│  │ 
+│  └─ Dependencies
+│     ├─ abort-controller@npm:^3.0.0 → npm:3.0.0
+│     ├─ buffer@npm:^6.0.3 → npm:6.0.3
+│     ├─ events@npm:^3.3.0 → npm:3.3.0
+│     ├─ process@npm:^0.11.10 → npm:0.11.10
+│     └─ string_decoder@npm:^1.3.0 → npm:1.3.0
+│
+├─ readable-web-to-node-stream@npm:3.0.4
+│  ├─ Version: 3.0.4
+│  │ 
+│  └─ Dependencies
+│     └─ readable-stream@npm:^4.7.0 → npm:4.7.0
+│
+├─ readline@npm:1.3.0
+│  └─ Version: 1.3.0
+│
+├─ recast@npm:0.21.5
+│  ├─ Version: 0.21.5
+│  │ 
+│  └─ Dependencies
+│     ├─ ast-types@npm:0.15.2 → npm:0.15.2
+│     ├─ esprima@npm:~4.0.0 → npm:4.0.1
+│     ├─ source-map@npm:~0.6.1 → npm:0.6.1
+│     └─ tslib@npm:^2.0.1 → npm:2.8.1
+│
+├─ recast@npm:0.23.9
+│  ├─ Version: 0.23.9
+│  │ 
+│  └─ Dependencies
+│     ├─ ast-types@npm:^0.16.1 → npm:0.16.1
+│     ├─ esprima@npm:~4.0.0 → npm:4.0.1
+│     ├─ source-map@npm:~0.6.1 → npm:0.6.1
+│     ├─ tiny-invariant@npm:^1.3.3 → npm:1.3.3
+│     └─ tslib@npm:^2.0.1 → npm:2.8.1
+│
+├─ regenerate-unicode-properties@npm:10.2.0
+│  ├─ Version: 10.2.0
+│  │ 
+│  └─ Dependencies
+│     └─ regenerate@npm:^1.4.2 → npm:1.4.2
+│
+├─ regenerate@npm:1.4.2
+│  └─ Version: 1.4.2
+│
+├─ regenerator-runtime@npm:0.13.11
+│  └─ Version: 0.13.11
+│
+├─ regenerator-runtime@npm:0.14.1
+│  └─ Version: 0.14.1
+│
+├─ regenerator-transform@npm:0.15.2
+│  ├─ Version: 0.15.2
+│  │ 
+│  └─ Dependencies
+│     └─ @babel/runtime@npm:^7.8.4 → npm:7.26.9
+│
+├─ regexpu-core@npm:6.2.0
+│  ├─ Version: 6.2.0
+│  │ 
+│  └─ Dependencies
+│     ├─ regenerate-unicode-properties@npm:^10.2.0 → npm:10.2.0
+│     ├─ regenerate@npm:^1.4.2 → npm:1.4.2
+│     ├─ regjsgen@npm:^0.8.0 → npm:0.8.0
+│     ├─ regjsparser@npm:^0.12.0 → npm:0.12.0
+│     ├─ unicode-match-property-ecmascript@npm:^2.0.0 → npm:2.0.0
+│     └─ unicode-match-property-value-ecmascript@npm:^2.1.0 → npm:2.2.0
+│
+├─ regjsgen@npm:0.8.0
+│  └─ Version: 0.8.0
+│
+├─ regjsparser@npm:0.12.0
+│  ├─ Version: 0.12.0
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ regjsparser
+│  │ 
+│  └─ Dependencies
+│     └─ jsesc@npm:~3.0.2 → npm:3.0.2
+│
+├─ remove-trailing-slash@npm:0.1.1
+│  └─ Version: 0.1.1
+│
+├─ require-directory@npm:2.1.1
+│  └─ Version: 2.1.1
+│
+├─ require-from-string@npm:2.0.2
+│  └─ Version: 2.0.2
+│
+├─ requireg@npm:0.2.2
+│  ├─ Version: 0.2.2
+│  │ 
+│  └─ Dependencies
+│     ├─ nested-error-stacks@npm:~2.0.1 → npm:2.0.1
+│     ├─ rc@npm:~1.2.7 → npm:1.2.8
+│     └─ resolve@patch:resolve@npm%3A~1.7.1#optional!builtin<compat/resolve> → patch:resolve@npm%3A1.7.1#optional!builtin<compat/resolve>::version=1.7.1&hash=3bafbf
+│
+├─ resolve-from@npm:3.0.0
+│  └─ Version: 3.0.0
+│
+├─ resolve-from@npm:4.0.0
+│  └─ Version: 4.0.0
+│
+├─ resolve-from@npm:5.0.0
+│  └─ Version: 5.0.0
+│
+├─ resolve-workspace-root@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ resolve.exports@npm:2.0.3
+│  └─ Version: 2.0.3
+│
+├─ resolve@patch:resolve@npm%3A1.22.10#optional!builtin<compat/resolve>::version=1.22.10&hash=c3c19d
+│  ├─ Version: 1.22.10
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ resolve
+│  │ 
+│  └─ Dependencies
+│     ├─ is-core-module@npm:^2.16.0 → npm:2.16.1
+│     ├─ path-parse@npm:^1.0.7 → npm:1.0.7
+│     └─ supports-preserve-symlinks-flag@npm:^1.0.0 → npm:1.0.0
+│
+├─ resolve@patch:resolve@npm%3A1.7.1#optional!builtin<compat/resolve>::version=1.7.1&hash=3bafbf
+│  ├─ Version: 1.7.1
+│  │ 
+│  └─ Dependencies
+│     └─ path-parse@npm:^1.0.5 → npm:1.0.7
+│
+├─ restore-cursor@npm:2.0.0
+│  ├─ Version: 2.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ onetime@npm:^2.0.0 → npm:2.0.1
+│     └─ signal-exit@npm:^3.0.2 → npm:3.0.7
+│
+├─ retry@npm:0.12.0
+│  └─ Version: 0.12.0
+│
+├─ reusify@npm:1.0.4
+│  └─ Version: 1.0.4
+│
+├─ rimraf@npm:2.6.3
+│  ├─ Version: 2.6.3
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ rimraf
+│  │ 
+│  └─ Dependencies
+│     └─ glob@npm:^7.1.3 → npm:7.2.3
+│
+├─ rimraf@npm:3.0.2
+│  ├─ Version: 3.0.2
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ rimraf
+│  │ 
+│  └─ Dependencies
+│     └─ glob@npm:^7.1.3 → npm:7.2.3
+│
+├─ rimraf@npm:5.0.10
+│  ├─ Version: 5.0.10
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ rimraf
+│  │ 
+│  └─ Dependencies
+│     └─ glob@npm:^10.3.7 → npm:10.4.5
+│
+├─ run-parallel@npm:1.2.0
+│  ├─ Version: 1.2.0
+│  │ 
+│  └─ Dependencies
+│     └─ queue-microtask@npm:^1.2.2 → npm:1.2.3
+│
+├─ safe-buffer@npm:5.2.1
+│  └─ Version: 5.2.1
+│
+├─ safer-buffer@npm:2.1.2
+│  └─ Version: 2.1.2
+│
+├─ sax@npm:1.4.1
+│  └─ Version: 1.4.1
+│
+├─ scheduler@npm:0.23.2
+│  ├─ Version: 0.23.2
+│  │ 
+│  └─ Dependencies
+│     └─ loose-envify@npm:^1.1.0 → npm:1.4.0
+│
+├─ scheduler@npm:0.24.0-canary-efb381bbf-20230505
+│  ├─ Version: 0.24.0-canary-efb381bbf-20230505
+│  │ 
+│  └─ Dependencies
+│     └─ loose-envify@npm:^1.1.0 → npm:1.4.0
+│
+├─ selfsigned@npm:2.4.1
+│  ├─ Version: 2.4.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @types/node-forge@npm:^1.3.0 → npm:1.3.11
+│     └─ node-forge@npm:^1 → npm:1.3.1
+│
+├─ semver@npm:5.7.2
+│  ├─ Version: 5.7.2
+│  │ 
+│  └─ Exported Binaries
+│     └─ semver
+│
+├─ semver@npm:6.3.1
+│  ├─ Version: 6.3.1
+│  │ 
+│  └─ Exported Binaries
+│     └─ semver
+│
+├─ semver@npm:7.7.1
+│  ├─ Version: 7.7.1
+│  │ 
+│  └─ Exported Binaries
+│     └─ semver
+│
+├─ send@npm:0.19.0
+│  ├─ Version: 0.19.0
+│  │ 
+│  └─ Dependencies
+│     ├─ depd@npm:2.0.0 → npm:2.0.0
+│     ├─ destroy@npm:1.2.0 → npm:1.2.0
+│     ├─ encodeurl@npm:~1.0.2 → npm:1.0.2
+│     ├─ escape-html@npm:~1.0.3 → npm:1.0.3
+│     ├─ etag@npm:~1.8.1 → npm:1.8.1
+│     ├─ fresh@npm:0.5.2 → npm:0.5.2
+│     ├─ http-errors@npm:2.0.0 → npm:2.0.0
+│     ├─ mime@npm:1.6.0 → npm:1.6.0
+│     ├─ ms@npm:2.1.3 → npm:2.1.3
+│     ├─ on-finished@npm:2.4.1 → npm:2.4.1
+│     ├─ range-parser@npm:~1.2.1 → npm:1.2.1
+│     ├─ statuses@npm:2.0.1 → npm:2.0.1
+│     └─ debug@npm:^2.6.9 → npm:2.6.9 [04e17]
+│
+├─ send@npm:0.19.1
+│  ├─ Version: 0.19.1
+│  │ 
+│  └─ Dependencies
+│     ├─ depd@npm:2.0.0 → npm:2.0.0
+│     ├─ destroy@npm:1.2.0 → npm:1.2.0
+│     ├─ encodeurl@npm:~2.0.0 → npm:2.0.0
+│     ├─ escape-html@npm:~1.0.3 → npm:1.0.3
+│     ├─ etag@npm:~1.8.1 → npm:1.8.1
+│     ├─ fresh@npm:0.5.2 → npm:0.5.2
+│     ├─ http-errors@npm:2.0.0 → npm:2.0.0
+│     ├─ mime@npm:1.6.0 → npm:1.6.0
+│     ├─ ms@npm:2.1.3 → npm:2.1.3
+│     ├─ on-finished@npm:2.4.1 → npm:2.4.1
+│     ├─ range-parser@npm:~1.2.1 → npm:1.2.1
+│     ├─ statuses@npm:2.0.1 → npm:2.0.1
+│     └─ debug@npm:^2.6.9 → npm:2.6.9 [04e17]
+│
+├─ serialize-error@npm:2.1.0
+│  └─ Version: 2.1.0
+│
+├─ serve-static@npm:1.16.2
+│  ├─ Version: 1.16.2
+│  │ 
+│  └─ Dependencies
+│     ├─ encodeurl@npm:~2.0.0 → npm:2.0.0
+│     ├─ escape-html@npm:~1.0.3 → npm:1.0.3
+│     ├─ parseurl@npm:~1.3.3 → npm:1.3.3
+│     └─ send@npm:0.19.0 → npm:0.19.0
+│
+├─ setanta-app@workspace:.
+│  ├─ Version: 0.0.0-use.local
+│  │ 
+│  └─ Dependencies
+│     ├─ @babel/core@npm:^7.26.9 → npm:7.26.9
+│     ├─ @types/babel__core@npm:^7 → npm:7.20.5
+│     ├─ @types/react-native-web@npm:^0 → npm:0.19.0
+│     ├─ @types/react@npm:19 → npm:19.0.9
+│     ├─ firebase@npm:^11.3.1 → npm:11.3.1
+│     ├─ jimp@npm:^1.6.0 → npm:1.6.0
+│     ├─ prettier@npm:^3.5.1 → npm:3.5.1
+│     ├─ protobufjs@npm:^7.4.0 → npm:7.4.0
+│     ├─ react@npm:18 → npm:18.3.1
+│     ├─ typescript@patch:typescript@npm%3A^5.3.3#optional!builtin<compat/typescript> → patch:typescript@npm%3A5.7.3#optional!builtin<compat/typescript>::version=5.7.3&hash=5786d5
+│     ├─ @react-navigation/bottom-tabs@npm:^7.2.0 → npm:7.2.0 [4c7ef]
+│     ├─ @react-navigation/native@npm:^7.0.14 → npm:7.0.14 [4c7ef]
+│     ├─ @react-navigation/stack@npm:^7.1.1 → npm:7.1.1 [4c7ef]
+│     ├─ @types/react-dom@npm:19 → npm:19.0.3 [4c7ef]
+│     ├─ eslint@npm:^9.20.1 → npm:9.20.1 [4c7ef]
+│     ├─ expo-constants@npm:^17.0.6 → npm:17.0.6 [4c7ef]
+│     ├─ expo-device@npm:^7.0.2 → npm:7.0.2 [4c7ef]
+│     ├─ expo-permissions@npm:^14.4.0 → npm:14.4.0 [4c7ef]
+│     ├─ expo-sensors@npm:^14.0.2 → npm:14.0.2 [4c7ef]
+│     ├─ expo@npm:^52.0.35 → npm:52.0.35 [4c7ef]
+│     ├─ react-dom@npm:18 → npm:18.3.1 [4c7ef]
+│     ├─ react-native-gesture-handler@npm:^2.23.1 → npm:2.23.1 [4c7ef]
+│     ├─ react-native-reanimated@npm:^3.16.7 → npm:3.16.7 [4c7ef]
+│     ├─ react-native-safe-area-context@npm:^5.2.0 → npm:5.2.0 [4c7ef]
+│     ├─ react-native-screens@npm:^4.6.0 → npm:4.6.0 [4c7ef]
+│     ├─ react-native-web@npm:^0.19.13 → npm:0.19.13 [4c7ef]
+│     ├─ react-native@npm:^0.77.1 → npm:0.77.1 [4c7ef]
+│     └─ reactotron-react-native@npm:^5.1.12 → npm:5.1.12 [4c7ef]
+│
+├─ setimmediate@npm:1.0.5
+│  └─ Version: 1.0.5
+│
+├─ setprototypeof@npm:1.2.0
+│  └─ Version: 1.2.0
+│
+├─ shallow-clone@npm:3.0.1
+│  ├─ Version: 3.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ kind-of@npm:^6.0.2 → npm:6.0.3
+│
+├─ shebang-command@npm:1.2.0
+│  ├─ Version: 1.2.0
+│  │ 
+│  └─ Dependencies
+│     └─ shebang-regex@npm:^1.0.0 → npm:1.0.0
+│
+├─ shebang-command@npm:2.0.0
+│  ├─ Version: 2.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ shebang-regex@npm:^3.0.0 → npm:3.0.0
+│
+├─ shebang-regex@npm:1.0.0
+│  └─ Version: 1.0.0
+│
+├─ shebang-regex@npm:3.0.0
+│  └─ Version: 3.0.0
+│
+├─ shell-quote@npm:1.8.2
+│  └─ Version: 1.8.2
+│
+├─ signal-exit@npm:3.0.7
+│  └─ Version: 3.0.7
+│
+├─ signal-exit@npm:4.1.0
+│  └─ Version: 4.1.0
+│
+├─ simple-plist@npm:1.4.0
+│  ├─ Version: 1.4.0
+│  │ 
+│  └─ Dependencies
+│     ├─ bplist-creator@npm:0.1.1 → npm:0.1.1
+│     ├─ bplist-parser@npm:0.3.2 → npm:0.3.2
+│     └─ plist@npm:^3.0.5 → npm:3.1.0
+│
+├─ simple-swizzle@npm:0.2.2
+│  ├─ Version: 0.2.2
+│  │ 
+│  └─ Dependencies
+│     └─ is-arrayish@npm:^0.3.1 → npm:0.3.2
+│
+├─ simple-xml-to-json@npm:1.2.3
+│  └─ Version: 1.2.3
+│
+├─ sisteransi@npm:1.0.5
+│  └─ Version: 1.0.5
+│
+├─ slash@npm:3.0.0
+│  └─ Version: 3.0.0
+│
+├─ slugify@npm:1.6.6
+│  └─ Version: 1.6.6
+│
+├─ smart-buffer@npm:4.2.0
+│  └─ Version: 4.2.0
+│
+├─ socks-proxy-agent@npm:8.0.5
+│  ├─ Version: 8.0.5
+│  │ 
+│  └─ Dependencies
+│     ├─ agent-base@npm:^7.1.2 → npm:7.1.3
+│     ├─ socks@npm:^2.8.3 → npm:2.8.4
+│     └─ debug@npm:^4.3.1 → npm:4.4.0 [5dc40]
+│
+├─ socks@npm:2.8.4
+│  ├─ Version: 2.8.4
+│  │ 
+│  └─ Dependencies
+│     ├─ ip-address@npm:^9.0.5 → npm:9.0.5
+│     └─ smart-buffer@npm:^4.2.0 → npm:4.2.0
+│
+├─ source-map-js@npm:1.2.1
+│  └─ Version: 1.2.1
+│
+├─ source-map-support@npm:0.5.21
+│  ├─ Version: 0.5.21
+│  │ 
+│  └─ Dependencies
+│     ├─ buffer-from@npm:^1.0.0 → npm:1.1.2
+│     └─ source-map@npm:^0.6.0 → npm:0.6.1
+│
+├─ source-map@npm:0.5.7
+│  └─ Version: 0.5.7
+│
+├─ source-map@npm:0.6.1
+│  └─ Version: 0.6.1
+│
+├─ split-on-first@npm:1.1.0
+│  └─ Version: 1.1.0
+│
+├─ split@npm:1.0.1
+│  ├─ Version: 1.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ through@npm:2 → npm:2.3.8
+│
+├─ sprintf-js@npm:1.0.3
+│  └─ Version: 1.0.3
+│
+├─ sprintf-js@npm:1.1.3
+│  └─ Version: 1.1.3
+│
+├─ ssri@npm:10.0.6
+│  ├─ Version: 10.0.6
+│  │ 
+│  └─ Dependencies
+│     └─ minipass@npm:^7.0.3 → npm:7.1.2
+│
+├─ ssri@npm:12.0.0
+│  ├─ Version: 12.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ minipass@npm:^7.0.3 → npm:7.1.2
+│
+├─ stack-utils@npm:2.0.6
+│  ├─ Version: 2.0.6
+│  │ 
+│  └─ Dependencies
+│     └─ escape-string-regexp@npm:^2.0.0 → npm:2.0.0
+│
+├─ stackframe@npm:1.3.4
+│  └─ Version: 1.3.4
+│
+├─ stacktrace-parser@npm:0.1.10
+│  ├─ Version: 0.1.10
+│  │ 
+│  └─ Dependencies
+│     └─ type-fest@npm:^0.7.1 → npm:0.7.1
+│
+├─ statuses@npm:1.5.0
+│  └─ Version: 1.5.0
+│
+├─ statuses@npm:2.0.1
+│  └─ Version: 2.0.1
+│
+├─ stream-buffers@npm:2.2.0
+│  └─ Version: 2.2.0
+│
+├─ strict-uri-encode@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ string-width@npm:4.2.3
+│  ├─ Version: 4.2.3
+│  │ 
+│  └─ Dependencies
+│     ├─ emoji-regex@npm:^8.0.0 → npm:8.0.0
+│     ├─ is-fullwidth-code-point@npm:^3.0.0 → npm:3.0.0
+│     └─ strip-ansi@npm:^6.0.1 → npm:6.0.1
+│
+├─ string-width@npm:5.1.2
+│  ├─ Version: 5.1.2
+│  │ 
+│  └─ Dependencies
+│     ├─ eastasianwidth@npm:^0.2.0 → npm:0.2.0
+│     ├─ emoji-regex@npm:^9.2.2 → npm:9.2.2
+│     └─ strip-ansi@npm:^7.0.1 → npm:7.1.0
+│
+├─ string_decoder@npm:1.3.0
+│  ├─ Version: 1.3.0
+│  │ 
+│  └─ Dependencies
+│     └─ safe-buffer@npm:~5.2.0 → npm:5.2.1
+│
+├─ strip-ansi@npm:5.2.0
+│  ├─ Version: 5.2.0
+│  │ 
+│  └─ Dependencies
+│     └─ ansi-regex@npm:^4.1.0 → npm:4.1.1
+│
+├─ strip-ansi@npm:6.0.1
+│  ├─ Version: 6.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ ansi-regex@npm:^5.0.1 → npm:5.0.1
+│
+├─ strip-ansi@npm:7.1.0
+│  ├─ Version: 7.1.0
+│  │ 
+│  └─ Dependencies
+│     └─ ansi-regex@npm:^6.0.1 → npm:6.1.0
+│
+├─ strip-eof@npm:1.0.0
+│  └─ Version: 1.0.0
+│
+├─ strip-json-comments@npm:2.0.1
+│  └─ Version: 2.0.1
+│
+├─ strip-json-comments@npm:3.1.1
+│  └─ Version: 3.1.1
+│
+├─ strtok3@npm:6.3.0
+│  ├─ Version: 6.3.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @tokenizer/token@npm:^0.3.0 → npm:0.3.0
+│     └─ peek-readable@npm:^4.1.0 → npm:4.1.0
+│
+├─ structured-headers@npm:0.4.1
+│  └─ Version: 0.4.1
+│
+├─ styleq@npm:0.1.3
+│  └─ Version: 0.1.3
+│
+├─ sucrase@npm:3.35.0
+│  ├─ Version: 3.35.0
+│  │ 
+│  ├─ Exported Binaries
+│  │  ├─ sucrase
+│  │  └─ sucrase-node
+│  │ 
+│  └─ Dependencies
+│     ├─ @jridgewell/gen-mapping@npm:^0.3.2 → npm:0.3.8
+│     ├─ commander@npm:^4.0.0 → npm:4.1.1
+│     ├─ glob@npm:^10.3.10 → npm:10.4.5
+│     ├─ lines-and-columns@npm:^1.1.6 → npm:1.2.4
+│     ├─ mz@npm:^2.7.0 → npm:2.7.0
+│     ├─ pirates@npm:^4.0.1 → npm:4.0.6
+│     └─ ts-interface-checker@npm:^0.1.9 → npm:0.1.13
+│
+├─ sudo-prompt@npm:8.2.5
+│  └─ Version: 8.2.5
+│
+├─ sudo-prompt@npm:9.1.1
+│  └─ Version: 9.1.1
+│
+├─ supports-color@npm:5.5.0
+│  ├─ Version: 5.5.0
+│  │ 
+│  └─ Dependencies
+│     └─ has-flag@npm:^3.0.0 → npm:3.0.0
+│
+├─ supports-color@npm:7.2.0
+│  ├─ Version: 7.2.0
+│  │ 
+│  └─ Dependencies
+│     └─ has-flag@npm:^4.0.0 → npm:4.0.0
+│
+├─ supports-color@npm:8.1.1
+│  ├─ Version: 8.1.1
+│  │ 
+│  └─ Dependencies
+│     └─ has-flag@npm:^4.0.0 → npm:4.0.0
+│
+├─ supports-hyperlinks@npm:2.3.0
+│  ├─ Version: 2.3.0
+│  │ 
+│  └─ Dependencies
+│     ├─ has-flag@npm:^4.0.0 → npm:4.0.0
+│     └─ supports-color@npm:^7.0.0 → npm:7.2.0
+│
+├─ supports-preserve-symlinks-flag@npm:1.0.0
+│  └─ Version: 1.0.0
+│
+├─ tar@npm:6.2.1
+│  ├─ Version: 6.2.1
+│  │ 
+│  └─ Dependencies
+│     ├─ chownr@npm:^2.0.0 → npm:2.0.0
+│     ├─ fs-minipass@npm:^2.0.0 → npm:2.1.0
+│     ├─ minipass@npm:^5.0.0 → npm:5.0.0
+│     ├─ minizlib@npm:^2.1.1 → npm:2.1.2
+│     ├─ mkdirp@npm:^1.0.3 → npm:1.0.4
+│     └─ yallist@npm:^4.0.0 → npm:4.0.0
+│
+├─ tar@npm:7.4.3
+│  ├─ Version: 7.4.3
+│  │ 
+│  └─ Dependencies
+│     ├─ @isaacs/fs-minipass@npm:^4.0.0 → npm:4.0.1
+│     ├─ chownr@npm:^3.0.0 → npm:3.0.0
+│     ├─ minipass@npm:^7.1.2 → npm:7.1.2
+│     ├─ minizlib@npm:^3.0.1 → npm:3.0.1
+│     ├─ mkdirp@npm:^3.0.1 → npm:3.0.1
+│     └─ yallist@npm:^5.0.0 → npm:5.0.0
+│
+├─ temp-dir@npm:2.0.0
+│  └─ Version: 2.0.0
+│
+├─ temp@npm:0.8.4
+│  ├─ Version: 0.8.4
+│  │ 
+│  └─ Dependencies
+│     └─ rimraf@npm:~2.6.2 → npm:2.6.3
+│
+├─ tempy@npm:0.7.1
+│  ├─ Version: 0.7.1
+│  │ 
+│  └─ Dependencies
+│     ├─ del@npm:^6.0.0 → npm:6.1.1
+│     ├─ is-stream@npm:^2.0.0 → npm:2.0.1
+│     ├─ temp-dir@npm:^2.0.0 → npm:2.0.0
+│     ├─ type-fest@npm:^0.16.0 → npm:0.16.0
+│     └─ unique-string@npm:^2.0.0 → npm:2.0.0
+│
+├─ terminal-link@npm:2.1.1
+│  ├─ Version: 2.1.1
+│  │ 
+│  └─ Dependencies
+│     ├─ ansi-escapes@npm:^4.2.1 → npm:4.3.2
+│     └─ supports-hyperlinks@npm:^2.0.0 → npm:2.3.0
+│
+├─ terser@npm:5.39.0
+│  ├─ Version: 5.39.0
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ terser
+│  │ 
+│  └─ Dependencies
+│     ├─ @jridgewell/source-map@npm:^0.3.3 → npm:0.3.6
+│     ├─ acorn@npm:^8.8.2 → npm:8.14.0
+│     ├─ commander@npm:^2.20.0 → npm:2.20.3
+│     └─ source-map-support@npm:~0.5.20 → npm:0.5.21
+│
+├─ test-exclude@npm:6.0.0
+│  ├─ Version: 6.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ @istanbuljs/schema@npm:^0.1.2 → npm:0.1.3
+│     ├─ glob@npm:^7.1.4 → npm:7.2.3
+│     └─ minimatch@npm:^3.0.4 → npm:3.1.2
+│
+├─ thenify-all@npm:1.6.0
+│  ├─ Version: 1.6.0
+│  │ 
+│  └─ Dependencies
+│     └─ thenify@npm:>= 3.1.0 < 4 → npm:3.3.1
+│
+├─ thenify@npm:3.3.1
+│  ├─ Version: 3.3.1
+│  │ 
+│  └─ Dependencies
+│     └─ any-promise@npm:^1.0.0 → npm:1.3.0
+│
+├─ throat@npm:5.0.0
+│  └─ Version: 5.0.0
+│
+├─ through@npm:2.3.8
+│  └─ Version: 2.3.8
+│
+├─ tiny-invariant@npm:1.3.3
+│  └─ Version: 1.3.3
+│
+├─ tinycolor2@npm:1.6.0
+│  └─ Version: 1.6.0
+│
+├─ tmp@npm:0.0.33
+│  ├─ Version: 0.0.33
+│  │ 
+│  └─ Dependencies
+│     └─ os-tmpdir@npm:~1.0.2 → npm:1.0.2
+│
+├─ tmp@npm:0.2.3
+│  └─ Version: 0.2.3
+│
+├─ tmpl@npm:1.0.5
+│  └─ Version: 1.0.5
+│
+├─ to-regex-range@npm:5.0.1
+│  ├─ Version: 5.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ is-number@npm:^7.0.0 → npm:7.0.0
+│
+├─ toidentifier@npm:1.0.1
+│  └─ Version: 1.0.1
+│
+├─ token-types@npm:4.2.1
+│  ├─ Version: 4.2.1
+│  │ 
+│  └─ Dependencies
+│     ├─ @tokenizer/token@npm:^0.3.0 → npm:0.3.0
+│     └─ ieee754@npm:^1.2.1 → npm:1.2.1
+│
+├─ tr46@npm:0.0.3
+│  └─ Version: 0.0.3
+│
+├─ ts-interface-checker@npm:0.1.13
+│  └─ Version: 0.1.13
+│
+├─ tslib@npm:2.8.1
+│  └─ Version: 2.8.1
+│
+├─ type-check@npm:0.4.0
+│  ├─ Version: 0.4.0
+│  │ 
+│  └─ Dependencies
+│     └─ prelude-ls@npm:^1.2.1 → npm:1.2.1
+│
+├─ type-detect@npm:4.0.8
+│  └─ Version: 4.0.8
+│
+├─ type-fest@npm:0.16.0
+│  └─ Version: 0.16.0
+│
+├─ type-fest@npm:0.21.3
+│  └─ Version: 0.21.3
+│
+├─ type-fest@npm:0.7.1
+│  └─ Version: 0.7.1
+│
+├─ typescript@patch:typescript@npm%3A5.7.3#optional!builtin<compat/typescript>::version=5.7.3&hash=5786d5
+│  ├─ Version: 5.7.3
+│  │ 
+│  └─ Exported Binaries
+│     ├─ tsc
+│     └─ tsserver
+│
+├─ ua-parser-js@npm:0.7.40
+│  ├─ Version: 0.7.40
+│  │ 
+│  └─ Exported Binaries
+│     └─ ua-parser-js
+│
+├─ ua-parser-js@npm:1.0.40
+│  ├─ Version: 1.0.40
+│  │ 
+│  └─ Exported Binaries
+│     └─ ua-parser-js
+│
+├─ undici-types@npm:6.20.0
+│  └─ Version: 6.20.0
+│
+├─ undici@npm:6.21.1
+│  └─ Version: 6.21.1
+│
+├─ unicode-canonical-property-names-ecmascript@npm:2.0.1
+│  └─ Version: 2.0.1
+│
+├─ unicode-match-property-ecmascript@npm:2.0.0
+│  ├─ Version: 2.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ unicode-canonical-property-names-ecmascript@npm:^2.0.0 → npm:2.0.1
+│     └─ unicode-property-aliases-ecmascript@npm:^2.0.0 → npm:2.1.0
+│
+├─ unicode-match-property-value-ecmascript@npm:2.2.0
+│  └─ Version: 2.2.0
+│
+├─ unicode-property-aliases-ecmascript@npm:2.1.0
+│  └─ Version: 2.1.0
+│
+├─ unique-filename@npm:3.0.0
+│  ├─ Version: 3.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ unique-slug@npm:^4.0.0 → npm:4.0.0
+│
+├─ unique-filename@npm:4.0.0
+│  ├─ Version: 4.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ unique-slug@npm:^5.0.0 → npm:5.0.0
+│
+├─ unique-slug@npm:4.0.0
+│  ├─ Version: 4.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ imurmurhash@npm:^0.1.4 → npm:0.1.4
+│
+├─ unique-slug@npm:5.0.0
+│  ├─ Version: 5.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ imurmurhash@npm:^0.1.4 → npm:0.1.4
+│
+├─ unique-string@npm:2.0.0
+│  ├─ Version: 2.0.0
+│  │ 
+│  └─ Dependencies
+│     └─ crypto-random-string@npm:^2.0.0 → npm:2.0.0
+│
+├─ universalify@npm:0.1.2
+│  └─ Version: 0.1.2
+│
+├─ universalify@npm:1.0.0
+│  └─ Version: 1.0.0
+│
+├─ universalify@npm:2.0.1
+│  └─ Version: 2.0.1
+│
+├─ unpipe@npm:1.0.0
+│  └─ Version: 1.0.0
+│
+├─ update-browserslist-db@npm:1.1.2
+│  ├─ Instances: 1
+│  ├─ Version: 1.1.2
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ update-browserslist-db
+│  │ 
+│  └─ Dependencies
+│     ├─ escalade@npm:^3.2.0 → npm:3.2.0
+│     └─ picocolors@npm:^1.1.1 → npm:1.1.1
+│
+├─ uri-js@npm:4.4.1
+│  ├─ Version: 4.4.1
+│  │ 
+│  └─ Dependencies
+│     └─ punycode@npm:^2.1.0 → npm:2.3.1
+│
+├─ use-latest-callback@npm:0.2.3
+│  ├─ Instances: 1
+│  └─ Version: 0.2.3
+│
+├─ use-sync-external-store@npm:1.4.0
+│  ├─ Instances: 1
+│  └─ Version: 1.4.0
+│
+├─ utif2@npm:4.1.0
+│  ├─ Version: 4.1.0
+│  │ 
+│  └─ Dependencies
+│     └─ pako@npm:^1.0.11 → npm:1.0.11
+│
+├─ utils-merge@npm:1.0.1
+│  └─ Version: 1.0.1
+│
+├─ uuid@npm:7.0.3
+│  ├─ Version: 7.0.3
+│  │ 
+│  └─ Exported Binaries
+│     └─ uuid
+│
+├─ uuid@npm:8.3.2
+│  ├─ Version: 8.3.2
+│  │ 
+│  └─ Exported Binaries
+│     └─ uuid
+│
+├─ validate-npm-package-name@npm:5.0.1
+│  └─ Version: 5.0.1
+│
+├─ vary@npm:1.1.2
+│  └─ Version: 1.1.2
+│
+├─ vlq@npm:1.0.1
+│  └─ Version: 1.0.1
+│
+├─ walker@npm:1.0.8
+│  ├─ Version: 1.0.8
+│  │ 
+│  └─ Dependencies
+│     └─ makeerror@npm:1.0.12 → npm:1.0.12
+│
+├─ warn-once@npm:0.1.1
+│  └─ Version: 0.1.1
+│
+├─ wcwidth@npm:1.0.1
+│  ├─ Version: 1.0.1
+│  │ 
+│  └─ Dependencies
+│     └─ defaults@npm:^1.0.3 → npm:1.0.4
+│
+├─ web-streams-polyfill@npm:3.3.3
+│  └─ Version: 3.3.3
+│
+├─ web-vitals@npm:4.2.4
+│  └─ Version: 4.2.4
+│
+├─ webidl-conversions@npm:3.0.1
+│  └─ Version: 3.0.1
+│
+├─ webidl-conversions@npm:5.0.0
+│  └─ Version: 5.0.0
+│
+├─ websocket-driver@npm:0.7.4
+│  ├─ Version: 0.7.4
+│  │ 
+│  └─ Dependencies
+│     ├─ http-parser-js@npm:>=0.5.1 → npm:0.5.9
+│     ├─ safe-buffer@npm:>=5.1.0 → npm:5.2.1
+│     └─ websocket-extensions@npm:>=0.1.1 → npm:0.1.4
+│
+├─ websocket-extensions@npm:0.1.4
+│  └─ Version: 0.1.4
+│
+├─ whatwg-fetch@npm:3.6.20
+│  └─ Version: 3.6.20
+│
+├─ whatwg-url-without-unicode@npm:8.0.0-3
+│  ├─ Version: 8.0.0-3
+│  │ 
+│  └─ Dependencies
+│     ├─ buffer@npm:^5.4.3 → npm:5.7.1
+│     ├─ punycode@npm:^2.1.1 → npm:2.3.1
+│     └─ webidl-conversions@npm:^5.0.0 → npm:5.0.0
+│
+├─ whatwg-url@npm:5.0.0
+│  ├─ Version: 5.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ tr46@npm:~0.0.3 → npm:0.0.3
+│     └─ webidl-conversions@npm:^3.0.0 → npm:3.0.1
+│
+├─ which@npm:1.3.1
+│  ├─ Version: 1.3.1
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ which
+│  │ 
+│  └─ Dependencies
+│     └─ isexe@npm:^2.0.0 → npm:2.0.0
+│
+├─ which@npm:2.0.2
+│  ├─ Version: 2.0.2
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ node-which
+│  │ 
+│  └─ Dependencies
+│     └─ isexe@npm:^2.0.0 → npm:2.0.0
+│
+├─ which@npm:5.0.0
+│  ├─ Version: 5.0.0
+│  │ 
+│  ├─ Exported Binaries
+│  │  └─ node-which
+│  │ 
+│  └─ Dependencies
+│     └─ isexe@npm:^3.1.1 → npm:3.1.1
+│
+├─ wonka@npm:6.3.4
+│  └─ Version: 6.3.4
+│
+├─ word-wrap@npm:1.2.5
+│  └─ Version: 1.2.5
+│
+├─ wrap-ansi@npm:7.0.0
+│  ├─ Version: 7.0.0
+│  │ 
+│  └─ Dependencies
+│     ├─ ansi-styles@npm:^4.0.0 → npm:4.3.0
+│     ├─ string-width@npm:^4.1.0 → npm:4.2.3
+│     └─ strip-ansi@npm:^6.0.0 → npm:6.0.1
+│
+├─ wrap-ansi@npm:8.1.0
+│  ├─ Version: 8.1.0
+│  │ 
+│  └─ Dependencies
+│     ├─ ansi-styles@npm:^6.1.0 → npm:6.2.1
+│     ├─ string-width@npm:^5.0.1 → npm:5.1.2
+│     └─ strip-ansi@npm:^7.0.1 → npm:7.1.0
+│
+├─ wrappy@npm:1.0.2
+│  └─ Version: 1.0.2
+│
+├─ write-file-atomic@npm:2.4.3
+│  ├─ Version: 2.4.3
+│  │ 
+│  └─ Dependencies
+│     ├─ graceful-fs@npm:^4.1.11 → npm:4.2.11
+│     ├─ imurmurhash@npm:^0.1.4 → npm:0.1.4
+│     └─ signal-exit@npm:^3.0.2 → npm:3.0.7
+│
+├─ write-file-atomic@npm:4.0.2
+│  ├─ Version: 4.0.2
+│  │ 
+│  └─ Dependencies
+│     ├─ imurmurhash@npm:^0.1.4 → npm:0.1.4
+│     └─ signal-exit@npm:^3.0.7 → npm:3.0.7
+│
+├─ write-file-atomic@npm:5.0.1
+│  ├─ Version: 5.0.1
+│  │ 
+│  └─ Dependencies
+│     ├─ imurmurhash@npm:^0.1.4 → npm:0.1.4
+│     └─ signal-exit@npm:^4.0.1 → npm:4.1.0
+│
+├─ ws@npm:6.2.3
+│  ├─ Instances: 1
+│  ├─ Version: 6.2.3
+│  │ 
+│  └─ Dependencies
+│     └─ async-limiter@npm:~1.0.0 → npm:1.0.1
+│
+├─ ws@npm:7.5.10
+│  ├─ Instances: 1
+│  └─ Version: 7.5.10
+│
+├─ ws@npm:8.18.0
+│  ├─ Instances: 1
+│  └─ Version: 8.18.0
+│
+├─ xcode@npm:3.0.1
+│  ├─ Version: 3.0.1
+│  │ 
+│  └─ Dependencies
+│     ├─ simple-plist@npm:^1.1.0 → npm:1.4.0
+│     └─ uuid@npm:^7.0.3 → npm:7.0.3
+│
+├─ xml-parse-from-string@npm:1.0.1
+│  └─ Version: 1.0.1
+│
+├─ xml2js@npm:0.5.0
+│  ├─ Version: 0.5.0
+│  │ 
+│  └─ Dependencies
+│     ├─ sax@npm:>=0.6.0 → npm:1.4.1
+│     └─ xmlbuilder@npm:~11.0.0 → npm:11.0.1
+│
+├─ xml2js@npm:0.6.0
+│  ├─ Version: 0.6.0
+│  │ 
+│  └─ Dependencies
+│     ├─ sax@npm:>=0.6.0 → npm:1.4.1
+│     └─ xmlbuilder@npm:~11.0.0 → npm:11.0.1
+│
+├─ xmlbuilder@npm:11.0.1
+│  └─ Version: 11.0.1
+│
+├─ xmlbuilder@npm:14.0.0
+│  └─ Version: 14.0.0
+│
+├─ xmlbuilder@npm:15.1.1
+│  └─ Version: 15.1.1
+│
+├─ y18n@npm:5.0.8
+│  └─ Version: 5.0.8
+│
+├─ yallist@npm:3.1.1
+│  └─ Version: 3.1.1
+│
+├─ yallist@npm:4.0.0
+│  └─ Version: 4.0.0
+│
+├─ yallist@npm:5.0.0
+│  └─ Version: 5.0.0
+│
+├─ yargs-parser@npm:21.1.1
+│  └─ Version: 21.1.1
+│
+├─ yargs@npm:17.7.2
+│  ├─ Version: 17.7.2
+│  │ 
+│  └─ Dependencies
+│     ├─ cliui@npm:^8.0.1 → npm:8.0.1
+│     ├─ escalade@npm:^3.1.1 → npm:3.2.0
+│     ├─ get-caller-file@npm:^2.0.5 → npm:2.0.5
+│     ├─ require-directory@npm:^2.1.1 → npm:2.1.1
+│     ├─ string-width@npm:^4.2.3 → npm:4.2.3
+│     ├─ y18n@npm:^5.0.5 → npm:5.0.8
+│     └─ yargs-parser@npm:^21.1.1 → npm:21.1.1
+│
+├─ yocto-queue@npm:0.1.0
+│  └─ Version: 0.1.0
+│
+└─ zod@npm:3.24.2
+   └─ Version: 3.24.2
