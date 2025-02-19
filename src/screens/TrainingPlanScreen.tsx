@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, TextInput, Button, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet, ScrollView, Alert } from 'react-native';
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
 
 const TrainingPlanInputForm: React.FC = () => {
   const [planName, setPlanName] = React.useState('');
@@ -17,23 +18,50 @@ const TrainingPlanInputForm: React.FC = () => {
   const [leg, setLeg] = React.useState('');
   const [calf, setCalf] = React.useState('');
 
-  const handleSubmit = () => {
-    console.log({
+  const handleSubmit = async () => {
+    const db = getFirestore();
+    const trainingPlan = {
       planName,
       description,
       startDate,
       endDate,
-      frequency,
-      targetIncreaseRate,
-      chest,
-      shoulder,
-      back,
-      abs,
-      arm,
-      forearm,
-      leg,
-      calf,
-    });
+      frequency: Number(frequency),
+      targetIncreaseRate: Number(targetIncreaseRate),
+      goals: {
+        chest: Number(chest),
+        shoulder: Number(shoulder),
+        back: Number(back),
+        abs: Number(abs),
+        arm: Number(arm),
+        forearm: Number(forearm),
+        leg: Number(leg),
+        calf: Number(calf),
+      },
+      createdAt: new Date(),
+    };
+
+    try {
+      await addDoc(collection(db, 'trainingPlans'), trainingPlan);
+      Alert.alert("成功", "トレーニング計画が保存されました！");
+      // フォームのリセット
+      setPlanName('');
+      setDescription('');
+      setStartDate('');
+      setEndDate('');
+      setFrequency('');
+      setTargetIncreaseRate('');
+      setChest('');
+      setShoulder('');
+      setBack('');
+      setAbs('');
+      setArm('');
+      setForearm('');
+      setLeg('');
+      setCalf('');
+    } catch (error) {
+      console.error("Error adding training plan:", error);
+      Alert.alert("エラー", "トレーニング計画の保存に失敗しました。");
+    }
   };
 
   return (
