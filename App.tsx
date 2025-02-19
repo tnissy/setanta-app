@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import LoginScreen from './src/screens/LoginScreen';
 import TrainingHistoryScreen from './src/screens/TrainingHistoryScreen';
 import TrainingRecordScreen from './src/screens/TrainingRecordScreen';
+import TrainingPlanScreen from './src/screens/TrainingPlanScreen';
 
 // 型定義
 type RootStackParamList = {
@@ -28,6 +29,11 @@ const HomeTabs: React.FC = () => {
         name="Record"
         component={TrainingRecordScreen}
         options={{ title: 'Record' }}
+      />
+      <Tab.Screen
+        name="Plan"
+        component={TrainingPlanScreen}
+        options={{ title: 'Plan' }}
       />
     </Tab.Navigator>
   );

@@ -14,8 +14,8 @@ type RootStackParamList = {
 type LoginScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Login'>;
 
 const LoginScreen: React.FC = () => {
-  const [email, setEmail] = useState<string>('');
-  const [password, setPassword] = useState<string>('');
+  const [email, setEmail] = useState<string>('mo2.ayase@gmail.com');
+  const [password, setPassword] = useState<string>('test4545');
   const navigation = useNavigation<LoginScreenNavigationProp>();
 
   const handleLogin = async (): Promise<void> => {
