@@ -1,12 +1,13 @@
 import type { Config } from 'jest';
 
 const config: Config = {
-  preset: 'ts-jest',
+  preset: 'react-native',
   testEnvironment: 'node',
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
+    '^@env$': '<rootDir>/.env',
   },
-  setupFilesAfterEnv: [], // jest.setup.ts を削除
+  setupFiles: ['<rootDir>/jest.setup.js'],
   testMatch: ['**/__tests__/**/*.test.ts', '**/*.test.ts'],
 };
 
