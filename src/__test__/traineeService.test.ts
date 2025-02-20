@@ -1,4 +1,4 @@
-import { ensureTraineeDocument } from '../services/traineeService';
+import { getTraineeDocument } from '../services/traineeService';
 import { getAuth } from 'firebase/auth';
 import { getFirestore, doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
 
@@ -44,7 +44,7 @@ describe('ensureTraineeDocument', () => {
         // currentUser is null
         fakeAuth.currentUser = null;
 
-        await ensureTraineeDocument();
+        await getTraineeDocument();
 
         expect(console.log).toHaveBeenCalledWith('認証ユーザが見つかりません');
     });
@@ -62,7 +62,7 @@ describe('ensureTraineeDocument', () => {
             exists: () => false,
         });
 
-        await ensureTraineeDocument();
+        await getTraineeDocument();
 
         // Expect doc was called with correct parameters.
         expect(doc).toHaveBeenCalledWith(expect.any(Object), 'trainees', 'user-001');
@@ -94,7 +94,7 @@ describe('ensureTraineeDocument', () => {
             exists: () => true,
         });
 
-        await ensureTraineeDocument();
+        await getTraineeDocument();
 
         expect(console.log).toHaveBeenCalledWith('トレイニーのドキュメントは既に存在します');
         expect(setDoc).not.toHaveBeenCalled();
@@ -117,7 +117,7 @@ describe('ensureTraineeDocument', () => {
         const errorMessage = new Error('setDoc failure');
         (setDoc as jest.Mock).mockRejectedValue(errorMessage);
 
-        await ensureTraineeDocument();
+        await getTraineeDocument();
 
         // Expected trainee data
         const expectedData = {

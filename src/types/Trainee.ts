@@ -10,4 +10,4 @@ export const userSchema = z.object({
   gender: z.enum(['male', 'female', 'other']), // 性別（英語表記）
 });
 
-export type User = z.infer<typeof userSchema>;
+export type Trainee = z.infer<typeof userSchema>;

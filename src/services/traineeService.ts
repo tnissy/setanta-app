@@ -5,7 +5,7 @@ import firebaseApp from '../firebaseConfig'; // Firebaseの初期設定
 const auth = getAuth(firebaseApp);
 const db = getFirestore(firebaseApp);
 
-export async function ensureTraineeDocument() {
+export async function getTraineeDocument() {
   // ログイン済みの認証ユーザを取得（user）
   const user = auth.currentUser;
   if (!user) {
