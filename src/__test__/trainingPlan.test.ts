@@ -3,13 +3,10 @@ import { TrainingPlan, trainingPlanSchema } from '../types/TrainingPlan';
 describe('TrainingPlan Structure', () => {
   it('should create a valid TrainingPlan object', () => {
     const plan: TrainingPlan = {
-      planName: 'Summer Strength',
-      description: 'Build muscle for summer!',
-      startDate: '2025-06-01',
-      endDate: '2025-08-31',
-      frequency: 3,
-      targetIncreaseRate: 10,
-      goals: {
+      planId: 'plan-001', // FirestoreのドキュメントID
+      userId: 'user-123', // ユーザーID
+      targetDate: '2025-06-01', // "YYYY-MM-DD"形式
+      targetIncreaseRates: {
         chest: 10,
         shoulder: 8,
         back: 12,
@@ -22,9 +19,10 @@ describe('TrainingPlan Structure', () => {
       createdAt: new Date('2025-01-01'),
     };
 
-    expect(plan.planName).toBe('Summer Strength');
-    expect(plan.frequency).toBe(3);
-    expect(plan.goals.chest).toBe(10);
+    expect(plan.planId).toBe('plan-001');
+    expect(plan.userId).toBe('user-123');
+    expect(plan.targetDate).toBe('2025-06-01');
+    expect(plan.targetIncreaseRates.chest).toBe(10);
     expect(plan.createdAt.toISOString()).toBe(new Date('2025-01-01').toISOString());
   });
 });
@@ -32,13 +30,10 @@ describe('TrainingPlan Structure', () => {
 describe('TrainingPlan Schema Validation', () => {
   it('should validate a correct TrainingPlan object', () => {
     const validPlan = {
-      planName: 'Summer Strength',
-      description: 'Build muscle for summer!',
-      startDate: '2025-06-01',
-      endDate: '2025-08-31',
-      frequency: 3,
-      targetIncreaseRate: 10,
-      goals: {
+      planId: 'plan-001',
+      userId: 'user-123',
+      targetDate: '2025-06-01',
+      targetIncreaseRates: {
         chest: 10,
         shoulder: 8,
         back: 12,
@@ -48,7 +43,7 @@ describe('TrainingPlan Schema Validation', () => {
         leg: 20,
         calf: 5,
       },
-      createdAt: new Date('2025-01-01')
+      createdAt: new Date('2025-01-01'),
     };
 
     const result = trainingPlanSchema.safeParse(validPlan);
@@ -57,14 +52,11 @@ describe('TrainingPlan Schema Validation', () => {
 
   it('should invalidate an incorrect TrainingPlan object', () => {
     const invalidPlan = {
-      planName: 'Summer Strength',
-      description: 'Build muscle for summer!',
-      startDate: '2025-06-01',
-      endDate: '2025-08-31',
-      frequency: 'three', // 数値ではなく文字列になっている
-      targetIncreaseRate: 10,
-      goals: {
-        chest: 10,
+      planId: 'plan-001',
+      userId: 'user-123',
+      targetDate: '2025/06/01', // 日付形式が不正 ("YYYY/MM/DD")
+      targetIncreaseRates: {
+        chest: "ten", // 数値ではなく文字列になっている
         shoulder: 8,
         back: 12,
         abs: 5,
@@ -73,7 +65,7 @@ describe('TrainingPlan Schema Validation', () => {
         leg: 20,
         calf: 5,
       },
-      createdAt: new Date('2025-01-01')
+      createdAt: new Date('2025-01-01'),
     };
 
     const result = trainingPlanSchema.safeParse(invalidPlan);

@@ -15,7 +15,13 @@
     "noImplicitAny": false,
     "allowJs": true,
     "strictNullChecks": true,
-    "types": ["react", "react-native", "expo"]
+    "types": [
+      "react",
+      "react-native",
+      "expo",
+      "jest",
+      "node"
+    ]
   },
   "include": [
     "src",

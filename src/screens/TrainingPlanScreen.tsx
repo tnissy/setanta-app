@@ -1,14 +1,9 @@
 import React from 'react';
 import { View, Text, TextInput, Button, StyleSheet, ScrollView, Alert } from 'react-native';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { TrainingPlan } from '../types/TrainingPlan'; // TrainingPlan 型をインポート
 
 const TrainingPlanInputForm: React.FC = () => {
-  const [planName, setPlanName] = React.useState('');
-  const [description, setDescription] = React.useState('');
-  const [startDate, setStartDate] = React.useState('');
-  const [endDate, setEndDate] = React.useState('');
-  const [frequency, setFrequency] = React.useState('');
-  const [targetIncreaseRate, setTargetIncreaseRate] = React.useState('');
   const [chest, setChest] = React.useState('');
   const [shoulder, setShoulder] = React.useState('');
   const [back, setBack] = React.useState('');
@@ -17,17 +12,19 @@ const TrainingPlanInputForm: React.FC = () => {
   const [forearm, setForearm] = React.useState('');
   const [leg, setLeg] = React.useState('');
   const [calf, setCalf] = React.useState('');
+  const [targetDate, setTargetDate] = React.useState(
+    new Date().toISOString().slice(0, 10) // デフォルトで今日の日付をセット
+  );
 
   const handleSubmit = async () => {
     const db = getFirestore();
-    const trainingPlan = {
-      planName,
-      description,
-      startDate,
-      endDate,
-      frequency: Number(frequency),
-      targetIncreaseRate: Number(targetIncreaseRate),
-      goals: {
+    // 本来は planId は Firestore のドキュメントIDとして自動付与される可能性があるため、
+    // 初期値は空文字、userId や targetDate も適宜取得してください。
+    const trainingPlan: TrainingPlan = {
+      planId: "",
+      userId: "dummyUser",
+      targetDate: targetDate, // ユーザー入力された日付を使用
+      targetIncreaseRates: {
         chest: Number(chest),
         shoulder: Number(shoulder),
         back: Number(back),
@@ -44,12 +41,6 @@ const TrainingPlanInputForm: React.FC = () => {
       await addDoc(collection(db, 'trainingPlans'), trainingPlan);
       Alert.alert("成功", "トレーニング計画が保存されました！");
       // フォームのリセット
-      setPlanName('');
-      setDescription('');
-      setStartDate('');
-      setEndDate('');
-      setFrequency('');
-      setTargetIncreaseRate('');
       setChest('');
       setShoulder('');
       setBack('');
@@ -58,6 +49,7 @@ const TrainingPlanInputForm: React.FC = () => {
       setForearm('');
       setLeg('');
       setCalf('');
+      setTargetDate(new Date().toISOString().slice(0, 10)); // フォームリセット時に日付もリセット
     } catch (error) {
       console.error("Error adding training plan:", error);
       Alert.alert("エラー", "トレーニング計画の保存に失敗しました。");
@@ -66,46 +58,12 @@ const TrainingPlanInputForm: React.FC = () => {
 
   return (
     <ScrollView contentContainerStyle={styles.form}>
-      <Text>トレーニングプラン名</Text>
+      <Text style={styles.subtitle}>目標日</Text>
       <TextInput
         style={styles.input}
-        value={planName}
-        onChangeText={setPlanName}
-        placeholder="プラン名を入力"
-      />
-      
-      <Text>開始日</Text>
-      <TextInput
-        style={styles.input}
-        value={startDate}
-        onChangeText={setStartDate}
+        value={targetDate}
+        onChangeText={setTargetDate}
         placeholder="YYYY-MM-DD"
-      />
-
-      <Text>終了日</Text>
-      <TextInput
-        style={styles.input}
-        value={endDate}
-        onChangeText={setEndDate}
-        placeholder="YYYY-MM-DD"
-      />
-
-      <Text>トレーニング頻度（週あたり）</Text>
-      <TextInput
-        style={styles.input}
-        value={frequency}
-        onChangeText={setFrequency}
-        placeholder="週あたりの回数"
-        keyboardType="numeric"
-      />
-
-      <Text>全体の目標増加率 (%)</Text>
-      <TextInput
-        style={styles.input}
-        value={targetIncreaseRate}
-        onChangeText={setTargetIncreaseRate}
-        placeholder="例: 10"
-        keyboardType="numeric"
       />
 
       <Text style={styles.subtitle}>部位ごとの目標増加率 (%)</Text>
@@ -180,15 +138,6 @@ const TrainingPlanInputForm: React.FC = () => {
         onChangeText={setCalf}
         placeholder="例: 4"
         keyboardType="numeric"
-      />
-
-      <Text>説明</Text>
-      <TextInput
-        style={styles.input}
-        value={description}
-        onChangeText={setDescription}
-        placeholder="説明を入力"
-        multiline
       />
 
       <Button title="保存" onPress={handleSubmit} />
