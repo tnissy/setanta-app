@@ -1,40 +1,52 @@
 // src/screens/TrainingRecordScreen.tsx
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity, Alert } from 'react-native';
-// Firestore にデータを書き込むためのメソッドをインポート
 import { collection, addDoc, Timestamp } from 'firebase/firestore';
-// 自分のfirebaseConfigから `db` をインポート
-import { db } from '../firebaseConfig'; 
+import { db } from '../firebaseConfig';
+import { exerciseSchema, Exercise } from '../types/Exercise';
+import { v4 as uuidv4 } from 'uuid';
 
 const TrainingRecordScreen: React.FC = () => {
-  // 入力データを管理するためのステート
-  const [exerciseName, setExerciseName] = useState('');
+  const [exerciseId] = useState(uuidv4());
+  const [workoutId] = useState('workout_1');
+  const [exerciseTypeId, setExerciseTypeId] = useState('');
+  const [order] = useState(1);
   const [weight, setWeight] = useState('');
   const [reps, setReps] = useState('');
   const [sets, setSets] = useState('');
-  const [notes, setNotes] = useState('');
+  const [method, setMethod] = useState('standard');
+  const [status] = useState('planned');
+  const [work, setWork] = useState('');
+  const [feedback, setFeedback] = useState('');
 
-  // Firestore に書き込む関数
   const handleSaveRecord = async () => {
     try {
-      // addDocを使う場合はコレクション名を指定
-      // 例: "trainingRecords" コレクションを作成してそこに格納するイメージ
-      await addDoc(collection(db, 'trainingRecords'), {
-        exerciseName,
-        weight: Number(weight), // 重量を数値に変換
-        reps: Number(reps),     // レップを数値に変換
-        sets: Number(sets),     // セット数を数値に変換
-        notes,
-        createdAt: Timestamp.now(), // Firestoreのタイムスタンプ
-      });
+      const newExercise: Exercise = {
+        exerciseId,
+        workoutId,
+        exerciseTypeId,
+        order,
+        weight: Number(weight),
+        reps: Number(reps),
+        sets: Number(sets),
+        method,
+        status: 'planned',
+        work: Number(work),
+        feedback: feedback ? Number(feedback) : undefined,
+      };
 
-      Alert.alert('成功', 'トレーニング記録が保存されたよ！');
-      // 保存後、入力をクリアしておく（必要に応じて）
-      setExerciseName('');
+      const parsedExercise = exerciseSchema.parse(newExercise);
+      await addDoc(collection(db, 'exercises'), parsedExercise);
+
+      Alert.alert('成功', 'エクササイズ記録が保存されたよ！');
+      
+      setExerciseTypeId('');
       setWeight('');
       setReps('');
       setSets('');
-      setNotes('');
+      setMethod('standard');
+      setWork('');
+      setFeedback('');
     } catch (error: any) {
       console.error(error);
       Alert.alert('エラー', `データの保存に失敗: ${error.message}`);
@@ -43,15 +55,15 @@ const TrainingRecordScreen: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>トレーニング記録</Text>
-
+      <Text style={styles.title}>エクササイズ記録</Text>
+      
       <TextInput
         style={styles.input}
-        placeholder="種目名（例: ベンチプレス）"
-        value={exerciseName}
-        onChangeText={setExerciseName}
+        placeholder="種目ID（例: bench_press）"
+        value={exerciseTypeId}
+        onChangeText={setExerciseTypeId}
       />
-
+      
       <TextInput
         style={styles.input}
         placeholder="重量 (kg)"
@@ -59,7 +71,7 @@ const TrainingRecordScreen: React.FC = () => {
         onChangeText={setWeight}
         keyboardType="numeric"
       />
-
+      
       <TextInput
         style={styles.input}
         placeholder="レップ数"
@@ -67,7 +79,7 @@ const TrainingRecordScreen: React.FC = () => {
         onChangeText={setReps}
         keyboardType="numeric"
       />
-
+      
       <TextInput
         style={styles.input}
         placeholder="セット数"
@@ -75,20 +87,33 @@ const TrainingRecordScreen: React.FC = () => {
         onChangeText={setSets}
         keyboardType="numeric"
       />
-
+      
       <TextInput
         style={styles.input}
-        placeholder="メモ・コメント"
-        value={notes}
-        onChangeText={setNotes}
+        placeholder="実施方法 (例: standard)"
+        value={method}
+        onChangeText={setMethod}
       />
-
+      
+      <TextInput
+        style={styles.input}
+        placeholder="仕事 (Joule)"
+        value={work}
+        onChangeText={setWork}
+        keyboardType="numeric"
+      />
+      
+      <TextInput
+        style={styles.input}
+        placeholder="フィードバック (1:物足りない, 2:いい感じ, 3:普通)"
+        value={feedback}
+        onChangeText={setFeedback}
+        keyboardType="numeric"
+      />
+      
       <TouchableOpacity style={styles.button} onPress={handleSaveRecord}>
         <Text style={styles.buttonText}>記録を保存</Text>
       </TouchableOpacity>
-
-      {/* Debug表示したい場合はこんなの入れてみる */}
-      {/* <Text>{JSON.stringify({ exerciseName, weight, reps, sets, notes }, null, 2)}</Text> */}
     </View>
   );
 };

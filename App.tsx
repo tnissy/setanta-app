@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import LoginScreen from './src/screens/LoginScreen';
 import TrainingHistoryScreen from './src/screens/TrainingHistoryScreen';
-import TrainingRecordScreen from './src/screens/TrainingRecordScreen';
+import ExerciseRecordScreen from './src/screens/ExerciseRecordScreen';
 import TrainingPlanScreen from './src/screens/TrainingPlanScreen';
 
 // 型定義
@@ -27,7 +27,7 @@ const HomeTabs: React.FC = () => {
       />
       <Tab.Screen
         name="Record"
-        component={TrainingRecordScreen}
+        component={ExerciseRecordScreen}
         options={{ title: 'Record' }}
       />
       <Tab.Screen
