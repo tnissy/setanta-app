@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity, Alert } from 'react-native';
-import { collection, addDoc } from 'firebase/firestore';
-import { db } from '../firebaseConfig';
-import { workoutSessionSchema, WorkoutSession } from '../types/workoutSession';
+// Repositoryからワークアウトセッション作成メソッドをimport
+import { WorkoutSessionRepository } from '../services/WorkoutSessionRepository';
+import { workoutSessionSchema, WorkoutSession } from '../types/workoutSessionEntity';
+
+const workoutSessionRepository = WorkoutSessionRepository.getInstance(); 
 
 const WorkoutSessionScreen: React.FC = () => {
   const [userId, setUserId] = useState('');
@@ -21,11 +23,14 @@ const WorkoutSessionScreen: React.FC = () => {
         },
       };
 
+      // バリデーションはそのまま行う
       workoutSessionSchema.parse(sessionData);
 
-      await addDoc(collection(db, 'workoutSessions'), sessionData);
+      // Repositoryのメソッドを呼び出してFirestoreへの書き込みを行う
+      await workoutSessionRepository.createWorkoutSession(sessionData);
       Alert.alert('成功', 'ワークアウトセッションが保存されたよ！');
 
+      // 入力フォームのリセット
       setUserId('');
       setWorkoutName('');
       setExercises('');
@@ -64,6 +69,7 @@ const WorkoutSessionScreen: React.FC = () => {
 
 export default WorkoutSessionScreen;
 
+// 既存のstyles定義はそのまま
 const styles = StyleSheet.create({
   container: {
     flex: 1,

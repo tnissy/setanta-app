@@ -6,7 +6,7 @@ import {
   fetchExerciseTypeList, 
   ExerciseSet, 
   WorkoutSessionData 
-} from '../services/workoutSessionService';
+} from '../services/workoutService';
 
 const WorkoutSessionScreen2: React.FC = () => {
   const [sessionData, setSessionData] = useState<WorkoutSessionData | null>(null);

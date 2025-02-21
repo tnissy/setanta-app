@@ -22,8 +22,8 @@ const LoginScreen: React.FC = () => {
   const handleLogin = async (): Promise<void> => {
     console.log('handleLogin関数が開始');
     try {
-      console.log('Repository.loginWithEmail を実行');
-      const userCredential = await Repository.loginWithEmail(email, password);
+      console.log('baseRepository.loginWithEmail を実行');
+      const userCredential = await baseRepository.loginWithEmail(email, password);
       console.log('ログイン成功:', userCredential.user.email);
       Alert.alert('ログイン成功', `ようこそ ${userCredential.user.email} さん！`);
       navigation.navigate('HomeTabs'); // ログイン成功後にホーム画面へ遷移

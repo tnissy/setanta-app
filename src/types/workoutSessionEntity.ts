@@ -2,7 +2,7 @@ import { z } from "zod";
 
 export const workoutSessionSchema = z.object({
   userId: z.string(), // ユーザーID
-  workout: z.object({
+  workoutSessionData: z.object({
     name: z.string(), // ワークアウトの名前
     exercises: z.array(
       z.object({

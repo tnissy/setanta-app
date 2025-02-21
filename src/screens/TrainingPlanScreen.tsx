@@ -9,8 +9,10 @@ import {
   ScrollView,
   Alert,
 } from 'react-native';
-import { createTrainingPlan, getTraineeDocument } from '../services/Repository';
+import { BaseRepository } from '../services/baseRepository';
 import { TrainingPlan } from '../types/TrainingPlan';
+
+const baseRepository = BaseRepository.getInstance();
 
 const TrainingPlanInputForm: React.FC = () => {
   const [chest, setChest] = React.useState('');
@@ -44,7 +46,7 @@ const TrainingPlanInputForm: React.FC = () => {
     };
 
     try {
-      await createTrainingPlan(trainingPlan);
+      await baseRepository.createTrainingPlan(trainingPlan);
       Alert.alert("成功", "トレーニング計画が保存されました！");
       // フォームのリセット
       setChest('');

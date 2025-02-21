@@ -1,7 +1,11 @@
 // Repository モジュールと firebase/auth の関数をインポートしています。
 // Repository の loginWithEmail メソッドの動作を検証するためのテストファイルです。
-import { Repository } from '../services/Repository';
+import { BaseRepository } from '../services/baseRepository';
+//import { exerciseRepository } from '../services/exerciseRepository';
+//import { workoutSessionRepository } from '../services/workoutSessionRepository';
 import { signInWithEmailAndPassword, getAuth } from 'firebase/auth';
+
+const baseRepository = BaseRepository.getInstance(); // すでにあるインスタンスを取得
 
 // firebase/auth モジュールのモックを作成しています。
 // signInWithEmailAndPassword と getAuth はそれぞれ jest.fn() を使ってモック化されています。
@@ -16,9 +20,9 @@ jest.mock('firebase/auth', () => ({
     getAuth: jest.fn(() => ({}))
 }));
 
-// Repository.loginWithEmail のテストスイートです。
+// baseRepository.loginWithEmail のテストスイートです。
 // 各テストケースは、firebase/auth のモックを利用して、ログインの正常動作、エラーハンドリングなどを検証しています。
-describe('Repository.loginWithEmail', () => {
+describe('baseRepository.loginWithEmail', () => {
     // テストで利用するダミーデータを定義します。
     const fakeEmail = 'test@example.com';
     const fakePassword = 'password123';
@@ -35,8 +39,8 @@ describe('Repository.loginWithEmail', () => {
         // signInWithEmailAndPassword の呼び出しは成功し、fakeUserCredential を返すように設定します。
         (signInWithEmailAndPassword as jest.Mock).mockResolvedValue(fakeUserCredential);
         
-        // Repository.loginWithEmail を呼び出し、返された結果を検証します。
-        const result = await Repository.loginWithEmail(fakeEmail, fakePassword);
+        // baseRepository.loginWithEmail を呼び出し、返された結果を検証します。
+        const result = await baseRepository.loginWithEmail(fakeEmail, fakePassword);
         
         // firebase/auth の getAuth が呼ばれたこと、正しい引数で signInWithEmailAndPassword が呼ばれていることを確認します。
         expect(getAuth).toHaveBeenCalled();
@@ -44,34 +48,23 @@ describe('Repository.loginWithEmail', () => {
         // 結果が期待通りのユーザー認証情報であることを確認します。
         expect(result).toEqual(fakeUserCredential);
     });
-    
-    // ログイン失敗時に、エラーがスローされることを検証するテストケースです。
-    test('should throw error on failed login', async () => {
-        // signInWithEmailAndPassword でエラーが発生するように設定します。
-        const testError = new Error('Authentication failed');
-        (signInWithEmailAndPassword as jest.Mock).mockRejectedValue(testError);
-        
-        // エラー発生を確認するために、Repository.loginWithEmail 呼び出しで例外が発生するかを検証します。
-        await expect(Repository.loginWithEmail(fakeEmail, fakePassword)).rejects.toThrow(testError);
-    });
-
-    test('should call signInWithEmailAndPassword only once', async () => {
+        test('should call signInWithEmailAndPassword only once', async () => {
         (signInWithEmailAndPassword as jest.Mock).mockResolvedValue(fakeUserCredential);
         
-        await Repository.loginWithEmail(fakeEmail, fakePassword);
+        await baseRepository.loginWithEmail(fakeEmail, fakePassword);
         
         expect(signInWithEmailAndPassword).toHaveBeenCalledTimes(1);
     });
 
     test('should reject when email is empty', async () => {
-        await expect(Repository.loginWithEmail('', fakePassword)).rejects.toThrow();
+        await expect(baseRepository.loginWithEmail('', fakePassword)).rejects.toThrow();
     });
     
     test('should log start and success messages on successful login', async () => {
         const logSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
         (signInWithEmailAndPassword as jest.Mock).mockResolvedValue(fakeUserCredential);
         
-        await Repository.loginWithEmail(fakeEmail, fakePassword);
+        await baseRepository.loginWithEmail(fakeEmail, fakePassword);
         
         expect(logSpy).toHaveBeenCalledWith('Repository: signInWithEmailAndPassword 開始');
         expect(logSpy).toHaveBeenCalledWith("Repository: ログイン成功", "test@example.com");
@@ -82,7 +75,7 @@ describe('Repository.loginWithEmail', () => {
         const testError = new Error('Authentication failed');
         (signInWithEmailAndPassword as jest.Mock).mockRejectedValue(testError);
         
-        await expect(Repository.loginWithEmail(fakeEmail, fakePassword)).rejects.toThrow(testError);
+        await expect(baseRepository.loginWithEmail(fakeEmail, fakePassword)).rejects.toThrow(testError);
         
         expect(errorSpy).toHaveBeenCalledWith('Repository: ログイン失敗', testError);
     });

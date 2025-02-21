@@ -1,4 +1,6 @@
 import exerciseTypeList from '../assets/exerciseTypeList.json';
+//import { workoutSessionData } from '../types/workoutSessionEntity';
+import { WorkoutSessionRepository } from '../services/workoutSessionRepository';
 
 export interface ExerciseSet {
   weight: number | string;
@@ -20,54 +22,39 @@ export interface WorkoutSessionData {
   };
 }
 
+// ここでリポジトリのインスタンスを生成（DIコンテナを使って管理する方法もあるね）
+const workoutSessionRepository = WorkoutSessionRepository.getInstance();
+
 /**
  * ダミーのワークアウトセッションデータを返す関数
  */
 export const fetchWorkoutSession = async (sessionId: string): Promise<WorkoutSessionData> => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve({
-        workout: {
-          name: "ダミーワークアウト",
-          exercises: [
-            {
-              id: "1",
-              exerciseType: "ベンチプレス",
-              sets: [
-                { weight: 55, reps: 12 },
-                { weight: 55, reps: 12 },
-                { weight: 55, reps: 12 }
-              ],
-              memo: "",
-              status: "未実施"
-            },
-            {
-              id: "2",
-              exerciseType: "スクワット",
-              sets: [
-                { weight: 75, reps: 10 },
-                { weight: 75, reps: 10 },
-                { weight: 75, reps: 10 }
-              ],
-              memo: "",
-              status: "未実施"
-            },
-            {
-              id: "3",
-              exerciseType: "デッドリフト",
-              sets: [
-                { weight: 95, reps: 8 },
-                { weight: 95, reps: 8 },
-                { weight: 95, reps: 8 }
-              ],
-              memo: "",
-              status: "未実施"
-            }
-          ]
+  const sessionData: WorkoutSessionData = {
+    workout: {
+      name: "ダミーワークアウト",
+      exercises: [
+        {
+          id: "1",
+          exerciseType: "Push-Ups",
+          sets: [{ weight: 0, reps: 10 }],
+          memo: "ダミーメモ",
+          status: "未実施"
+        },
+        {
+          id: "2",
+          exerciseType: "Squats",
+          sets: [{ weight: 0, reps: 15 }],
+          memo: "ダミーメモ",
+          status: "未実施"
         }
-      });
-    }, 500);
-  });
+      ]
+    }
+  };
+
+  if (!sessionData) {
+    throw new Error('Workout session not found');
+  }
+  return sessionData;
 };
 
 /**

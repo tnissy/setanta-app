@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TextInput, Button, Alert } from 'react-native';
-import { getTraineeData, updateTraineeWeight } from '../services/Repository';
+import { BaseRepository } from '../services/baseRepository';
 
+const baseRepository = BaseRepository.getInstance();
 const TraineeInfoScreen: React.FC = () => {
   const [trainee, setTrainee] = useState<any>(null);
   const [weight, setWeight] = useState<string>('');
@@ -10,7 +11,7 @@ const TraineeInfoScreen: React.FC = () => {
   // トレイニー情報を取得する関数
   const fetchTraineeData = async () => {
     try {
-      const data = await getTraineeData();
+      const data = await baseRepository.getTraineeData();
       setTrainee(data);
       setWeight(data.weight ? String(data.weight) : '');
     } catch (error: any) {
@@ -32,7 +33,7 @@ const TraineeInfoScreen: React.FC = () => {
       return;
     }
     try {
-      await updateTraineeWeight(parsedWeight);
+      await baseRepository.updateTraineeWeight(parsedWeight);
       Alert.alert('成功', '体重を更新しました');
       // 更新後に最新の情報を再取得
       fetchTraineeData();
