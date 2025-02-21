@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity, Alert } from 'react-native';
-import { collection, addDoc } from 'firebase/firestore';
-import { db } from '../firebaseConfig';
+// Repositoryからワークアウトセッション作成メソッドをimport
+import { Repository } from '../services/Repository';
 import { workoutSessionSchema, WorkoutSession } from '../types/workoutSession';
 
 const WorkoutSessionScreen: React.FC = () => {
@@ -21,11 +21,14 @@ const WorkoutSessionScreen: React.FC = () => {
         },
       };
 
+      // バリデーションはそのまま行う
       workoutSessionSchema.parse(sessionData);
 
-      await addDoc(collection(db, 'workoutSessions'), sessionData);
+      // Repositoryのメソッドを呼び出してFirestoreへの書き込みを行う
+      await Repository.createWorkoutSession(sessionData);
       Alert.alert('成功', 'ワークアウトセッションが保存されたよ！');
 
+      // 入力フォームのリセット
       setUserId('');
       setWorkoutName('');
       setExercises('');
@@ -64,6 +67,7 @@ const WorkoutSessionScreen: React.FC = () => {
 
 export default WorkoutSessionScreen;
 
+// 既存のstyles定義はそのまま
 const styles = StyleSheet.create({
   container: {
     flex: 1,
