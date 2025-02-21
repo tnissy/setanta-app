@@ -1,10 +1,11 @@
 // src/screens/LoginScreen.tsx
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebaseConfig';
+// firebaseConfig からの auth インポートは不要
+// import { auth } from '../firebaseConfig';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
+import { Repository } from '../services/Repository';
 
 type RootStackParamList = {
   Login: undefined;
@@ -21,8 +22,8 @@ const LoginScreen: React.FC = () => {
   const handleLogin = async (): Promise<void> => {
     console.log('handleLogin関数が開始');
     try {
-      console.log('signInWithEmailAndPasswordを実行');
-      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      console.log('Repository.loginWithEmail を実行');
+      const userCredential = await Repository.loginWithEmail(email, password);
       console.log('ログイン成功:', userCredential.user.email);
       Alert.alert('ログイン成功', `ようこそ ${userCredential.user.email} さん！`);
       navigation.navigate('HomeTabs'); // ログイン成功後にホーム画面へ遷移
@@ -91,7 +92,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 10, // ボタン間のスペースを追加
+    marginBottom: 10,
   },
   buttonText: {
     color: '#fff',

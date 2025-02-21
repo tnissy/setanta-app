@@ -1,7 +1,16 @@
-import React from 'react';
-import { View, Text, TextInput, Button, StyleSheet, ScrollView, Alert } from 'react-native';
-import { getFirestore, collection, addDoc } from 'firebase/firestore';
-import { TrainingPlan } from '../types/TrainingPlan'; // TrainingPlan 型をインポート
+// filepath: /Users/nsgctty/dev/setanta-app/src/screens/TrainingPlanScreen.tsx
+import React, { useEffect } from 'react';
+import {
+  View,
+  Text,
+  TextInput,
+  Button,
+  StyleSheet,
+  ScrollView,
+  Alert,
+} from 'react-native';
+import { createTrainingPlan, getTraineeDocument } from '../services/Repository';
+import { TrainingPlan } from '../types/TrainingPlan';
 
 const TrainingPlanInputForm: React.FC = () => {
   const [chest, setChest] = React.useState('');
@@ -13,17 +22,14 @@ const TrainingPlanInputForm: React.FC = () => {
   const [leg, setLeg] = React.useState('');
   const [calf, setCalf] = React.useState('');
   const [targetDate, setTargetDate] = React.useState(
-    new Date().toISOString().slice(0, 10) // デフォルトで今日の日付をセット
+    new Date().toISOString().slice(0, 10) // 今日の日付をデフォルトでセット
   );
 
   const handleSubmit = async () => {
-    const db = getFirestore();
-    // 本来は planId は Firestore のドキュメントIDとして自動付与される可能性があるため、
-    // 初期値は空文字、userId や targetDate も適宜取得してください。
     const trainingPlan: TrainingPlan = {
       planId: "",
-      userId: "dummyUser",
-      targetDate: targetDate, // ユーザー入力された日付を使用
+      userId: "dummyUser", // ここは実際のユーザーID取得に変更する
+      targetDate: targetDate,
       targetIncreaseRates: {
         chest: Number(chest),
         shoulder: Number(shoulder),
@@ -38,7 +44,7 @@ const TrainingPlanInputForm: React.FC = () => {
     };
 
     try {
-      await addDoc(collection(db, 'trainingPlans'), trainingPlan);
+      await createTrainingPlan(trainingPlan);
       Alert.alert("成功", "トレーニング計画が保存されました！");
       // フォームのリセット
       setChest('');
@@ -49,8 +55,8 @@ const TrainingPlanInputForm: React.FC = () => {
       setForearm('');
       setLeg('');
       setCalf('');
-      setTargetDate(new Date().toISOString().slice(0, 10)); // フォームリセット時に日付もリセット
-    } catch (error) {
+      setTargetDate(new Date().toISOString().slice(0, 10));
+    } catch (error: any) {
       console.error("Error adding training plan:", error);
       Alert.alert("エラー", "トレーニング計画の保存に失敗しました。");
     }
@@ -146,6 +152,11 @@ const TrainingPlanInputForm: React.FC = () => {
 };
 
 const TrainingPlanScreen: React.FC = () => {
+  useEffect(() => {
+    // 画面がマウントされたタイミングで、トレイニーのドキュメント存在確認＆作成を実施
+    getTraineeDocument();
+  }, []);
+
   return (
     <View style={styles.container}>
       <TrainingPlanInputForm />

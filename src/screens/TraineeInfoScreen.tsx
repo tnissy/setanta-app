@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TextInput, Button, Alert } from 'react-native';
-import { getAuth } from 'firebase/auth';
-import { getFirestore, doc, getDoc, updateDoc } from 'firebase/firestore';
-import firebaseApp from '../firebaseConfig';
-import { getTraineeDocument } from '../services/traineeService';
-
-const auth = getAuth(firebaseApp);
-const db = getFirestore(firebaseApp);
+import { getTraineeData, updateTraineeWeight } from '../services/Repository';
 
 const TraineeInfoScreen: React.FC = () => {
   const [trainee, setTrainee] = useState<any>(null);
@@ -15,19 +9,15 @@ const TraineeInfoScreen: React.FC = () => {
 
   // トレイニー情報を取得する関数
   const fetchTraineeData = async () => {
-    // まずトレイニーのドキュメントが存在するか確認・作成
-    await getTraineeDocument();
-    const user = auth.currentUser;
-    if (user) {
-      const traineeDocRef = doc(db, 'trainees', user.uid);
-      const traineeSnap = await getDoc(traineeDocRef);
-      if (traineeSnap.exists()) {
-        const data = traineeSnap.data();
-        setTrainee(data);
-        setWeight(data.weight ? String(data.weight) : '');
-      }
+    try {
+      const data = await getTraineeData();
+      setTrainee(data);
+      setWeight(data.weight ? String(data.weight) : '');
+    } catch (error: any) {
+      Alert.alert('エラー', error.message);
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   };
 
   useEffect(() => {
@@ -36,25 +26,18 @@ const TraineeInfoScreen: React.FC = () => {
 
   // 体重更新処理
   const handleUpdate = async () => {
-    const user = auth.currentUser;
-    if (!user) {
-      Alert.alert("エラー", "認証ユーザが見つかりません");
-      return;
-    }
-    const traineeDocRef = doc(db, 'trainees', user.uid);
     const parsedWeight = parseFloat(weight);
     if (isNaN(parsedWeight)) {
-      Alert.alert("エラー", "体重は数値で入力してください");
+      Alert.alert('エラー', '体重は数値で入力してください');
       return;
     }
     try {
-      await updateDoc(traineeDocRef, { weight: parsedWeight });
-      Alert.alert("成功", "体重を更新しました");
+      await updateTraineeWeight(parsedWeight);
+      Alert.alert('成功', '体重を更新しました');
       // 更新後に最新の情報を再取得
       fetchTraineeData();
-    } catch (error) {
-      console.error(error);
-      Alert.alert("エラー", "更新に失敗しました");
+    } catch (error: any) {
+      Alert.alert('エラー', error.message);
     }
   };
 
@@ -83,21 +66,21 @@ const TraineeInfoScreen: React.FC = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    backgroundColor: '#fff',
+  container: { 
+    flex: 1, 
+    padding: 20, 
+    backgroundColor: '#fff' 
   },
-  label: {
-    fontSize: 16,
-    marginBottom: 10,
+  label: { 
+    fontSize: 16, 
+    marginBottom: 10 
   },
-  input: {
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 4,
-    padding: 10,
-    marginBottom: 15,
+  input: { 
+    borderWidth: 1, 
+    borderColor: '#ccc', 
+    borderRadius: 4, 
+    padding: 10, 
+    marginBottom: 15 
   },
 });
 

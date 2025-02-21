@@ -3,6 +3,7 @@ import { View, Text, FlatList, StyleSheet, TouchableOpacity, ActivityIndicator }
 import { useNavigation } from '@react-navigation/native';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import { db } from '../firebaseConfig'; // ← あなたのdb設定をimport
+import { StackNavigationProp } from '@react-navigation/stack';
 
 interface TrainingRecord {
   id: string;
@@ -14,10 +15,20 @@ interface TrainingRecord {
   weight: number;
 }
 
+type RootStackParamList = {
+  TrainingHistory: undefined;
+  Record: undefined;
+};
+
+type TrainingHistoryScreenNavigationProp = StackNavigationProp<
+  RootStackParamList,
+  'TrainingHistory'
+>;
+
 const TrainingHistoryScreen: React.FC = () => {
   const [records, setRecords] = useState<TrainingRecord[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
-  const navigation = useNavigation();
+  const navigation = useNavigation<TrainingHistoryScreenNavigationProp>();
 
   useEffect(() => {
     const fetchRecords = async () => {
