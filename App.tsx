@@ -7,6 +7,7 @@ import TrainingHistoryScreen from './src/screens/TrainingHistoryScreen';
 import ExerciseRecordScreen from './src/screens/ExerciseRecordScreen';
 import TrainingPlanScreen from './src/screens/TrainingPlanScreen';
 import TraineeInfoScreen from './src/screens/TraineeInfoScreen';
+import WorkoutSessionScreen2 from './src/screens/WorkoutSessionScreen2';
 
 // 型定義
 type RootStackParamList = {
@@ -40,6 +41,11 @@ const HomeTabs: React.FC = () => {
         name="Trainee"
         component={TraineeInfoScreen}
         options={{ title: 'Trainee Info' }}
+      />
+      <Tab.Screen
+        name="WorkoutSession"
+        component={WorkoutSessionScreen2}
+        options={{ title: 'Workout Session' }}
       />
     </Tab.Navigator>
   );
