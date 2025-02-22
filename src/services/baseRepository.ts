@@ -98,8 +98,8 @@ export class BaseRepository {
     await updateDoc(traineeDocRef, data);
   }
 
-  // getOrCreateTrainingPlan: トレーニングプラン文書を取得または作成する
-  async getOrCreateTrainingPlan(): Promise<TrainingPlan> {
+  // getTrainingPlan: トレーニングプラン文書を取得または作成する
+  async getTrainingPlan(): Promise<TrainingPlan> {
     const user = this.getCurrentUser();
     const trainingPlanDocRef = doc(this.db, 'trainingPlans', user.uid);
     const trainingPlanSnap = await getDoc(trainingPlanDocRef);

@@ -1,4 +1,3 @@
-// filepath: /Users/nsgctty/dev/setanta-app/src/screens/TrainingPlanScreen.tsx
 import React, { useEffect } from 'react';
 import {
   View,
@@ -23,15 +22,37 @@ const TrainingPlanInputForm: React.FC = () => {
   const [forearm, setForearm] = React.useState('');
   const [leg, setLeg] = React.useState('');
   const [calf, setCalf] = React.useState('');
-  const [targetDate, setTargetDate] = React.useState(
-    new Date().toISOString().slice(0, 10) // 今日の日付をデフォルトでセット
-  );
+  const [targetDate, setTargetDate] = React.useState(new Date().toISOString().slice(0, 10));
+
+  // 初期データ取得
+  useEffect(() => {
+    const fetchPlan = async () => {
+      try {
+        const plan = await baseRepository.getTrainingPlan();
+        if (plan) {
+          // 取得したプランでフォームを初期化
+          setChest(String(plan.targetIncreaseRates.chest));
+          setShoulder(String(plan.targetIncreaseRates.shoulder));
+          setBack(String(plan.targetIncreaseRates.back));
+          setAbs(String(plan.targetIncreaseRates.abs));
+          setArm(String(plan.targetIncreaseRates.arm));
+          setForearm(String(plan.targetIncreaseRates.forearm));
+          setLeg(String(plan.targetIncreaseRates.leg));
+          setCalf(String(plan.targetIncreaseRates.calf));
+          setTargetDate(plan.targetDate);
+        }
+      } catch (error) {
+        console.error("Error fetching training plan:", error);
+      }
+    };
+    fetchPlan();
+  }, []);
 
   const handleSubmit = async () => {
     const trainingPlan: TrainingPlan = {
-      planId: "",
-      userId: "dummyUser", // ここは実際のユーザーID取得に変更する
-      targetDate: targetDate,
+      planId: "", // 必要ならIDをセット
+      userId: "dummyUser", // 実際のユーザーIDに変更
+      targetDate,
       targetIncreaseRates: {
         chest: Number(chest),
         shoulder: Number(shoulder),
@@ -46,21 +67,12 @@ const TrainingPlanInputForm: React.FC = () => {
     };
 
     try {
-      await baseRepository.createTrainingPlan(trainingPlan);
-      Alert.alert("成功", "トレーニング計画が保存されました！");
-      // フォームのリセット
-      setChest('');
-      setShoulder('');
-      setBack('');
-      setAbs('');
-      setArm('');
-      setForearm('');
-      setLeg('');
-      setCalf('');
-      setTargetDate(new Date().toISOString().slice(0, 10));
-    } catch (error: any) {
-      console.error("Error adding training plan:", error);
-      Alert.alert("エラー", "トレーニング計画の保存に失敗しました。");
+      // 更新メソッドを呼ぶ
+      await baseRepository.updateTrainingPlan(trainingPlan);
+      Alert.alert("成功", "トレーニング計画が更新されました！");
+    } catch (error) {
+      console.error("Error updating training plan:", error);
+      Alert.alert("エラー", "トレーニング計画の更新に失敗しました。");
     }
   };
 
@@ -154,11 +166,6 @@ const TrainingPlanInputForm: React.FC = () => {
 };
 
 const TrainingPlanScreen: React.FC = () => {
-  useEffect(() => {
-    // 画面がマウントされたタイミングで、トレイニーのドキュメント存在確認＆作成を実施
-    getTraineeDocument();
-  }, []);
-
   return (
     <View style={styles.container}>
       <TrainingPlanInputForm />
