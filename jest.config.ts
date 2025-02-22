@@ -8,7 +8,10 @@ const config: Config = {
     '^@env$': '<rootDir>/.env',
   },
   setupFiles: ['<rootDir>/jest.setup.js'],
-  testMatch: ['**/__tests__/**/*.test.ts', '**/*.test.ts'],
+  testMatch: [
+    '<rootDir>/src/__test__/**/*.test.{ts,tsx}',
+    '<rootDir>/src/__integration__/**/*.test.{ts,tsx}'
+  ],
 };
 
 export default config;

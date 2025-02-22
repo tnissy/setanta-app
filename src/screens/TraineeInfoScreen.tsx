@@ -2,18 +2,35 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TextInput, Button, Alert } from 'react-native';
 import { BaseRepository } from '../services/baseRepository';
 
-const baseRepository = BaseRepository.getInstance();
-const TraineeInfoScreen: React.FC = () => {
-  const [trainee, setTrainee] = useState<any>(null);
-  const [weight, setWeight] = useState<string>('');
+// Trainee型の定義（必要に応じてFirebaseのTimestamp型などに変更してね）
+interface Trainee {
+  weight: number | string;
+  name: string;
+  email: string;
+  gender: string;
+  createdAt: any; // 編集不可なので表示のみで使う
+}
+
+// // BaseRepository の型定義
+// type BaseRepository = {
+//   getTrainee: () => Promise<Trainee>;
+//   updateTrainee: (data: Trainee) => Promise<void>;
+// };
+
+// コンポーネントの props 型定義
+type Props = {
+  baseRepository: BaseRepository;
+};
+
+const TraineeInfoScreen: React.FC<Props> = ({ baseRepository }) => {
+  const [trainee, setTrainee] = useState<Trainee | null>(null);
   const [loading, setLoading] = useState(true);
 
   // トレイニー情報を取得する関数
   const fetchTraineeData = async () => {
     try {
-      const data = await baseRepository.getTraineeData();
+      const data = await baseRepository.getTrainee();
       setTrainee(data);
-      setWeight(data.weight ? String(data.weight) : '');
     } catch (error: any) {
       Alert.alert('エラー', error.message);
     } finally {
@@ -25,22 +42,34 @@ const TraineeInfoScreen: React.FC = () => {
     fetchTraineeData();
   }, []);
 
-  // 体重更新処理
+  // 更新処理：入力された全フィールドを更新する
   const handleUpdate = async () => {
-    const parsedWeight = parseFloat(weight);
+    if (!trainee) return;
+    // 体重は数値としてバリデート
+    const parsedWeight = parseFloat(String(trainee.weight));
     if (isNaN(parsedWeight)) {
       Alert.alert('エラー', '体重は数値で入力してください');
       return;
     }
+    // 更新対象のフィールドだけをまとめる（createdAtは更新対象外）
+    const updatedTrainee = {
+      name: trainee.name,
+      email: trainee.email,
+      gender: trainee.gender,
+      weight: parsedWeight,
+    };
     try {
-      await baseRepository.updateTraineeWeight(parsedWeight);
-      Alert.alert('成功', '体重を更新しました');
+      await baseRepository.updateTrainee(updatedTrainee);
+      Alert.alert('成功', '情報を更新しました');
       // 更新後に最新の情報を再取得
       fetchTraineeData();
     } catch (error: any) {
       Alert.alert('エラー', error.message);
     }
   };
+
+
+
 
   if (loading) {
     return (
@@ -52,15 +81,44 @@ const TraineeInfoScreen: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>名前: {trainee?.name}</Text>
-      <Text style={styles.label}>メール: {trainee?.email}</Text>
+      {/* 名前 */}
+      <Text style={styles.label}>名前:</Text>
+      <TextInput
+        style={styles.input}
+        value={trainee?.name}
+        onChangeText={(text) => setTrainee({ ...trainee!, name: text })}
+      />
+
+      {/* メール */}
+      <Text style={styles.label}>メール:</Text>
+      <TextInput
+        style={styles.input}
+        value={trainee?.email}
+        onChangeText={(text) => setTrainee({ ...trainee!, email: text })}
+      />
+
+      {/* 性別 */}
+      <Text style={styles.label}>性別:</Text>
+      <TextInput
+        style={styles.input}
+        value={trainee?.gender}
+        onChangeText={(text) => setTrainee({ ...trainee!, gender: text })}
+      />
+
+      {/* 体重 */}
       <Text style={styles.label}>体重 (kg):</Text>
       <TextInput
         style={styles.input}
-        value={weight}
-        onChangeText={setWeight}
+        value={trainee?.weight ? String(trainee.weight) : ''}
+        onChangeText={(text) => setTrainee({ ...trainee!, weight: text })}
         keyboardType="decimal-pad"
       />
+
+      {/* 登録日時は編集不可 */}
+      <Text style={styles.label}>
+        登録日時: {trainee?.createdAt?.toDate ? trainee.createdAt.toDate().toLocaleString() : '不明'}
+      </Text>
+
       <Button title="更新" onPress={handleUpdate} />
     </View>
   );
@@ -85,4 +143,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TraineeInfoScreen;
+const repository = BaseRepository.getInstance();
+export default () => <TraineeInfoScreen baseRepository={repository} />;

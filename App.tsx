@@ -3,7 +3,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import LoginScreen from './src/screens/LoginScreen';
-import TrainingHistoryScreen from './src/screens/TrainingHistoryScreen';
 import ExerciseRecordScreen from './src/screens/ExerciseRecordScreen';
 import TrainingPlanScreen from './src/screens/TrainingPlanScreen';
 import TraineeInfoScreen from './src/screens/TraineeInfoScreen';
@@ -22,11 +21,6 @@ const Tab = createBottomTabNavigator();
 const HomeTabs: React.FC = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen
-        name="History"
-        component={TrainingHistoryScreen}
-        options={{ title: 'History' }}
-      />
       <Tab.Screen
         name="Record"
         component={ExerciseRecordScreen}

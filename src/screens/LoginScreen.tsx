@@ -1,11 +1,8 @@
-// src/screens/LoginScreen.tsx
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
-// firebaseConfig からの auth インポートは不要
-// import { auth } from '../firebaseConfig';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { Repository } from '../services/Repository';
+import { BaseRepository } from '../services/baseRepository';
 
 type RootStackParamList = {
   Login: undefined;
@@ -14,24 +11,22 @@ type RootStackParamList = {
 
 type LoginScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Login'>;
 
-const LoginScreen: React.FC = () => {
+type Props = {
+  baseRepository: BaseRepository;
+};
+
+const LoginScreen: React.FC<Props> = ({ baseRepository }) => {
   const [email, setEmail] = useState<string>('mo2.ayase@gmail.com');
   const [password, setPassword] = useState<string>('test4545');
   const navigation = useNavigation<LoginScreenNavigationProp>();
 
   const handleLogin = async (): Promise<void> => {
-    console.log('handleLogin関数が開始');
     try {
-      console.log('baseRepository.loginWithEmail を実行');
       const userCredential = await baseRepository.loginWithEmail(email, password);
-      console.log('ログイン成功:', userCredential.user.email);
       Alert.alert('ログイン成功', `ようこそ ${userCredential.user.email} さん！`);
-      navigation.navigate('HomeTabs'); // ログイン成功後にホーム画面へ遷移
-      console.log('handleLogin関数が正常に終了');
+      navigation.navigate('HomeTabs');
     } catch (error: any) {
-      console.error('ログイン失敗:', error);
       Alert.alert('ログインエラー', error.message);
-      console.log('handleLogin関数がエラーで終了');
     }
   };
 
@@ -56,9 +51,9 @@ const LoginScreen: React.FC = () => {
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>ログイン</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('HomeTabs')}>
+      {/* <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('HomeTabs')}>
         <Text style={styles.buttonText}>ホーム画面へ</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   );
 };
@@ -100,4 +95,6 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoginScreen;
+// BaseRepository のインスタンスを生成して注入
+const repository = BaseRepository.getInstance();
+export default () => <LoginScreen baseRepository={repository} />;
