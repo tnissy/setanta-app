@@ -1,16 +1,12 @@
 import { z } from "zod";
 
 export const workoutSessionSchema = z.object({
-  userId: z.string(), // ユーザーID
-  workoutSessionData: z.object({
-    name: z.string(), // ワークアウトの名前
-    exercises: z.array(
-      z.object({
-        exerciseType: z.string(), // 各エクササイズの種別を実施順に格納
-      })
-    ),
-  }),
-  // ※ 1ユーザごとに最大10種類のワークアウトセッションが登録可能
+  workoutSessionData: z.array(
+    z.object({
+      name: z.string(), // ワークアウト名
+      exercises: z.array(z.string()), // 文字列の配列
+    })
+  ),
 });
 
 export type WorkoutSession = z.infer<typeof workoutSessionSchema>;

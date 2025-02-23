@@ -152,4 +152,10 @@ export class BaseRepository {
       throw error;
     }
   }
+
+  // getUidAndDisplayName: 現在のユーザーのuidとdisplayNameを返す
+  public getUidAndDisplayName(): { uid: string; displayName: string | null } {
+    const user = this.getCurrentUser(); // 既に認証済みのUserオブジェクトを取得
+    return { uid: user.uid, displayName: user.displayName };
+  }
 }
